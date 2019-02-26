@@ -1,0 +1,28 @@
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Writing database to /home/ligure/hexo-blog/leaguecn/db.json","time":"2019-02-21T12:25:23.131Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Hexo version: \u001b[35m3.8.0\u001b[39m","time":"2019-02-21T12:25:23.161Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Working directory: \u001b[35m/home/ligure/hexo-blog/leaguecn/\u001b[39m","time":"2019-02-21T12:25:23.162Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Config loaded: \u001b[35m/home/ligure/hexo-blog/leaguecn/_config.yml\u001b[39m","time":"2019-02-21T12:25:23.332Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2019-02-21T12:25:23.442Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2019-02-21T12:25:23.445Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2019-02-21T12:25:23.446Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2019-02-21T12:25:23.448Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2019-02-21T12:25:23.449Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2019-02-21T12:25:23.452Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2019-02-21T12:25:23.458Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2019-02-21T12:25:23.459Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2019-02-21T12:25:23.532Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/filters/exturl.js\u001b[39m","time":"2019-02-21T12:25:23.546Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/helpers/engine.js\u001b[39m","time":"2019-02-21T12:25:23.546Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/helpers/next-url.js\u001b[39m","time":"2019-02-21T12:25:23.547Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/merge-configs.js\u001b[39m","time":"2019-02-21T12:25:23.558Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/button.js\u001b[39m","time":"2019-02-21T12:25:23.558Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/center-quote.js\u001b[39m","time":"2019-02-21T12:25:23.559Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/exturl.js\u001b[39m","time":"2019-02-21T12:25:23.560Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/full-image.js\u001b[39m","time":"2019-02-21T12:25:23.560Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/group-pictures.js\u001b[39m","time":"2019-02-21T12:25:23.561Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/include-raw.js\u001b[39m","time":"2019-02-21T12:25:23.562Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/label.js\u001b[39m","time":"2019-02-21T12:25:23.563Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/note.js\u001b[39m","time":"2019-02-21T12:25:23.563Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/tags/tabs.js\u001b[39m","time":"2019-02-21T12:25:23.564Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Script loaded: \u001b[35mthemes/next/scripts/merge.js\u001b[39m","time":"2019-02-21T12:25:23.572Z","v":0}
+{"name":"hexo","hostname":"ubuntu","pid":29985,"level":20,"msg":"Database saved","time":"2019-02-21T12:25:23.580Z","v":0}
