@@ -32,13 +32,13 @@
     </summary>
     
     
-      <category term="Tutorial" scheme="http://yoursite.com/tags/Tutorial/"/>
-    
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
       <category term="Post" scheme="http://yoursite.com/tags/Post/"/>
     
       <category term="Article" scheme="http://yoursite.com/tags/Article/"/>
+    
+      <category term="Tutorial" scheme="http://yoursite.com/tags/Tutorial/"/>
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -47,9 +47,9 @@
     <link href="http://yoursite.com/2019/02/26/OpenCV2/"/>
     <id>http://yoursite.com/2019/02/26/OpenCV2/</id>
     <published>2019-02-26T16:50:07.000Z</published>
-    <updated>2019-02-27T09:24:34.589Z</updated>
+    <updated>2019-02-27T10:17:00.927Z</updated>
     
-    <content type="html"><![CDATA[<p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p><a id="more"></a><h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://opencv.org/about.html" target="_blank" rel="noopener">https://opencv.org/about.html</a></li><li><a href="https://baike.baidu.com/item/opencv/10320623" target="_blank" rel="noopener">https://baike.baidu.com/item/opencv/10320623</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p><a id="more"></a><h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://opencv.org/about.html" target="_blank" rel="noopener">https://opencv.org/about.html</a></li><li><a href="https://baike.baidu.com/item/opencv/10320623" target="_blank" rel="noopener">https://baike.baidu.com/item/opencv/10320623</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -60,13 +60,13 @@
       <category term="Note" scheme="http://yoursite.com/categories/Note/"/>
     
     
-      <category term="opencv" scheme="http://yoursite.com/tags/opencv/"/>
-    
       <category term="Tutorial" scheme="http://yoursite.com/tags/Tutorial/"/>
     
-      <category term="计算机视觉" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
-    
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="opencv" scheme="http://yoursite.com/tags/opencv/"/>
+    
+      <category term="计算机视觉" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
     
   </entry>
   
