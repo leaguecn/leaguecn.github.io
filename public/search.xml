@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F02%2F27%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <tags>
-        <tag>Post</tag>
-        <tag>Article</tag>
-        <tag>Tutorial</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[OpenCV2开发笔记]]></title>
     <url>%2F2019%2F02%2F26%2FOpenCV2%2F</url>
     <content type="text"><![CDATA[OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。 OpenCV安装与配置入门知识图像处理相机标定三维重建机器学习目标检测 参考资料 https://opencv.org/about.html https://baike.baidu.com/item/opencv/10320623]]></content>
@@ -19,10 +8,10 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>Tutorial</tag>
-        <tag>教程</tag>
         <tag>opencv</tag>
+        <tag>Tutorial</tag>
         <tag>计算机视觉</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
