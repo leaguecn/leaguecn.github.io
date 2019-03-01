@@ -8,12 +8,12 @@
         <category>教程</category>
       </categories>
       <tags>
-        <tag>Tutorial</tag>
         <tag>教程</tag>
         <tag>搭建博客</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
         <tag>多设备</tag>
+        <tag>Tutorial</tag>
       </tags>
   </entry>
   <entry>
@@ -38,10 +38,10 @@
         <category>Note</category>
       </categories>
       <tags>
-        <tag>opencv</tag>
-        <tag>Tutorial</tag>
-        <tag>计算机视觉</tag>
         <tag>教程</tag>
+        <tag>Tutorial</tag>
+        <tag>opencv</tag>
+        <tag>计算机视觉</tag>
       </tags>
   </entry>
   <entry>
@@ -52,8 +52,8 @@
         <category>Tutorial</category>
       </categories>
       <tags>
-        <tag>Tutorial</tag>
         <tag>教程</tag>
+        <tag>Tutorial</tag>
         <tag>Math</tag>
         <tag>数学</tag>
       </tags>
