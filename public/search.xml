@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Github搭建博客]]></title>
+    <url>%2F2019%2F02%2F28%2Fhow-to-build-your-blog-on-github%2F</url>
+    <content type="text"><![CDATA[这是一个比较完整的Github Page的博客搭建教程，涵盖以下几点： Hexo框架安装 Next主题的安装和个性化 Hexo支持多设备方案 待更新]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+        <tag>教程</tag>
+        <tag>搭建博客</tag>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>多设备</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[计算视觉SLAM工程师技能要求]]></title>
     <url>%2F2019%2F02%2F27%2Fslam-engineer-skills-demand%2F</url>
     <content type="text"><![CDATA[计算机视觉SLAM可以说是现在和以后较长一段时间里都比较火的研究方向，总结一下工程师的技能要求。 看了较多的这类招聘，基本要求包括： 精通C/C++语言 熟练使用OpenCV、g2o、BA开源库 掌握SLAM、SFM等算法原理 具有较强的学习能力和实践能力，可以阅读计算机视觉顶级期刊论文并进行相关算法的移植 要求更高一点的是： 发表过CVPR/ECCV/ICCV等顶会的论文 熟悉高性能加速工具GPGPU、CUDA 结合招聘的要求和相关博客内容以及自己的经验（菜逼的我，还是有点经验的;)），整理一些这方面的内容，希望对网友有所帮助。 学习要求技能： 【熟练使用C和C++】 《21天学通C++》 《Effective C++》 【熟悉常用的opencv，等库】 《opencv 3入门》 《学习 opencv》 【熟悉linux下编程】 熟悉cmake编程 熟悉Kdevelop 以及调试 熟练使用VIM编辑器 熟练markdown文档编写 【QT下的编程】 熟悉QT软件以及基本的语法功能 【熟悉常见的slam框架】 跟着高翔的14讲走就行 【机器学习数学知识】 高数，矩阵分析，概率论 【基本的数据结构与算法】 《数据结构，邓俊辉》 《算法竞赛入门》睡觉 【熟悉模式识别，多视图几何，计算机视觉等理论知识】 《计算机视觉》 《多视图几何》某几章 《模式识别》 项目经历： 【C++ demo】雷霆战机C++与QT实现 【opencv demo】 【slam easy demo】 进步历程基础篇 《21天学通 C++ 》 《数据结构（C++ 语言版）》 《Effective C++ 》 《算法竞赛入门》 高数/矩阵分析/概率论 课程 《线性估计》 《An Invitation to 3-D Vision》 技能篇 《视觉slam十四讲》 《OpenCV3 入门》 《学习 opencv》 专业知识背景 《计算机视觉》 《多视图几何》某几章 《模式识别》 《概率机器人学》 《Computer Vision Algorithms and Applications》 《Computer vision A modern approach 2nd》 参考 https://blog.csdn.net/fanjiule/article/details/80851233 https://zhuanlan.zhihu.com/p/22266788]]></content>
