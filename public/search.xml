@@ -18,7 +18,7 @@
   </entry>
   <entry>
     <title><![CDATA[计算视觉SLAM工程师技能要求]]></title>
-    <url>%2F2019%2F02%2F27%2Fslam-engineer-skills-demand%2F</url>
+    <url>%2F2019%2F02%2F28%2Fslam-engineer-skills-demand%2F</url>
     <content type="text"><![CDATA[计算机视觉SLAM可以说是现在和以后较长一段时间里都比较火的研究方向，总结一下工程师的技能要求。分为下面几方面内容： 基础知识学习要求 进步历程篇 看了较多的这类招聘，基本要求包括： 精通C/C++语言 熟练使用OpenCV、g2o、BA开源库 掌握SLAM、SFM等算法原理 具有较强的学习能力和实践能力，可以阅读计算机视觉顶级期刊论文并进行相关算法的移植 要求更高一点的是： 发表过CVPR/ECCV/ICCV等顶会的论文 熟悉高性能加速工具GPGPU、CUDA 结合招聘的要求和相关博客内容以及自己的经验（菜逼的我，还是有点经验的;)），整理一些这方面的内容，希望对网友有所帮助。 学习要求技能： 【熟练使用C和C++】 《21天学通C++》 《Effective C++》 【熟悉常用的opencv，等库】 《opencv 3入门》 《学习 opencv》 【熟悉linux下编程】 熟悉cmake编程 熟悉Kdevelop 以及调试 熟练使用VIM编辑器 熟练markdown文档编写 【QT下的编程】 熟悉QT软件以及基本的语法功能 【熟悉常见的slam框架】 跟着高翔的14讲走就行 【机器学习数学知识】 高数，矩阵分析，概率论 【基本的数据结构与算法】 《数据结构，邓俊辉》 《算法竞赛入门》睡觉 【熟悉模式识别，多视图几何，计算机视觉等理论知识】 《计算机视觉》 《多视图几何》某几章 《模式识别》 项目经历： 【C++ demo】雷霆战机C++与QT实现 【opencv demo】 【slam easy demo】 进步历程基础篇 《21天学通 C++ 》 《数据结构（C++ 语言版）》 《Effective C++ 》 《算法竞赛入门》 高数/矩阵分析/概率论 课程 《线性估计》 《An Invitation to 3-D Vision》 技能篇 《视觉slam十四讲》 《OpenCV3 入门》 《学习 opencv》 专业知识背景 《计算机视觉》 《多视图几何》某几章 《模式识别》 《概率机器人学》 《Computer Vision Algorithms and Applications》 《Computer vision A modern approach 2nd》 参考 https://blog.csdn.net/fanjiule/article/details/80851233 https://zhuanlan.zhihu.com/p/22266788]]></content>
       <categories>
         <category>总结</category>
@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title><![CDATA[OpenCV2开发笔记]]></title>
-    <url>%2F2019%2F02%2F26%2FOpenCV2%2F</url>
+    <url>%2F2019%2F02%2F27%2FOpenCV2%2F</url>
     <content type="text"><![CDATA[这是一篇OpenCV2的开发笔记，根据自己学习OpenCV开源库笔记整理，包含以下几方面内容： OpenCV2的环境配置 简单图像处理 相机标定 三维重建 机器学习 目标检测 OpenCV简介OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。 OpenCV安装与配置入门知识图像处理相机标定三维重建机器学习目标检测 参考资料 https://opencv.org/about.html https://baike.baidu.com/item/opencv/10320623]]></content>
       <categories>
         <category>Note</category>
@@ -46,7 +46,7 @@
   </entry>
   <entry>
     <title><![CDATA[math-equation]]></title>
-    <url>%2F2019%2F02%2F21%2Fmath-equation%2F</url>
+    <url>%2F2019%2F02%2F22%2Fmath-equation%2F</url>
     <content type="text"><![CDATA[There are three kinds of math equation styles in markdown file in generally. But all these styles are suitable for markdown? Or which one is better? Here are the samples. 3 kinds of Math Equation style in MD file Picture style equation 12![](https://latex.codecogs.com/svg.latex?\Large&amp;space;x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;)&lt;/div&gt;![](http://latex.codecogs.com/gif.latex?h%28x%29%3D%5Ctheta_0%20x%20&amp;plus;%20%5Ctheta_1%20x)&lt;/div&gt; MD support style equation 123456\begin&#123;equation&#125;x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125; \end&#123;equation&#125; \begin&#123;equation&#125;h(x)=\theta_0 x + \theta_1 x\end&#123;equation&#125; \begin{equation}x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\end{equation} \begin{equation}h(x)=\theta_0 x + \theta_1 x\end{equation} MathJax style equation 123456$$x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;$$ $$h(x)=\theta_0 x + \theta_1 x$$ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} h(x)=\theta_0 x + \theta_1 x Here is shot of normal display in html thread. Reference https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog https://www.zhihu.com/question/26887527 https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview http://latex.codecogs.com/eqneditor/editor.php https://blog.csdn.net/Quest_sec/article/details/78068960]]></content>
       <categories>
         <category>Tutorial</category>
@@ -60,7 +60,7 @@
   </entry>
   <entry>
     <title><![CDATA[Android awesome apps|安卓优秀应用集]]></title>
-    <url>%2F2019%2F02%2F21%2Fandroid-awesome-apps%2F</url>
+    <url>%2F2019%2F02%2F22%2Fandroid-awesome-apps%2F</url>
     <content type="text"><![CDATA[There are many apps in android play store. But there are a few applications to be awesome. I summary list of apps what I had used, which have good performent. I hope them will help you in some way. I also split these apps into three catergories: Daily driving, Assistance &amp; System enhence. Just enjoy it. Android awesome apps remarkDaily driving Video player MX Player VLC PotPlayer Online music NetEase Music QQ Music Browser Chrome(variant: kiwibrowser for snapdrogen chips) Via(simple &amp; pure) Map GoogleMap Amap(in China) 3rd Camera Google Camera(nice functions &amp; powerful night sight) OpenCamera(pure but rich function on manual control for camera) Social app Twitter Facebook Telegram Weibo QQ Wechat Assistance Dictionary Mdict+mdx file GoldenDict kiwix+zim file Books reader Moon+ Reader Librera PDF reader Foxit PDF Mobile office WPS office OfficeSuite Polaris office(&lt;5.2) Text editor QuickEdit Jota+ Note Evernote Notes Markdown editor MarkdownX Picture recognition Quick PDF Scanner Photo editor PicsArt Snapseed System enhence VPN Wuma VPN SSH JuiceSSH 3rd file explorer Root Explorer X-plore Data backup Titanium Backup Downloader IDM+ ADM Hack app Lucky Patcher Root manager SuperSU Magisk System cleaner SD Maid by ligure on 2019-02-20 One More ThingDeploy linuxYep, I mean that you can deploy linux on android phone. Tools linuxdeploy.apk tutorial en tutorial zh 教程1 教程2 教程3]]></content>
       <tags>
         <tag>Android</tag>
@@ -72,7 +72,7 @@
   </entry>
   <entry>
     <title><![CDATA[Post of blog website initialization|博客开贴公告]]></title>
-    <url>%2F2019%2F02%2F20%2FREADME-md%2F</url>
+    <url>%2F2019%2F02%2F21%2FREADME-md%2F</url>
     <content type="text"><![CDATA[Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！ 这是本站的第一篇博客，即博客开贴公告！ About|介绍This is leaguecn’s blog website. Build information|建站信息 Built via Hexo+Nodejs+github page view(repository username.github.io). Using NexT theme on 2019-02-21 Credits|感谢I really know that this website deploying successfully under many personal blogs help. So I wanna say thanks for these person who post the meaningful blogs which could fix the issue what I encounted. Especially in this website building progressing, like: cyzus wuxianlin Lines other persons I forgot(sorry for my bad memory) Reference|参考 https://cyzus.github.io/2015/06/21/github-build-blog/ https://www.jianshu.com/p/3ff20be8574c https://www.jianshu.com/p/265b2c653e6f https://hexo.io/ https://www.titanjun.top/]]></content>
       <tags>
         <tag>Post</tag>

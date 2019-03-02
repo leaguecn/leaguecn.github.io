@@ -1994,7 +1994,11 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
+<<<<<<< HEAD
   background: #b0ffb4;
+=======
+  background: #ffff61;
+>>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
 }
 .links-of-blogroll {
   font-size: 13px;
