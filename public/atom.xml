@@ -6,11 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-<<<<<<< HEAD
   <updated>2019-03-01T07:07:11.973Z</updated>
-=======
-  <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
   <id>http://yoursite.com/</id>
   
   <author>
@@ -25,11 +21,7 @@
     <link href="http://yoursite.com/2019/02/28/how-to-build-your-blog-on-github/"/>
     <id>http://yoursite.com/2019/02/28/how-to-build-your-blog-on-github/</id>
     <published>2019-02-28T10:27:04.000Z</published>
-<<<<<<< HEAD
     <updated>2019-03-01T07:07:11.973Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<p>这是一个比较完整的Github Page的博客搭建教程，涵盖以下几点：</p><ul><li>Hexo框架安装</li><li>Next主题的安装和个性化</li><li>Hexo支持多设备方案</li></ul><a id="more"></a><p>待更新</p>]]></content>
     
@@ -63,14 +55,10 @@
   
   <entry>
     <title>计算视觉SLAM工程师技能要求</title>
-    <link href="http://yoursite.com/2019/02/28/slam-engineer-skills-demand/"/>
-    <id>http://yoursite.com/2019/02/28/slam-engineer-skills-demand/</id>
+    <link href="http://yoursite.com/2019/02/27/slam-engineer-skills-demand/"/>
+    <id>http://yoursite.com/2019/02/27/slam-engineer-skills-demand/</id>
     <published>2019-02-27T17:24:04.000Z</published>
-<<<<<<< HEAD
     <updated>2019-03-01T10:16:24.709Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<ul><li>计算机视觉SLAM可以说是现在和以后较长一段时间里都比较火的研究方向，总结一下工程师的技能要求。分为下面几方面内容：<ul><li>基础知识学习要求</li><li>进步历程篇</li></ul></li></ul><a id="more"></a><ul><li><p>看了较多的这类招聘，基本要求包括：</p><ul><li>精通C/C++语言</li><li>熟练使用OpenCV、g2o、BA开源库</li><li>掌握SLAM、SFM等算法原理</li><li>具有较强的学习能力和实践能力，可以阅读计算机视觉顶级期刊论文并进行相关算法的移植</li></ul></li><li><p>要求更高一点的是：</p><ul><li>发表过CVPR/ECCV/ICCV等顶会的论文</li><li>熟悉高性能加速工具GPGPU、CUDA</li></ul></li><li><p>结合招聘的要求和相关博客内容以及自己的经验（菜逼的我，还是有点经验的;)），整理一些这方面的内容，希望对网友有所帮助。</p></li></ul><h2 id="学习要求"><a href="#学习要求" class="headerlink" title="学习要求"></a>学习要求</h2><h3 id="技能："><a href="#技能：" class="headerlink" title="技能："></a>技能：</h3><ul><li><p>【熟练使用C和C++】</p><ul><li>《21天学通C++》</li><li>《Effective C++》</li></ul></li><li><p>【熟悉常用的opencv，等库】</p><ul><li>《opencv 3入门》</li><li>《学习 opencv》</li></ul></li><li><p>【熟悉linux下编程】</p><ul><li>熟悉cmake编程</li><li>熟悉Kdevelop 以及调试</li><li>熟练使用VIM编辑器</li><li>熟练markdown文档编写</li></ul></li><li><p>【QT下的编程】</p><ul><li>熟悉QT软件以及基本的语法功能</li></ul></li><li><p>【熟悉常见的slam框架】</p><ul><li>跟着高翔的14讲走就行</li></ul></li><li><p>【机器学习数学知识】</p><ul><li>高数，矩阵分析，概率论</li></ul></li><li><p>【基本的数据结构与算法】</p><ul><li>《数据结构，邓俊辉》</li><li>《算法竞赛入门》睡觉</li></ul></li><li><p>【熟悉模式识别，多视图几何，计算机视觉等理论知识】</p><ul><li>《计算机视觉》</li><li>《多视图几何》某几章</li><li>《模式识别》</li></ul></li></ul><h3 id="项目经历："><a href="#项目经历：" class="headerlink" title="项目经历："></a>项目经历：</h3><ul><li>【C++ demo】雷霆战机C++与QT实现</li><li>【opencv demo】</li><li>【slam easy demo】</li></ul><hr><h2 id="进步历程"><a href="#进步历程" class="headerlink" title="进步历程"></a>进步历程</h2><h3 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h3><ul><li>《21天学通 C++ 》</li><li>《数据结构（C++ 语言版）》</li><li>《Effective C++ 》</li><li>《算法竞赛入门》</li><li>高数/矩阵分析/概率论 课程</li><li>《线性估计》</li><li>《An Invitation to 3-D Vision》</li></ul><h3 id="技能篇"><a href="#技能篇" class="headerlink" title="技能篇"></a>技能篇</h3><ul><li>《视觉slam十四讲》</li><li>《OpenCV3 入门》</li><li>《学习 opencv》</li><li>专业知识背景<ul><li>《计算机视觉》</li><li>《多视图几何》某几章</li><li>《模式识别》</li><li>《概率机器人学》</li><li>《Computer Vision Algorithms and Applications》</li><li>《Computer vision A modern approach 2nd》</li></ul></li></ul><hr><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://blog.csdn.net/fanjiule/article/details/80851233" target="_blank" rel="noopener">https://blog.csdn.net/fanjiule/article/details/80851233</a></li><li><a href="https://zhuanlan.zhihu.com/p/22266788" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/22266788</a></li></ul>]]></content>
     
@@ -101,14 +89,10 @@
   
   <entry>
     <title>OpenCV2开发笔记</title>
-    <link href="http://yoursite.com/2019/02/27/OpenCV2/"/>
-    <id>http://yoursite.com/2019/02/27/OpenCV2/</id>
+    <link href="http://yoursite.com/2019/02/26/OpenCV2/"/>
+    <id>http://yoursite.com/2019/02/26/OpenCV2/</id>
     <published>2019-02-26T16:50:07.000Z</published>
-<<<<<<< HEAD
     <updated>2019-03-01T10:16:24.709Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<p>这是一篇OpenCV2的开发笔记，根据自己学习OpenCV开源库笔记整理，包含以下几方面内容：</p><ul><li>OpenCV2的环境配置</li><li>简单图像处理</li><li>相机标定</li><li>三维重建</li><li>机器学习</li><li>目标检测</li></ul><a id="more"></a><h2 id="OpenCV简介"><a href="#OpenCV简介" class="headerlink" title="OpenCV简介"></a>OpenCV简介</h2><p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p><h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://opencv.org/about.html" target="_blank" rel="noopener">https://opencv.org/about.html</a></li><li><a href="https://baike.baidu.com/item/opencv/10320623" target="_blank" rel="noopener">https://baike.baidu.com/item/opencv/10320623</a></li></ul>]]></content>
     
@@ -141,14 +125,10 @@
   
   <entry>
     <title>math-equation</title>
-    <link href="http://yoursite.com/2019/02/22/math-equation/"/>
-    <id>http://yoursite.com/2019/02/22/math-equation/</id>
+    <link href="http://yoursite.com/2019/02/21/math-equation/"/>
+    <id>http://yoursite.com/2019/02/21/math-equation/</id>
     <published>2019-02-21T22:03:24.000Z</published>
-<<<<<<< HEAD
     <updated>2019-02-27T08:42:56.447Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<ul><li>There are three kinds of math equation styles in markdown file in generally.</li><li>But all these styles are suitable for markdown? Or which one is better?</li><li>Here are the samples.</li></ul><a id="more"></a><h2 id="3-kinds-of-Math-Equation-style-in-MD-file"><a href="#3-kinds-of-Math-Equation-style-in-MD-file" class="headerlink" title="3 kinds of Math Equation style in MD file"></a>3 kinds of Math Equation style in MD file</h2><ul><li>Picture style equation    </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![](https://latex.codecogs.com/svg.latex?\Large&amp;space;x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;)&lt;/div&gt;</span><br><span class="line">![](http://latex.codecogs.com/gif.latex?h%28x%29%3D%5Ctheta_0%20x%20&amp;plus;%20%5Ctheta_1%20x)&lt;/div&gt;</span><br></pre></td></tr></table></figure><p><img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" alt><br><img src="http://latex.codecogs.com/gif.latex?h%28x%29%3D%5Ctheta_0%20x%20&plus;%20%5Ctheta_1%20x" alt></p><hr><ul><li>MD support style equation   </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;equation&#125;</span><br><span class="line">x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;   </span><br><span class="line">\end&#123;equation&#125;    </span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">h(x)=\theta_0 x + \theta_1 x</span><br><span class="line">\end&#123;equation&#125;</span><br></pre></td></tr></table></figure><p>\begin{equation}<br>x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}<br>\end{equation}</p><p>\begin{equation}<br>h(x)=\theta_0 x + \theta_1 x<br>\end{equation}</p><hr><ul><li>MathJax style equation    </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">x=\frac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;</span><br><span class="line">$$    </span><br><span class="line">$$</span><br><span class="line">h(x)=\theta_0 x + \theta_1 x</span><br><span class="line">$$</span><br></pre></td></tr></table></figure><script type="math/tex; mode=display">x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</script><script type="math/tex; mode=display">h(x)=\theta_0 x + \theta_1 x</script><hr><p>Here is shot of normal display in html thread.<br><img src="https://github.com/leaguecn/leenotes/raw/master/img/md-equation.png" alt></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><a href="https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog" target="_blank" rel="noopener">https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog</a>    </li><li><a href="https://www.zhihu.com/question/26887527" target="_blank" rel="noopener">https://www.zhihu.com/question/26887527</a>    </li><li><a href="https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview" target="_blank" rel="noopener">https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview</a></li><li><a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank" rel="noopener">http://latex.codecogs.com/eqneditor/editor.php</a></li><li><a href="https://blog.csdn.net/Quest_sec/article/details/78068960" target="_blank" rel="noopener">https://blog.csdn.net/Quest_sec/article/details/78068960</a></li></ul>]]></content>
     
@@ -177,14 +157,10 @@
   
   <entry>
     <title>Android awesome apps|安卓优秀应用集</title>
-    <link href="http://yoursite.com/2019/02/22/android-awesome-apps/"/>
-    <id>http://yoursite.com/2019/02/22/android-awesome-apps/</id>
+    <link href="http://yoursite.com/2019/02/21/android-awesome-apps/"/>
+    <id>http://yoursite.com/2019/02/21/android-awesome-apps/</id>
     <published>2019-02-21T20:14:26.000Z</published>
-<<<<<<< HEAD
     <updated>2019-02-27T08:42:56.447Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<ul><li>There are many apps in android play store. But there are a few applications to be awesome.</li><li>I summary list of apps what I had used, which have good performent. I hope them will help you in some way.</li><li>I also split these apps into three catergories: Daily driving, Assistance &amp; System enhence. Just enjoy it.</li></ul><a id="more"></a><h2 id="Android-awesome-apps-remark"><a href="#Android-awesome-apps-remark" class="headerlink" title="Android awesome apps remark"></a>Android awesome apps remark</h2><p><strong>Daily driving</strong>    </p><h3 id="Video-player"><a href="#Video-player" class="headerlink" title="Video player"></a>Video player</h3><ul><li>MX Player</li><li>VLC</li><li>PotPlayer</li></ul><h3 id="Online-music"><a href="#Online-music" class="headerlink" title="Online music"></a>Online music</h3><ul><li>NetEase Music</li><li>QQ Music</li></ul><h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><ul><li>Chrome(variant: kiwibrowser for snapdrogen chips)</li><li>Via(simple &amp; pure)</li></ul><h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><ul><li>GoogleMap</li><li>Amap(in China)</li></ul><h3 id="3rd-Camera"><a href="#3rd-Camera" class="headerlink" title="3rd Camera"></a>3rd Camera</h3><ul><li>Google Camera(nice functions &amp; powerful night sight)</li><li>OpenCamera(pure but rich function on manual control for camera)</li></ul><h3 id="Social-app"><a href="#Social-app" class="headerlink" title="Social app"></a>Social app</h3><ul><li>Twitter</li><li>Facebook</li><li>Telegram</li><li>Weibo</li><li>QQ</li><li>Wechat</li></ul><hr><p><strong>Assistance</strong></p><h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><ul><li>Mdict+mdx file</li><li>GoldenDict</li><li>kiwix+zim file</li></ul><h3 id="Books-reader"><a href="#Books-reader" class="headerlink" title="Books reader"></a>Books reader</h3><ul><li>Moon+ Reader</li><li>Librera</li></ul><h3 id="PDF-reader"><a href="#PDF-reader" class="headerlink" title="PDF reader"></a>PDF reader</h3><ul><li>Foxit PDF</li></ul><h3 id="Mobile-office"><a href="#Mobile-office" class="headerlink" title="Mobile office"></a>Mobile office</h3><ul><li>WPS office</li><li>OfficeSuite</li><li>Polaris office(&lt;5.2)</li></ul><h3 id="Text-editor"><a href="#Text-editor" class="headerlink" title="Text editor"></a>Text editor</h3><ul><li>QuickEdit</li><li>Jota+</li></ul><h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><ul><li>Evernote</li><li>Notes</li></ul><h3 id="Markdown-editor"><a href="#Markdown-editor" class="headerlink" title="Markdown editor"></a>Markdown editor</h3><ul><li>MarkdownX</li></ul><h3 id="Picture-recognition"><a href="#Picture-recognition" class="headerlink" title="Picture recognition"></a>Picture recognition</h3><ul><li>Quick PDF Scanner</li></ul><h3 id="Photo-editor"><a href="#Photo-editor" class="headerlink" title="Photo editor"></a>Photo editor</h3><ul><li>PicsArt</li><li>Snapseed</li></ul><hr><p><strong>System enhence</strong></p><h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><ul><li>Wuma VPN</li></ul><h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><ul><li>JuiceSSH</li></ul><h3 id="3rd-file-explorer"><a href="#3rd-file-explorer" class="headerlink" title="3rd file explorer"></a>3rd file explorer</h3><ul><li>Root Explorer</li><li>X-plore</li></ul><h3 id="Data-backup"><a href="#Data-backup" class="headerlink" title="Data backup"></a>Data backup</h3><ul><li>Titanium Backup</li></ul><h3 id="Downloader"><a href="#Downloader" class="headerlink" title="Downloader"></a>Downloader</h3><ul><li>IDM+</li><li>ADM</li></ul><h3 id="Hack-app"><a href="#Hack-app" class="headerlink" title="Hack app"></a>Hack app</h3><ul><li><a href="https://www.luckypatchers.com/download/" target="_blank" rel="noopener">Lucky Patcher</a><br><img src="https://www.luckypatchers.com/wp-content/uploads/2016/03/Lucky-patcher-logo.webp" alt="Lucky-Patcher-icon"></li></ul><h3 id="Root-manager"><a href="#Root-manager" class="headerlink" title="Root manager"></a>Root manager</h3><ul><li><a href="http://supersu.com/" target="_blank" rel="noopener">SuperSU</a><br><img src="http://supersu.com/img/phone.gif" alt="SuperSU-snapshot"></li><li><a href="https://magiskroot.net/install-download-magisk-manager-latest/" target="_blank" rel="noopener">Magisk</a><br><img src="https://magiskroot.net/wp-content/uploads/2017/07/magisk-manager-1024x576.webp" alt="Magisk-manager"></li></ul><h3 id="System-cleaner"><a href="#System-cleaner" class="headerlink" title="System cleaner"></a>System cleaner</h3><ul><li>SD Maid</li></ul><p><em>by ligure on 2019-02-20</em></p><hr><h2 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h2><h3 id="Deploy-linux"><a href="#Deploy-linux" class="headerlink" title="Deploy linux"></a>Deploy linux</h3><p>Yep, I mean that you can deploy linux on android phone.</p><p><em>Tools</em></p><ul><li><a href="https://github.com/meefik/linuxdeploy/releases/download/2.2.1/linuxdeploy-2.2.1-243.apk" target="_blank" rel="noopener">linuxdeploy.apk</a></li><li><a href="https://github.com/meefik/linuxdeploy/wiki/Installing-Kali-Linux-Guide" target="_blank" rel="noopener">tutorial en</a></li><li>tutorial zh<ul><li><a href="https://www.htcp.net/4431.html" target="_blank" rel="noopener">教程1</a></li><li><a href="https://mlapp.cn/134.html" target="_blank" rel="noopener">教程2</a></li><li><a href="https://my.oschina.net/zss1993/blog/1790223" target="_blank" rel="noopener">教程3</a></li></ul></li></ul>]]></content>
     
@@ -213,14 +189,10 @@
   
   <entry>
     <title>Post of blog website initialization|博客开贴公告</title>
-    <link href="http://yoursite.com/2019/02/21/README-md/"/>
-    <id>http://yoursite.com/2019/02/21/README-md/</id>
+    <link href="http://yoursite.com/2019/02/20/README-md/"/>
+    <id>http://yoursite.com/2019/02/20/README-md/</id>
     <published>2019-02-20T20:42:05.000Z</published>
-<<<<<<< HEAD
     <updated>2019-03-01T10:16:24.709Z</updated>
-=======
-    <updated>2019-03-01T16:19:34.638Z</updated>
->>>>>>> 825917793d259b8e6e9a759a4100396615ca77bb
     
     <content type="html"><![CDATA[<p><strong>Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！</strong></p><ul><li>这是本站的第一篇博客，即博客开贴公告！</li></ul><a id="more"></a><h2 id="About-介绍"><a href="#About-介绍" class="headerlink" title="About|介绍"></a>About|介绍</h2><p>This is leaguecn’s blog website. </p><h2 id="Build-information-建站信息"><a href="#Build-information-建站信息" class="headerlink" title="Build information|建站信息"></a>Build information|建站信息</h2><ul><li>Built via Hexo+Nodejs+github page view(repository username.github.io).    </li><li>Using <a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">NexT theme</a></li></ul><p><em>on 2019-02-21</em></p><h2 id="Credits-感谢"><a href="#Credits-感谢" class="headerlink" title="Credits|感谢"></a>Credits|感谢</h2><p>I really know that this website deploying successfully under many personal blogs help. So I wanna say thanks for these person who post the meaningful blogs which could fix the issue what I encounted. Especially in this website building progressing, like:</p><ul><li><a href="https://cyzus.github.io/" target="_blank" rel="noopener">cyzus</a></li><li><a href="http://wuxianlin.com/" target="_blank" rel="noopener">wuxianlin</a></li><li><a href="http://fanzhenyu.me/" target="_blank" rel="noopener">Lines</a></li><li>other persons I forgot(sorry for my bad memory)</li></ul><h2 id="Reference-参考"><a href="#Reference-参考" class="headerlink" title="Reference|参考"></a>Reference|参考</h2><ul><li><a href="https://cyzus.github.io/2015/06/21/github-build-blog/" target="_blank" rel="noopener">https://cyzus.github.io/2015/06/21/github-build-blog/</a></li><li><a href="https://www.jianshu.com/p/3ff20be8574c" target="_blank" rel="noopener">https://www.jianshu.com/p/3ff20be8574c</a></li><li><a href="https://www.jianshu.com/p/265b2c653e6f" target="_blank" rel="noopener">https://www.jianshu.com/p/265b2c653e6f</a></li><li><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></li><li><a href="https://www.titanjun.top/" target="_blank" rel="noopener">https://www.titanjun.top/</a></li></ul>]]></content>
     
