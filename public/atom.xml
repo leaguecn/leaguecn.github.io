@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-01T07:07:11.973Z</updated>
+  <updated>2019-03-03T01:13:05.296Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为Hexo添加流程图支持</title>
+    <link href="http://yoursite.com/2019/03/01/flow-chart-support/"/>
+    <id>http://yoursite.com/2019/03/01/flow-chart-support/</id>
+    <published>2019-03-01T15:18:00.000Z</published>
+    <updated>2019-03-03T01:13:05.296Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>写博客有时候需要使用流程图来说明整个工程，或者整个项目的一个大致流程；</li><li>一些笔记软件中也已经相继支持流程图的解析，但是默认安装的Hexo是不支持流程图解析的；</li><li><p>所以需要将流程图支持的模块安装到Hexo中，才能解析Markdown中的流程图；</p></li><li><p>下面是Hexo安装流程图模块的教程，主要包括：</p><ul><li>模块选择</li><li>模块安装和设置</li><li>流程图绘制例子</li></ul></li></ul><a id="more"></a><h2 id="模块选择"><a href="#模块选择" class="headerlink" title="模块选择"></a>模块选择</h2><p>目前的流程图模块主流的有3个，包括：</p><ul><li><p>mermaid模块<br><img src="https://github.com/leaguecn/leenotes/raw/master/img2/mermaid.png" alt></p></li><li><p>flowchart模块<br><img src="https://camo.githubusercontent.com/51780424a31f92eb5f0008b84be7c15d3dd29cc5/68747470733a2f2f63646e2e7261776769742e636f6d2f6275626b6f6f2f6865786f2d66696c7465722d666c6f7763686172742f6d61737465722f736e617073686f742e737667" alt></p></li><li><p>sequence模块<br><img src="https://github.com/leaguecn/leenotes/raw/master/img2/sequence.png" alt></p></li></ul><p>mermaid支持流程、时序、甘地图，写法简便，最受欢迎，是流程图中的最大玩家。其他的两个是小众，但相当淡雅的玩家，不追求颜色多样，只是简单的纯黑色样式。<br>个人还是首推mermaid的，多样化，选择更多；如果你是一位算法爱好者，理论研究人员，不追求流程图的颜色、搭配，喜欢黑白样式的流程图，那可以选择后两者。</p><p>所以，以下的教程将以mermaid安装进行介绍，其他的两种模块可以参考官方教程进行安装：</p><ul><li>flowchart官方：<a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="noopener">https://github.com/bubkoo/hexo-filter-flowchart</a></li><li>sequence官方：<a href="https://github.com/bubkoo/hexo-filter-sequence" target="_blank" rel="noopener">https://github.com/bubkoo/hexo-filter-sequence</a></li></ul><h2 id="模块安装"><a href="#模块安装" class="headerlink" title="模块安装"></a>模块安装</h2><ul><li><p>安装模块</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#npm安装</span><br><span class="line">npm install hexo-filter-mermaid-diagrams</span><br></pre></td></tr></table></figure></li><li><p>配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#编辑hexo的配置文件，_config.yml，追加以下内容</span><br><span class="line"># mermaid chart</span><br><span class="line">mermaid: ## mermaid url https://github.com/knsv/mermaid</span><br><span class="line">  enable: true  # default true</span><br><span class="line">  version: &quot;7.1.2&quot; # default v7.1.2</span><br><span class="line">  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js</span><br><span class="line">  #startOnload: true  // default true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">#编辑NexT主题的脚注文件，即./themes/next/layout/_partials/footer.swig，追加以下内容</span><br><span class="line">&#123;% if (theme.mermaid.enable)  %&#125;</span><br><span class="line">  &lt;script src=&apos;https://unpkg.com/mermaid@&lt;%= theme.mermaid.version %&gt;/dist/mermaid.min.js&apos;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    if (window.mermaid) &#123;</span><br><span class="line">      mermaid.initialize(&#123;theme: &apos;forest&apos;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li></ul><h2 id="一个栗子"><a href="#一个栗子" class="headerlink" title="一个栗子"></a>一个栗子</h2><p>利用mermaid绘制流程图、时序图以及甘地图。</p><ul><li>流程图<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TD#方向：TD上到下，LR左到右，RL右道左</span><br><span class="line">A[模块A] --&gt;|A1| B(模块B)</span><br><span class="line">B --&gt; C&#123;判断条件C&#125;</span><br><span class="line">C --&gt;|条件C1| D[模块D]</span><br><span class="line">C --&gt;|条件C2| E[模块E]</span><br><span class="line">C --&gt;|条件C3| F[模块F]</span><br></pre></td></tr></table></figure></li></ul><pre class="mermaid">graph TDA[模块A] -->|A1| B(模块B)B --> C{判断条件C}C -->|条件C1| D[模块D]C -->|条件C2| E[模块E]C -->|条件C3| F[模块F]</pre><ul><li>时序图<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">A-&gt;&gt;B: 是否已收到消息？</span><br><span class="line">B--&gt;&gt;A: 已收到消息</span><br></pre></td></tr></table></figure></li></ul><pre class="mermaid">sequenceDiagramA->>B: 是否已收到消息？B-->>A: 已收到消息</pre><ul><li>甘特图<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 甘特图</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 项目A</span><br><span class="line">任务1      :a1, 2018-06-06, 30d</span><br><span class="line">任务2      :after a1  , 20d</span><br><span class="line">section 项目B</span><br><span class="line">任务3      :2018-06-12  , 12d</span><br><span class="line">任务4      : 24d</span><br></pre></td></tr></table></figure></li></ul><pre class="mermaid">gantttitle 甘特图dateFormat  YYYY-MM-DDsection 项目A任务1      :a1, 2018-06-06, 30d任务2      :after a1  , 20dsection 项目B任务3      :2018-06-12  , 12d任务4      : 24d</pre><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html" target="_blank" rel="noopener">https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html</a><br><a href="https://tyloafer.github.io/2018/04/21/hexo-mermaid/" target="_blank" rel="noopener">https://tyloafer.github.io/2018/04/21/hexo-mermaid/</a><br><a href="https://github.com/knsv/mermaid" target="_blank" rel="noopener">https://github.com/knsv/mermaid</a><br><a href="https://github.com/bubkoo/hexo-filter-flowchart" target="_blank" rel="noopener">https://github.com/bubkoo/hexo-filter-flowchart</a><br><a href="https://github.com/bubkoo/hexo-filter-sequence" target="_blank" rel="noopener">https://github.com/bubkoo/hexo-filter-sequence</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;写博客有时候需要使用流程图来说明整个工程，或者整个项目的一个大致流程；&lt;/li&gt;
+&lt;li&gt;一些笔记软件中也已经相继支持流程图的解析，但是默认安装的Hexo是不支持流程图解析的；&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;所以需要将流程图支持的模块安装到Hexo中，才能解析Markdown中的流程图；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下面是Hexo安装流程图模块的教程，主要包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模块选择&lt;/li&gt;
+&lt;li&gt;模块安装和设置&lt;/li&gt;
+&lt;li&gt;流程图绘制例子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="flowchart" scheme="http://yoursite.com/tags/flowchart/"/>
+    
+      <category term="流程图" scheme="http://yoursite.com/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>Github搭建博客</title>
@@ -43,9 +81,9 @@
     
       <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="搭建博客" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="搭建博客" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
       <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
     
