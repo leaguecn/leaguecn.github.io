@@ -9,7 +9,6 @@ catergories: Post
 
 ---
 
-**Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！**
 
 + 这是本站的第一篇博客，即博客开贴公告！
 
@@ -17,6 +16,7 @@ catergories: Post
 
 ## About|介绍
 
+**Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！**
 This is leaguecn's blog website. 
 
 ## Build information|建站信息
