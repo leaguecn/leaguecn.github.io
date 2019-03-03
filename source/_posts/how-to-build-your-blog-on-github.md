@@ -38,11 +38,11 @@ categories: 教程
 
 请确认在该步骤前已经注册了一个[Github](https://github.com/)账号。
 
-+ 进入https://github.com/{username}/页面，确保已经登陆账号；
-+ 点击右上角的+，会跳转到[新建界面](https://github.com/new)，然后必须以{username}.github.io名称新建一个人仓库，其他设置如下图所示：
++ 进入*https://github.com/{username}/*页面，确保已经登陆账号；
++ 点击右上角的+，会跳转到[新建界面](https://github.com/new)，然后必须以*{username}.github.io*名称新建一个人仓库，其他设置如下图所示：
 ![](https://github.com/leaguecn/leenotes/raw/master/img/github-build-blog-create-repo.png)
 
-+ 拷贝新建仓库的git地址，如：https://github.com/{username}/{username}.github.io.git到文本备存。
++ 拷贝新建仓库的git地址，如：*https://github.com/{username}/{username}.github.io.git*到文本备存。
 
 ## Hexo博客框架安装
 
@@ -91,15 +91,15 @@ cd <folder> && npm install
 ```
 
 
-+ 生成静态网页```hexo g/genarate```需要一秒左右的时间对整个项目工程进行编译，从而生成静态的网页。
++ 生成静态网页*hexo g/genarate*需要一秒左右的时间对整个项目工程进行编译，从而生成静态的网页。
 
-+ 调试网页```hexo server```然后在浏览器中访问http://localhost:40000，将会看到类似如下的页面：     
++ 调试网页*hexo server*然后在浏览器中访问*http://localhost:40000*，将会看到类似如下的页面：     
 ![](https://github.com/leaguecn/leenotes/raw/master/img/hexo-server.png)     
 
 **如果没有看到，那就是环境出了问题，根据不同的问题自行debug。**
 
 + 发布到Github仓库
-如果调试没有出现问题，那就可以发布到Github上的仓库，通过```https://{username}.github.io```访问验证配置是否正常，看到的界面应和调试所看到的界面一致。
+如果调试没有出现问题，那就可以发布到Github上的仓库，通过*https://{username}.github.io*访问验证配置是否正常，看到的界面应和调试所看到的界面一致。
 ```
 #首先安装hexo配置到git上的插件
 npm install hexo-deployer-git --save
@@ -198,12 +198,14 @@ language: zh-CN
     * avatar
     * favoi.ico
     * 社交账号
+*待更新*
 
 + 增删部件
     * 增加flagcount
     * 增加文字统计
     * 增加本站搜索
     * 删除底部logo
+*待更新*
 
 + 添加页面     
 ```
@@ -256,7 +258,10 @@ tags:
 categories: 教程
 ```
 
-+ 使更改生效/发布更改配置```hexo clean && hexo g/generate && hexo d/deploy```。
++ 使更改生效/发布更改配置
+```
+hexo clean && hexo g/generate && hexo d/deploy
+```
 
 
 ## 多设备支持方案
@@ -265,7 +270,7 @@ categories: 教程
 多设备支持是为了方便在多种设备中更新博客，方案的思路如下图所示：
 
 
-+ 新建分支对hexo的工程文件进行备份在原来的部署仓库中新建另一分支backup/hexo等分支，将分支设为默认分支
++ 新建分支对hexo的工程文件进行备份在原来的部署仓库中新建另一分支*backup/hexo*等分支，将分支设为默认分支
 
 
 + 克隆静态网页文件
@@ -313,16 +318,16 @@ hexo clean && hexo g/generate && hexo d/deploy
 git add . && git commit -m '- update' && git push
 
 ```
-总体思路是：拷贝默认分支中的hexo部署文件，安装npm插件，新建博客，每次发布博客后最好随手同步配置文件到分支backup/hexo。
+总体思路是：拷贝默认分支中的hexo部署文件，安装npm插件，新建博客，每次发布博客后最好随手同步配置文件到分支*backup/hexo*。
 
 
 
 ## 其他
 
-+ 可能在其他设备上clone仓库中的backup/hexo分支后，```npm install```会出现问题，这时需要根据不同的bug去网上找解决方法来debug了。
++ 可能在其他设备上clone仓库中的backup/hexo分支后，*npm install*会出现问题，这时需要根据不同的bug去网上找解决方法来debug了。
 + 在其他设备上使用hexo deploy进行部署网页时，可能会遇到github page build不能运行的错误，同时会收到官方发来的Alert邮件，这时也是需要仁者见仁智者见智了。
 + 关于博客公式和流程图的支持，需要另外安装插件，对公式和流程图block进行render,这里简单给出教程：
-    + 公式支持mathjax,需要卸载```hexo-renderer-marked```安装``hexo-renderer-kramed``,然后在NexT主题配置文件激活以及在文章开头激活```mathjax: true```，具体参考[博客1](https://www.lefer.cn/posts/64106/)&[博客2](https://blog.csdn.net/wgshun616/article/details/81019687)。
+    + 公式支持mathjax,需要卸载*hexo-renderer-marked*安装*hexo-renderer-kramed*,然后在NexT主题配置文件激活以及在文章开头激活*mathjax: true*，具体参考[博客1](https://www.lefer.cn/posts/64106/)&[博客2](https://blog.csdn.net/wgshun616/article/details/81019687)。
     + 流程图支持，需要下列模块之一安装:
     ```
     hexo-filter-mermaid-diagrams
