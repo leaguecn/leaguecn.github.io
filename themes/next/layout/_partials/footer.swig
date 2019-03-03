@@ -60,7 +60,7 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
-# mermaid support
+
 {% if theme.mermaid.enable %}
   <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version  }}/dist/mermaid.min.js'></script>
     <script>
