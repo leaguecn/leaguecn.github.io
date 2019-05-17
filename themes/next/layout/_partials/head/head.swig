@@ -128,3 +128,6 @@
   {% set custom_head = '../../_custom/head.swig' %}
 {% endif %}
 {% include custom_head %}
+{% if theme.google_site_verification %}
+    <meta name="google-site-verification" content="NtiVvzFQQ-SkZFplyXPgsF4yxhqsZ8NKLvCHZlLzTiw" />
+{% endif %}
