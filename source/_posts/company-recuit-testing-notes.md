@@ -46,7 +46,7 @@ categories:
 
 + C++ 编程实现
 
-```
+```c++
 // judge a point in which side of one line consisted with tow line in plane
 // @author ligurecn
 // xuzhou, 2019.03.19
@@ -138,7 +138,7 @@ $ ./pp
 + C++编程实现
 
 
-```
+```c++
 // sum test
 // @author ligurecn
 // xuzhou, 2019-03-18
