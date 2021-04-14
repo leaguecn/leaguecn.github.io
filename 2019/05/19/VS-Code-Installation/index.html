@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前言|PrewordVS Code 全称Visual Studio Code是微软推出了一款跨平台的开放源码的代码编辑器。没错，TA就是一款编辑器，不是所谓的编译器，请不要被Code误解，理解为Build Program。VS Code强大之处，除了开源，还加入了Git版本控制（还不清楚是啥功能，估计是Git同步）、代码补全（just like intellisense functions）、代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Studio Code在win7下安装笔记&lt;!--VS-Code-Installation--&gt;">
+<meta property="og:url" content="http://example.com/2019/05/19/VS-Code-Installation/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言|PrewordVS Code 全称Visual Studio Code是微软推出了一款跨平台的开放源码的代码编辑器。没错，TA就是一款编辑器，不是所谓的编译器，请不要被Code误解，理解为Build Program。VS Code强大之处，除了开源，还加入了Git版本控制（还不清楚是啥功能，估计是Git同步）、代码补全（just like intellisense functions）、代码">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-05-18T23:31:00.000Z">
+<meta property="article:modified_time" content="2021-04-14T01:43:12.279Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="VS Code">
+<meta property="article:tag" content="编辑器">
+<meta property="article:tag" content="Editor">
+<meta property="article:tag" content="微软">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2019/05/19/VS-Code-Installation/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Visual Studio Code在win7下安装笔记<!--VS-Code-Installation--> | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/05/19/VS-Code-Installation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Visual Studio Code在win7下安装笔记<!--VS-Code-Installation-->
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-19 07:31:00" itemprop="dateCreated datePublished" datetime="2019-05-19T07:31:00+08:00">2019-05-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-04-14 09:43:12" itemprop="dateModified" datetime="2021-04-14T09:43:12+08:00">2021-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="前言-Preword"><a href="#前言-Preword" class="headerlink" title="前言|Preword"></a>前言|Preword</h2><p>VS Code 全称Visual Studio Code是微软推出了一款跨平台的开放源码的代码编辑器。<br>没错，TA就是一款编辑器，不是所谓的编译器，请不要被Code误解，理解为Build Program。VS Code强大之处，除了开源，还加入了Git版本控制（还不清楚是啥功能，估计是Git同步）、代码补全（just like intellisense functions）、代码片段、代码重构等功能，深受欢迎。由于VS Code资源占用少，就连台湾 Emacs 布道师试用了VS Code以后，决定不推Emacs了。但是，VS Code的安装和配置是件令人头疼的事情。这几天利用空余时间安装了VS Code及C++的插件并把编译C++项目的配置文件走了一遍，终于可以编译C++源代码，故写下这篇安装笔记，以便后来者参考和自己学习的记录。</p>
+<span id="more"></span>
+<p>VS Code 安装在Windows 7中，下面将在Windows 7介绍所有的安装、配置C++编译文件。<br>如果不是Windows 7的环境，不太推荐阅读，可能只有一些的帮助、启发，请谅解。</p>
+<h2 id="准备-Pre-requirement"><a href="#准备-Pre-requirement" class="headerlink" title="准备|Pre-requirement"></a>准备|Pre-requirement</h2><ul>
+<li>下载VS Code安装文件，<a target="_blank" rel="noopener" href="https://code.visualstudio.com/Download">下载地址</a>，选择win7 64/32Bit;</li>
+<li>下载MingW 64/32bit安装文件，并安装到相应的文件夹。</li>
+</ul>
+<h2 id="配置C-Configure-C-build-information"><a href="#配置C-Configure-C-build-information" class="headerlink" title="配置C++|Configure C++ build information"></a>配置C++|Configure C++ build information</h2><p>主要是配置3个文件，分别是：c_cpp_properties.json|tasks.json|launch.json。</p>
+<h3 id="c-cpp-properties-json的配置"><a href="#c-cpp-properties-json的配置" class="headerlink" title="c_cpp_properties.json的配置"></a>c_cpp_properties.json的配置</h3><p>在该配置文件里，主要是编译器路径的配置、包括路径、c语言的标准、cpp语言的标准、intellisenseMode。包含的字段为：</p>
+<ul>
+<li>compilerPath</li>
+<li>includePath</li>
+<li>cStandard</li>
+<li>cpp Standard</li>
+<li>intelliSenseMode</li>
+</ul>
+<p>本人在该文件中的配置内容如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Win32&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;includePath&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;$&#123;workspaceFolder&#125;/**&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;defines&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;_DEBUG&quot;</span>,</span><br><span class="line">                <span class="string">&quot;UNICODE&quot;</span>,</span><br><span class="line">                <span class="string">&quot;_UNICODE&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;compilerPath&quot;</span>: <span class="string">&quot;D:\\ProgramFiles2017\\mingw-w64\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\bin\\g++.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;cStandard&quot;</span>: <span class="string">&quot;c11&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;cppStandard&quot;</span>: <span class="string">&quot;c++17&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;intelliSenseMode&quot;</span>: <span class="string">&quot;gcc-x64&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="tasks-json的配置"><a href="#tasks-json的配置" class="headerlink" title="tasks.json的配置"></a>tasks.json的配置</h3><p>该文件是编译是命令的配置，包括编译的标记、类型、命令、参数、所属组。配置的项目字段如下：</p>
+<ul>
+<li>label</li>
+<li>type</li>
+<li>command</li>
+<li>args</li>
+<li>group</li>
+</ul>
+<p>本人在该文件的配置内容如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;label&quot;</span>: <span class="string">&quot;build cpp program&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;shell&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;group&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;kind&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;isDefault&quot;</span>: <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="launch-json的配置"><a href="#launch-json的配置" class="headerlink" title="launch.json的配置"></a>launch.json的配置</h3><p>该文件，记录了调试生成文件的路径、调试程序路径等信息。包括的项目字段如下：</p>
+<ul>
+<li>name</li>
+<li>type</li>
+<li>request</li>
+<li>program</li>
+<li>…</li>
+<li>miDebuggerPath</li>
+<li>…</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">     <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;(gdb) Launch&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;program&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;/$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;args&quot;</span>: [],</span><br><span class="line">             <span class="attr">&quot;stopAtEntry&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">             <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;environment&quot;</span>: [],</span><br><span class="line">             <span class="attr">&quot;externalConsole&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">             <span class="attr">&quot;MIMode&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;miDebuggerPath&quot;</span>: <span class="string">&quot;D:\\ProgramFiles2017\\mingw-w64\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\bin\\gdb.exe&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;setupCommands&quot;</span>: [</span><br><span class="line">                 &#123;</span><br><span class="line">                     <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;Enable pretty-printing for gdb&quot;</span>,</span><br><span class="line">                     <span class="attr">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">                     <span class="attr">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">                 &#125;</span><br><span class="line">             ]</span><br><span class="line">         &#125;</span><br><span class="line">     ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="配置文件重点"><a href="#配置文件重点" class="headerlink" title="配置文件重点"></a>配置文件重点</h3><p>在配置文件中，为了可以重复在多个源文件或者项目中使用，应该采取以下的原则：</p>
+<ul>
+<li>将配置文件拷贝至VS Code所有工程的根目录下；</li>
+<li>配置文件中的绝对路劲采取相对路径或者变量的设置方式。</li>
+</ul>
+<p>VS Code中新建项目的步骤如下：</p>
+<ul>
+<li>step1. 打开VS Code软件，File-&gt;Open workspace选择或新建一个工作间文件夹vsc-prj；</li>
+<li>step2. 在工作间文件夹vsc-prj下面新建一个保存3个配置文件的文件夹.vscode；</li>
+<li>step3. 在文件夹.vscode下依次创建3个配置文件，内容设置参照以上笔记，可以使用快捷键Ctrl+shit+p打开插件搜索，键入#cpp#选择相应的配置任务；</li>
+<li>step4. 回到工作间文件夹vsc-prj，创建文件helloworld.cpp，使用测试代码作为内容；</li>
+<li>step5. 使用编译快捷键Ctrl+shit+b编译源文件，并使用F5调试编译结果。</li>
+</ul>
+<p>测试代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    vector&lt;string&gt; msg &#123;<span class="string">&quot;Hello&quot;</span>, <span class="string">&quot;C++&quot;</span>, <span class="string">&quot;World&quot;</span>, <span class="string">&quot;from&quot;</span>, <span class="string">&quot;VS Code!&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> string&amp; word : msg)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; word &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考-References"><a href="#参考-References" class="headerlink" title="参考|References"></a>参考|References</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Visual_Studio_Code">https://zh.wikipedia.org/wiki/Visual_Studio_Code</a></li>
+<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></li>
+<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/cpp/config-msvc">https://code.visualstudio.com/docs/cpp/config-msvc</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/bat67/article/details/76095813">https://blog.csdn.net/bat67/article/details/76095813</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/VS-Code/" rel="tag"># VS Code</a>
+              <a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/" rel="tag"># 编辑器</a>
+              <a href="/tags/Editor/" rel="tag"># Editor</a>
+              <a href="/tags/%E5%BE%AE%E8%BD%AF/" rel="tag"># 微软</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/" rel="prev" title="web端地图坐标拾取工具">
+      <i class="fa fa-chevron-left"></i> web端地图坐标拾取工具
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/04/14/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80-Preword"><span class="nav-number">1.</span> <span class="nav-text">前言|Preword</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%86%E5%A4%87-Pre-requirement"><span class="nav-number">2.</span> <span class="nav-text">准备|Pre-requirement</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEC-Configure-C-build-information"><span class="nav-number">3.</span> <span class="nav-text">配置C++|Configure C++ build information</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#c-cpp-properties-json%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">c_cpp_properties.json的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tasks-json%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">tasks.json的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#launch-json%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">3.3.</span> <span class="nav-text">launch.json的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%87%8D%E7%82%B9"><span class="nav-number">3.4.</span> <span class="nav-text">配置文件重点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83-References"><span class="nav-number">4.</span> <span class="nav-text">参考|References</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">40</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="摘要Web端地图遍地开花，一些坐标拾取工具质量参差不齐，为了提高地理学科研人员的寻找坐标数据的效率，本文对当前的主流Web端地图：谷歌、高德、Bing地图的API进行了研究，通过建立定制化在线地图，仅调用其检索工具、地理坐标、高程函数，对地图的坐标数据进行提取，并以简介的界面呈现，从而实现了精简的坐标拾取小工具。 关键词：谷歌地图、高德地图、BingMap、Web端、地理坐标、高程、拾取">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web端地图坐标拾取工具">
+<meta property="og:url" content="http://example.com/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="摘要Web端地图遍地开花，一些坐标拾取工具质量参差不齐，为了提高地理学科研人员的寻找坐标数据的效率，本文对当前的主流Web端地图：谷歌、高德、Bing地图的API进行了研究，通过建立定制化在线地图，仅调用其检索工具、地理坐标、高程函数，对地图的坐标数据进行提取，并以简介的界面呈现，从而实现了精简的坐标拾取小工具。 关键词：谷歌地图、高德地图、BingMap、Web端、地理坐标、高程、拾取">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw186h3459653_1527908688_401.png">
+<meta property="og:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908701_650.png">
+<meta property="og:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_307.png">
+<meta property="og:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_569.png">
+<meta property="og:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908700_793.png">
+<meta property="article:published_time" content="2019-05-16T21:41:47.000Z">
+<meta property="article:modified_time" content="2021-04-14T01:43:12.279Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="地图">
+<meta property="article:tag" content="Map">
+<meta property="article:tag" content="坐标拾取">
+<meta property="article:tag" content="Coordination picking">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="tool">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw186h3459653_1527908688_401.png">
+
+<link rel="canonical" href="http://example.com/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>web端地图坐标拾取工具 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          web端地图坐标拾取工具
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-17 05:41:47" itemprop="dateCreated datePublished" datetime="2019-05-17T05:41:47+08:00">2019-05-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-04-14 09:43:12" itemprop="dateModified" datetime="2021-04-14T09:43:12+08:00">2021-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%9C%B0%E5%9B%BE/" itemprop="url" rel="index"><span itemprop="name">地图</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Web端地图遍地开花，一些坐标拾取工具质量参差不齐，为了提高地理学科研人员的寻找坐标数据的效率，本文对当前的主流Web端地图：谷歌、高德、Bing地图的API进行了研究，通过建立定制化在线地图，仅调用其检索工具、地理坐标、高程函数，对地图的坐标数据进行提取，并以简介的界面呈现，从而实现了精简的坐标拾取小工具。</p>
+<p><strong>关键词：谷歌地图、高德地图、BingMap、Web端、地理坐标、高程、拾取</strong></p>
+<span id="more"></span>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>地图坐标是地理学工作研究重要的数据之一，近年来虽然出现了很多的地图开发商及软件，但他们大部分是商业应用型，兼顾了主流的消费需求，但限于个国家之间的政策，并没有很好地给出地图数据获取的方式，仅提供了一下接口，保留其科研性质。一些网络上的坐标拾取工具也由这些接口应用而生，但质量上良莠不齐，较好的会趋向收费，这不仅浪费了地理学科研人员寻找可靠数据的时间，而且增加了其成本，由此需要一个能够批量导出坐标拾取点数据的专业地图网站。</p>
+<h2 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h2><p>网上的坐标拾取工具较多，但商业化严重，这里列举一些坐标拾取工具并简单介绍。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.gpsov.com/cn/main.php">奥维地图</a>是一个商业化的软件，采用谷歌和百度两种主流地图作为底图，在服务器端自架构了谷歌地图的自动提示检索模块，可以在GFW情况下提示检索关键词；给一些事业单位提供坐标服务，包含坐标的批量查询、导入、导出，GNSS定位存储。</li>
+<li><a target="_blank" rel="noopener" href="http://www.gpsspg.com/maps.htm">GPSspg</a>也是一个商业化软件，提供有偿数据服务，地图的地图杂糅了当前的谷歌、百度、腾讯、高德、图吧等主流地图，且提供IP、基站、身份证、手机号码等查询。</li>
+<li><a target="_blank" rel="noopener" href="http://haiba.qhdi.com/">去何地</a>则是一个旅游者发烧友自建一个网站，以谷歌地图为地图，提供坐标查询。</li>
+</ul>
+<h2 id="开发原理"><a href="#开发原理" class="headerlink" title="开发原理"></a>开发原理</h2><p>JavaScript/JS+CSS+HTML<br>这里就不过多讲述了，毕竟这只是本人的业余爱好项目。<br>概括一下是：HTML是整个网页的基础框架，其中有W3C的标准，主要包含：head、body两大部分，近些年来也开始支持HTML5了；CSS是整个HTML网页版面的布局样式文件，确定某一id、class元素的属性，布局在左上、右上、居中还是左下、右下、居中，更加深究一点就是是不是有阴影、圆角、SVG图等等；JS则是动态脚本，通过结合官方API,可以在线调用在官方服务器上的JS函数库，实现各种操作，当然请求这些函数库往往需要开发Key，这需要申请一个并激活。</p>
+<h2 id="Web端地图生成"><a href="#Web端地图生成" class="headerlink" title="Web端地图生成"></a>Web端地图生成</h2><p>这里也不太过多讲述，下面给出一个流程图更加言简意赅。<br>流程大致如下：</p>
+<ul>
+<li>1）官网上申请地图开发密钥；</li>
+<li>2）浏览官网给出的样例Demo；</li>
+<li>3）熟悉参考手册的JS函数及回调结果数据结构；</li>
+<li>4）制定开发地图的页面布局及模块功能；</li>
+<li>5）在样例里找定制的模块功能代码、或者查找相关的博客借用其相关模块；</li>
+<li>6）编写地图Alpha版本并调试；</li>
+<li>7）调试通过后进行网页部署并测试；</li>
+<li>8）测试通过后正式发布Beta版本；</li>
+<li>9）后期升级、维护。</li>
+</ul>
+<p>本实验调用了Google/高德/Bing等地图的API，提供坐标的拾取，检索，页面相对简洁，没有一点商业化的意图，仅提供给地理学科研人员，可以拾取经纬度、高程（仅Google）。</p>
+<h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>Web端发布在三个平台，包括：github/gitee/coding.net。</p>
+<ul>
+<li>github是国外最有名的代码托管平台；</li>
+<li>gitee/coding.net则是国内模仿github的代码托管平台。<br>因为国外受限于GWF网络，所以选择了两个国内的备用。<br>在网页版和移动端均测试了其页面布局、操作响应等方面，均达到了可以发布的标准（我也不清楚啥标准）。<br>截图：</li>
+</ul>
+<p>Google Map 截图<br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw186h3459653_1527908688_401.png"></p>
+<p><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908701_650.png"></p>
+<p>Gaode Map 截图<br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_307.png"><br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_569.png"></p>
+<p>Bing Map 截图</p>
+<p><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908700_793.png"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>网页部署在github等代码托管平台的静态网页中，无需管理费等地图维护费用，相比于其他的坐标拾取网站，本实验不单节约了运营成本，简化了数据获取的流程，将有利于各地理学科研工作人员的数据获取。同时本实验将三个地图分开部署，会在一定程度上对数据的比较产生不便利。本实验中对数据现在仅能提高人工打点方式获取，工作量依然很大，后期可能会进行自动化的完善。坐标拾取也将会朝着自动化获取方向发展，只要用户输入几个关键词，工具批量下载其坐标数据。</p>
+<p>更新后的大地图地址为（地图加载的框架文件较多，需要较长时间，请耐心等待）：</p>
+<p><a target="_blank" rel="noopener" href="http://leaguecn.coding.me/maxmap/">http://leaguecn.coding.me/maxmap/</a></p>
+<p>2018-09-29,提供另外一个地图，基于AcrGIS JS API/HERE tile/GoogleMap tile</p>
+<p><a target="_blank" rel="noopener" href="http://leaguecn.coding.me/GeoMap/">http://leaguecn.coding.me/GeoMap/</a></p>
+<p><strong>欢迎批评指正，如有bug或者不满意，请邮件与我联系。</strong></p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>找地图 </p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://leaguecn.github.io/resume/">https://leaguecn.github.io/resume/</a></li>
+</ul>
+<p>直连</p>
+<ul>
+<li>Google: <a target="_blank" rel="noopener" href="http://leaguecn.gitee.io/map/">http://leaguecn.gitee.io/map/</a></li>
+<li>Bing: <a target="_blank" rel="noopener" href="https://leaguecn.github.io/bingmap/">https://leaguecn.github.io/bingmap/</a></li>
+<li>高德：<a target="_blank" rel="noopener" href="http://leaguecn.coding.me/amaplite/">http://leaguecn.coding.me/amaplite/</a></li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://muchong.com/t-12381369-1">http://muchong.com/t-12381369-1</a></li>
+<li><a target="_blank" rel="noopener" href="http://lbsyun.baidu.com/index.php?title=jspopular">http://lbsyun.baidu.com/index.php?title=jspopular</a></li>
+<li><a target="_blank" rel="noopener" href="https://lbs.amap.com/api/javascript-api/summary">https://lbs.amap.com/api/javascript-api/summary</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bing.com/api/maps/mapcontrol/isdk/">https://www.bing.com/api/maps/mapcontrol/isdk/</a></li>
+<li><a target="_blank" rel="noopener" href="https://developers.google.com/maps/documentation/javascript/tutorial">https://developers.google.com/maps/documentation/javascript/tutorial</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%9C%B0%E5%9B%BE/" rel="tag"># 地图</a>
+              <a href="/tags/Map/" rel="tag"># Map</a>
+              <a href="/tags/%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96/" rel="tag"># 坐标拾取</a>
+              <a href="/tags/Coordination-picking/" rel="tag"># Coordination picking</a>
+              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"># 工具</a>
+              <a href="/tags/tool/" rel="tag"># tool</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/05/17/company-recuit-testing-notes/" rel="prev" title="招聘笔试编程题笔记">
+      <i class="fa fa-chevron-left"></i> 招聘笔试编程题笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/05/19/VS-Code-Installation/" rel="next" title="Visual Studio Code在win7下安装笔记<!--VS-Code-Installation-->">
+      Visual Studio Code在win7下安装笔记<!--VS-Code-Installation--> <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%91%98%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E5%B7%A5%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">相关工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E5%8E%9F%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">开发原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E7%94%9F%E6%88%90"><span class="nav-number">5.</span> <span class="nav-text">Web端地图生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C"><span class="nav-number">6.</span> <span class="nav-text">测试结果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">8.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">9.</span> <span class="nav-text">参考</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">40</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
