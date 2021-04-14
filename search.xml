@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>OpenCV2开发笔记</title>
+    <url>/2019/02/27/OpenCV2/</url>
+    <content><![CDATA[<p>这是一篇OpenCV2的开发笔记，根据自己学习OpenCV开源库笔记整理，包含以下几方面内容：</p>
+<ul>
+<li>OpenCV2的环境配置</li>
+<li>简单图像处理</li>
+<li>相机标定</li>
+<li>三维重建</li>
+<li>机器学习</li>
+<li>目标检测</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="OpenCV简介"><a href="#OpenCV简介" class="headerlink" title="OpenCV简介"></a>OpenCV简介</h2><p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p>
+<h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://opencv.org/about.html">https://opencv.org/about.html</a></li>
+<li><a href="https://baike.baidu.com/item/opencv/10320623">https://baike.baidu.com/item/opencv/10320623</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>opencv</tag>
+        <tag>Tutorial</tag>
+        <tag>计算机视觉</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Post of blog website initialization|博客开贴公告</title>
+    <url>/2019/02/21/README-md/</url>
+    <content><![CDATA[<ul>
+<li>这是本站的第一篇博客，即博客开贴公告！</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="About-介绍"><a href="#About-介绍" class="headerlink" title="About|介绍"></a>About|介绍</h2><p><strong>Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！</strong><br>This is leaguecn’s blog website. </p>
+<h2 id="Build-information-建站信息"><a href="#Build-information-建站信息" class="headerlink" title="Build information|建站信息"></a>Build information|建站信息</h2><ul>
+<li>Built via Hexo+Nodejs+github page view(repository username.github.io).    </li>
+<li>Using <a href="https://theme-next.org/docs/getting-started/">NexT theme</a></li>
+</ul>
+<p><em>on 2019-02-21</em></p>
+<h2 id="Credits-感谢"><a href="#Credits-感谢" class="headerlink" title="Credits|感谢"></a>Credits|感谢</h2><p>I really know that this website deploying successfully under many personal blogs help. So I wanna say thanks for these person who post the meaningful blogs which could fix the issue what I encounted. Especially in this website building progressing, like:</p>
+<ul>
+<li><a href="https://cyzus.github.io/">cyzus</a></li>
+<li><a href="http://wuxianlin.com/">wuxianlin</a></li>
+<li><a href="http://fanzhenyu.me/">Lines</a></li>
+<li>other persons I forgot(sorry for my bad memory)</li>
+</ul>
+<h2 id="Reference-参考"><a href="#Reference-参考" class="headerlink" title="Reference|参考"></a>Reference|参考</h2><ul>
+<li><a href="https://cyzus.github.io/2015/06/21/github-build-blog/">https://cyzus.github.io/2015/06/21/github-build-blog/</a></li>
+<li><a href="https://www.jianshu.com/p/3ff20be8574c">https://www.jianshu.com/p/3ff20be8574c</a></li>
+<li><a href="https://www.jianshu.com/p/265b2c653e6f">https://www.jianshu.com/p/265b2c653e6f</a></li>
+<li><a href="https://hexo.io/">https://hexo.io/</a></li>
+<li><a href="https://www.titanjun.top/">https://www.titanjun.top/</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Post</tag>
+        <tag>Article</tag>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Visual Studio Code在win7下安装笔记&lt;!--VS-Code-Installation--&gt;</title>
+    <url>/2019/05/19/VS-Code-Installation/</url>
+    <content><![CDATA[<h2 id="前言-Preword"><a href="#前言-Preword" class="headerlink" title="前言|Preword"></a>前言|Preword</h2><p>VS Code 全称Visual Studio Code是微软推出了一款跨平台的开放源码的代码编辑器。<br>没错，TA就是一款编辑器，不是所谓的编译器，请不要被Code误解，理解为Build Program。VS Code强大之处，除了开源，还加入了Git版本控制（还不清楚是啥功能，估计是Git同步）、代码补全（just like intellisense functions）、代码片段、代码重构等功能，深受欢迎。由于VS Code资源占用少，就连台湾 Emacs 布道师试用了VS Code以后，决定不推Emacs了。但是，VS Code的安装和配置是件令人头疼的事情。这几天利用空余时间安装了VS Code及C++的插件并把编译C++项目的配置文件走了一遍，终于可以编译C++源代码，故写下这篇安装笔记，以便后来者参考和自己学习的记录。</p>
+<span id="more"></span>
+<p>VS Code 安装在Windows 7中，下面将在Windows 7介绍所有的安装、配置C++编译文件。<br>如果不是Windows 7的环境，不太推荐阅读，可能只有一些的帮助、启发，请谅解。</p>
+<h2 id="准备-Pre-requirement"><a href="#准备-Pre-requirement" class="headerlink" title="准备|Pre-requirement"></a>准备|Pre-requirement</h2><ul>
+<li>下载VS Code安装文件，<a href="https://code.visualstudio.com/Download">下载地址</a>，选择win7 64/32Bit;</li>
+<li>下载MingW 64/32bit安装文件，并安装到相应的文件夹。</li>
+</ul>
+<h2 id="配置C-Configure-C-build-information"><a href="#配置C-Configure-C-build-information" class="headerlink" title="配置C++|Configure C++ build information"></a>配置C++|Configure C++ build information</h2><p>主要是配置3个文件，分别是：c_cpp_properties.json|tasks.json|launch.json。</p>
+<h3 id="c-cpp-properties-json的配置"><a href="#c-cpp-properties-json的配置" class="headerlink" title="c_cpp_properties.json的配置"></a>c_cpp_properties.json的配置</h3><p>在该配置文件里，主要是编译器路径的配置、包括路径、c语言的标准、cpp语言的标准、intellisenseMode。包含的字段为：</p>
+<ul>
+<li>compilerPath</li>
+<li>includePath</li>
+<li>cStandard</li>
+<li>cpp Standard</li>
+<li>intelliSenseMode</li>
+</ul>
+<p>本人在该文件中的配置内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Win32&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;includePath&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;$&#123;workspaceFolder&#125;/**&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;defines&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;_DEBUG&quot;</span>,</span><br><span class="line">                <span class="string">&quot;UNICODE&quot;</span>,</span><br><span class="line">                <span class="string">&quot;_UNICODE&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;compilerPath&quot;</span>: <span class="string">&quot;D:\\ProgramFiles2017\\mingw-w64\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\bin\\g++.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;cStandard&quot;</span>: <span class="string">&quot;c11&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;cppStandard&quot;</span>: <span class="string">&quot;c++17&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;intelliSenseMode&quot;</span>: <span class="string">&quot;gcc-x64&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="number">4</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="tasks-json的配置"><a href="#tasks-json的配置" class="headerlink" title="tasks.json的配置"></a>tasks.json的配置</h3><p>该文件是编译是命令的配置，包括编译的标记、类型、命令、参数、所属组。配置的项目字段如下：</p>
+<ul>
+<li>label</li>
+<li>type</li>
+<li>command</li>
+<li>args</li>
+<li>group</li>
+</ul>
+<p>本人在该文件的配置内容如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment">// See https://go.microsoft.com/fwlink/?LinkId=733558</span></span><br><span class="line">    <span class="comment">// for the documentation about the tasks.json format</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;tasks&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;label&quot;</span>: <span class="string">&quot;build cpp program&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;shell&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;command&quot;</span>: <span class="string">&quot;g++&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-g&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-o&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">                <span class="string">&quot;$&#123;file&#125;&quot;</span></span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;group&quot;</span>: &#123;</span><br><span class="line">                <span class="attr">&quot;kind&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;isDefault&quot;</span>: <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="launch-json的配置"><a href="#launch-json的配置" class="headerlink" title="launch.json的配置"></a>launch.json的配置</h3><p>该文件，记录了调试生成文件的路径、调试程序路径等信息。包括的项目字段如下：</p>
+<ul>
+<li>name</li>
+<li>type</li>
+<li>request</li>
+<li>program</li>
+<li>…</li>
+<li>miDebuggerPath</li>
+<li>…</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">     <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;(gdb) Launch&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;program&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;/$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;args&quot;</span>: [],</span><br><span class="line">             <span class="attr">&quot;stopAtEntry&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">             <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;$&#123;workspaceFolder&#125;&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;environment&quot;</span>: [],</span><br><span class="line">             <span class="attr">&quot;externalConsole&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">             <span class="attr">&quot;MIMode&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;miDebuggerPath&quot;</span>: <span class="string">&quot;D:\\ProgramFiles2017\\mingw-w64\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\bin\\gdb.exe&quot;</span>,</span><br><span class="line">             <span class="attr">&quot;setupCommands&quot;</span>: [</span><br><span class="line">                 &#123;</span><br><span class="line">                     <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;Enable pretty-printing for gdb&quot;</span>,</span><br><span class="line">                     <span class="attr">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">                     <span class="attr">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">                 &#125;</span><br><span class="line">             ]</span><br><span class="line">         &#125;</span><br><span class="line">     ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="配置文件重点"><a href="#配置文件重点" class="headerlink" title="配置文件重点"></a>配置文件重点</h3><p>在配置文件中，为了可以重复在多个源文件或者项目中使用，应该采取以下的原则：</p>
+<ul>
+<li>将配置文件拷贝至VS Code所有工程的根目录下；</li>
+<li>配置文件中的绝对路劲采取相对路径或者变量的设置方式。</li>
+</ul>
+<p>VS Code中新建项目的步骤如下：</p>
+<ul>
+<li>step1. 打开VS Code软件，File-&gt;Open workspace选择或新建一个工作间文件夹vsc-prj；</li>
+<li>step2. 在工作间文件夹vsc-prj下面新建一个保存3个配置文件的文件夹.vscode；</li>
+<li>step3. 在文件夹.vscode下依次创建3个配置文件，内容设置参照以上笔记，可以使用快捷键Ctrl+shit+p打开插件搜索，键入#cpp#选择相应的配置任务；</li>
+<li>step4. 回到工作间文件夹vsc-prj，创建文件helloworld.cpp，使用测试代码作为内容；</li>
+<li>step5. 使用编译快捷键Ctrl+shit+b编译源文件，并使用F5调试编译结果。</li>
+</ul>
+<p>测试代码：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    vector&lt;string&gt; msg &#123;<span class="string">&quot;Hello&quot;</span>, <span class="string">&quot;C++&quot;</span>, <span class="string">&quot;World&quot;</span>, <span class="string">&quot;from&quot;</span>, <span class="string">&quot;VS Code!&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> string&amp; word : msg)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; word &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考-References"><a href="#参考-References" class="headerlink" title="参考|References"></a>参考|References</h2><ul>
+<li><a href="https://zh.wikipedia.org/wiki/Visual_Studio_Code">https://zh.wikipedia.org/wiki/Visual_Studio_Code</a></li>
+<li><a href="https://code.visualstudio.com/docs/cpp/config-mingw">https://code.visualstudio.com/docs/cpp/config-mingw</a></li>
+<li><a href="https://code.visualstudio.com/docs/cpp/config-msvc">https://code.visualstudio.com/docs/cpp/config-msvc</a></li>
+<li><a href="https://blog.csdn.net/bat67/article/details/76095813">https://blog.csdn.net/bat67/article/details/76095813</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>VS Code</tag>
+        <tag>编辑器</tag>
+        <tag>Editor</tag>
+        <tag>微软</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android awesome apps|安卓优秀应用集</title>
+    <url>/2019/02/22/android-awesome-apps/</url>
+    <content><![CDATA[<ul>
+<li>There are many apps in android play store. But there are a few applications to be awesome.</li>
+<li>I summary list of apps what I had used, which have good performent. I hope them will help you in some way.</li>
+<li>I also split these apps into three catergories: Daily driving, Assistance &amp; System enhence. Just enjoy it.</li>
+</ul>
+<span id="more"></span>
+<h2 id="Android-awesome-apps-remark"><a href="#Android-awesome-apps-remark" class="headerlink" title="Android awesome apps remark"></a>Android awesome apps remark</h2><p><strong>Daily driving</strong>    </p>
+<h3 id="Video-player"><a href="#Video-player" class="headerlink" title="Video player"></a>Video player</h3><ul>
+<li>MX Player</li>
+<li>VLC</li>
+<li>PotPlayer</li>
+</ul>
+<h3 id="Online-music"><a href="#Online-music" class="headerlink" title="Online music"></a>Online music</h3><ul>
+<li>NetEase Music</li>
+<li>QQ Music</li>
+</ul>
+<h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><ul>
+<li>Chrome(variant: kiwibrowser for snapdrogen chips)</li>
+<li>Via(simple &amp; pure)</li>
+</ul>
+<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><ul>
+<li>GoogleMap</li>
+<li>Amap(in China)</li>
+</ul>
+<h3 id="3rd-Camera"><a href="#3rd-Camera" class="headerlink" title="3rd Camera"></a>3rd Camera</h3><ul>
+<li>Google Camera(nice functions &amp; powerful night sight)</li>
+<li>OpenCamera(pure but rich function on manual control for camera)</li>
+</ul>
+<h3 id="Social-app"><a href="#Social-app" class="headerlink" title="Social app"></a>Social app</h3><ul>
+<li>Twitter</li>
+<li>Facebook</li>
+<li>Telegram</li>
+<li>Weibo</li>
+<li>QQ</li>
+<li>Wechat</li>
+</ul>
+<hr>
+<p><strong>Assistance</strong></p>
+<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><ul>
+<li>Mdict+mdx file</li>
+<li>GoldenDict</li>
+<li>kiwix+zim file</li>
+</ul>
+<h3 id="Books-reader"><a href="#Books-reader" class="headerlink" title="Books reader"></a>Books reader</h3><ul>
+<li>Moon+ Reader</li>
+<li>Librera</li>
+</ul>
+<h3 id="PDF-reader"><a href="#PDF-reader" class="headerlink" title="PDF reader"></a>PDF reader</h3><ul>
+<li>Foxit PDF</li>
+</ul>
+<h3 id="Mobile-office"><a href="#Mobile-office" class="headerlink" title="Mobile office"></a>Mobile office</h3><ul>
+<li>WPS office</li>
+<li>OfficeSuite</li>
+<li>Polaris office(&lt;5.2)</li>
+</ul>
+<h3 id="Text-editor"><a href="#Text-editor" class="headerlink" title="Text editor"></a>Text editor</h3><ul>
+<li>QuickEdit</li>
+<li>Jota+</li>
+</ul>
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><ul>
+<li>Evernote</li>
+<li>Notes</li>
+</ul>
+<h3 id="Markdown-editor"><a href="#Markdown-editor" class="headerlink" title="Markdown editor"></a>Markdown editor</h3><ul>
+<li>MarkdownX</li>
+</ul>
+<h3 id="Picture-recognition"><a href="#Picture-recognition" class="headerlink" title="Picture recognition"></a>Picture recognition</h3><ul>
+<li>Quick PDF Scanner</li>
+</ul>
+<h3 id="Photo-editor"><a href="#Photo-editor" class="headerlink" title="Photo editor"></a>Photo editor</h3><ul>
+<li>PicsArt</li>
+<li>Snapseed</li>
+</ul>
+<hr>
+<p><strong>System enhence</strong></p>
+<h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><ul>
+<li>Wuma VPN</li>
+</ul>
+<h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><ul>
+<li>JuiceSSH</li>
+</ul>
+<h3 id="3rd-file-explorer"><a href="#3rd-file-explorer" class="headerlink" title="3rd file explorer"></a>3rd file explorer</h3><ul>
+<li>Root Explorer</li>
+<li>X-plore</li>
+</ul>
+<h3 id="Data-backup"><a href="#Data-backup" class="headerlink" title="Data backup"></a>Data backup</h3><ul>
+<li>Titanium Backup</li>
+</ul>
+<h3 id="Downloader"><a href="#Downloader" class="headerlink" title="Downloader"></a>Downloader</h3><ul>
+<li>IDM+</li>
+<li>ADM</li>
+</ul>
+<h3 id="Hack-app"><a href="#Hack-app" class="headerlink" title="Hack app"></a>Hack app</h3><ul>
+<li><a href="https://www.luckypatchers.com/download/">Lucky Patcher</a><br><img src="https://www.luckypatchers.com/wp-content/uploads/2016/03/Lucky-patcher-logo.webp" alt="Lucky-Patcher-icon"></li>
+</ul>
+<h3 id="Root-manager"><a href="#Root-manager" class="headerlink" title="Root manager"></a>Root manager</h3><ul>
+<li><a href="http://supersu.com/">SuperSU</a><br><img src="http://supersu.com/img/phone.gif" alt="SuperSU-snapshot"></li>
+<li><a href="https://magiskroot.net/install-download-magisk-manager-latest/">Magisk</a><br><img src="https://magiskroot.net/wp-content/uploads/2017/07/magisk-manager-1024x576.webp" alt="Magisk-manager"></li>
+</ul>
+<h3 id="System-cleaner"><a href="#System-cleaner" class="headerlink" title="System cleaner"></a>System cleaner</h3><ul>
+<li>SD Maid</li>
+</ul>
+<p><em>by ligure on 2019-02-20</em></p>
+<hr>
+<h2 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h2><h3 id="Deploy-linux"><a href="#Deploy-linux" class="headerlink" title="Deploy linux"></a>Deploy linux</h3><p>Yep, I mean that you can deploy linux on android phone.</p>
+<p><em>Tools</em></p>
+<ul>
+<li><a href="https://github.com/meefik/linuxdeploy/releases/download/2.2.1/linuxdeploy-2.2.1-243.apk">linuxdeploy.apk</a></li>
+<li><a href="https://github.com/meefik/linuxdeploy/wiki/Installing-Kali-Linux-Guide">tutorial en</a></li>
+<li>tutorial zh<ul>
+<li><a href="https://www.htcp.net/4431.html">教程1</a></li>
+<li><a href="https://mlapp.cn/134.html">教程2</a></li>
+<li><a href="https://my.oschina.net/zss1993/blog/1790223">教程3</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Android</tag>
+        <tag>APP</tag>
+        <tag>Summary</tag>
+        <tag>安卓</tag>
+        <tag>应用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>招聘笔试编程题笔记</title>
+    <url>/2019/05/17/company-recuit-testing-notes/</url>
+    <content><![CDATA[<ul>
+<li><p>首先声明一下，本人很懒，然后博客搭建了之后，就较少更新博客了，原因有几个；</p>
+<ul>
+<li>原因1：临近毕业了，论文|工作各种忙，所以很少时间整理知识点；</li>
+<li>原因2：一直没有idea，要写什么博客，是技术编程，还是鸡汤美文，还没想好；</li>
+<li>原因3：比较懒，对我就是那种死肥宅的一类人物，博客更新看心情吧；</li>
+<li>原因4：其实写一些意义不大的吐槽的，或结构不完整的博客，本人觉得还不如不写。<span id="more"></span></li>
+</ul>
+</li>
+<li><p>之前在应聘各种单位|公司，虽然不是什么CS科班出身，但是难免会遇上一些装X的公司想试试你的编程能力<br>从此他们开始走向一条不归路。然后想把这些暂存在脑海里的编程题记录下来，归档或给后来者提供一些参考<br>毕竟现在，乐意在网上分享知识经验的人还是少数的，而能分享一些有意义的知识更是寥寥无几。</p>
+</li>
+<li><p>以上是起因，下文进入正题。</p>
+</li>
+</ul>
+<p><em>特别声明：限于本人知识水平有限，本文可能存在一些不足，还请谅解!</em></p>
+<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="公司1"><a href="#公司1" class="headerlink" title="公司1"></a>公司1</h3><ul>
+<li>判断平面点在指定的直线的左边还是右边</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定点A(xa, ya)和点B(xb, yb)，A、B两点确定了一条直线；</span><br><span class="line">然后，假定需要判定的点C坐标为(xc, yc)，如何判定C点相对于AB直线位置；</span><br><span class="line">请编程实现判定点C相对于直线AB的位置，左边返回true，右边返回false。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">利用向量叉乘的正负判定其位于直线左边还是右边。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>C++ 编程实现</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// judge a point in which side of one line consisted with tow line in plane</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019.03.19</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">getJudgement</span><span class="params">(<span class="keyword">double</span> point[], <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>])</span></span>&#123;</span><br><span class="line">    <span class="comment">//reconstruct vertors like a, b</span></span><br><span class="line">    <span class="comment">// then use cross product method to judge</span></span><br><span class="line">    <span class="comment">// if result is positive, point in left, otherwise negetive, point in right</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft=<span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">double</span> a[<span class="number">2</span>], b[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">2</span>; i++)</span><br><span class="line">        a[i] = line[<span class="number">1</span>][i]-line[<span class="number">0</span>][i], b[i]=point[i]-line[<span class="number">0</span>][i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">double</span> res = a[<span class="number">0</span>] * b[<span class="number">1</span>] - a[<span class="number">1</span>] * b[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span>(res &gt; <span class="number">0</span>) isLeft = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> isLeft;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">double</span> point[<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">srand</span>(<span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">time</span>(<span class="number">0</span>)));<span class="comment">//seed from time</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">2</span>; j++)line[i][j] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">        point[i] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// judge point position in which side of line</span></span><br><span class="line">    <span class="comment">// if in left side, return true</span></span><br><span class="line">    <span class="comment">// in right side, return false</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft = <span class="built_in">getJudgement</span>(point, line);</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- point(&quot;</span> &lt;&lt; point[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; point[<span class="number">1</span>]&lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(isLeft) cout &lt;&lt; <span class="string">&quot;-&gt; in left side of line: &quot;</span>;</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;-&gt; right side of line: &quot;</span>;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)&lt;-&gt;&quot;</span></span><br><span class="line">         &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>测试结果</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">$ g++ lrj.cpp -o pp</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 1</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-6.2113, 8.92874)</span><br><span class="line">-&gt; in left side of line: (0.0824081,9.7702)&lt;-&gt;(-5.83127,9.57272)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 2</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(8.20822, 8.60886)</span><br><span class="line">-&gt; right side of line: (4.5333,-5.9355)&lt;-&gt;(-8.27962,-2.37346)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 3</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-1.58741, 0.621722)</span><br><span class="line">-&gt; right side of line: (0.306838,-4.67183)&lt;-&gt;(-6.34671,0.975676)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>求向量元素前n个之和值为最大、最小时的位置。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定一组向量V(1, -9, 30, 3, -20, 9, ..., 88)；</span><br><span class="line">前n个元素之和为：1+(-9)+30&#x3D;22，但22不一定是最大或最小；</span><br><span class="line">请编程实现找出前n个元素最大和最小值的位置。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">遍历将向量的前n个元素之和依次计算，然后找出最大、最小值，最后根据index给出位置即可。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>C++编程实现</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// sum test</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019-03-18</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">minv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mn = v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (v[i]&lt;mn) mn = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mn;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mx= v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(v[i]&gt;mx) mx = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mx;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span></span>&#123;</span><br><span class="line">    <span class="comment">// tips of using.</span></span><br><span class="line">    <span class="keyword">if</span>(argc &lt; <span class="number">2</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;- Usage: &quot;</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; Num&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// get the num para.</span></span><br><span class="line">    <span class="keyword">int</span> num = <span class="built_in">atoi</span>(argv[<span class="number">1</span>]);</span><br><span class="line">    <span class="comment">// initial array: V.</span></span><br><span class="line">    <span class="keyword">int</span> V[num];</span><br><span class="line">    <span class="comment">// seed random number via unix time var.</span></span><br><span class="line">    <span class="built_in">srand</span>((<span class="keyword">int</span>)<span class="built_in">time</span>(<span class="number">0</span>));</span><br><span class="line">    <span class="comment">// generate the array via random function.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) V[i] = <span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">random</span>(<span class="number">-50</span>, <span class="number">50</span>));</span><br><span class="line">    <span class="comment">// then display them.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- Original array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; V[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// get sum of first N int var in V.</span></span><br><span class="line">    <span class="keyword">int</span> S[num];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">0</span>) S[i]=V[i];</span><br><span class="line">        <span class="keyword">else</span> S[i]=S[i<span class="number">-1</span>]+V[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// see the array of sum.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Sum array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; S[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// pick out the min &amp; max value of sum array.</span></span><br><span class="line">    <span class="keyword">int</span> mins = <span class="built_in">minv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> maxs = <span class="built_in">maxv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> mins_idx, maxs_idx;</span><br><span class="line">    <span class="comment">// fetch min &amp; max index via their value.</span></span><br><span class="line">    <span class="comment">// perhaps, there are more than one of them.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==mins) mins_idx = i;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==maxs) maxs_idx = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// show the final answer.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; min sum value is: &quot;</span> &lt;&lt; mins</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; mins_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; max sum value is: &quot;</span> &lt;&lt; maxs</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; maxs_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>测试结果</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 编译</span><br><span class="line">$g++ test.cpp -o test</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;1</span><br><span class="line">$.&#x2F;test 10</span><br><span class="line">- Original array:</span><br><span class="line">20 -11 47 -36 24 45 6 46 -44 -5</span><br><span class="line">Sum array:</span><br><span class="line">20 9 56 20 44 89 95 141 97 92</span><br><span class="line">-&gt; min sum value is: 9, in position: 2</span><br><span class="line">-&gt; max sum value is: 141, in position: 8</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;2</span><br><span class="line">$ .&#x2F;test 15</span><br><span class="line">- Original array:</span><br><span class="line">25 -15 6 -16 -6 -31 -29 -21 24 -9 28 14 -3 -46 35</span><br><span class="line">Sum array:</span><br><span class="line">25 10 16 0 -6 -37 -66 -87 -63 -72 -44 -30 -33 -79 -44</span><br><span class="line">-&gt; min sum value is: -87, in position: 8</span><br><span class="line">-&gt; max sum value is: 25, in position: 1</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;3</span><br><span class="line">$ .&#x2F;test 20</span><br><span class="line">- Original array:</span><br><span class="line">13 -6 -27 -12 48 -45 -35 28 -3 26 49 20 29 17 -32 -31 36 28 1 31</span><br><span class="line">Sum array:</span><br><span class="line">13 7 -20 -32 16 -29 -64 -36 -39 -13 36 56 85 102 70 39 75 103 104 135</span><br><span class="line">-&gt; min sum value is: -64, in position: 7</span><br><span class="line">-&gt; max sum value is: 135, in position: 20</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A">https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A</a></li>
+<li><a href="http://www.cnblogs.com/carekee/articles/2299546.html">http://www.cnblogs.com/carekee/articles/2299546.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+        <tag>招聘</tag>
+        <tag>编程笔记</tag>
+        <tag>work</tag>
+        <tag>recruit</tag>
+        <tag>coding note</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为Hexo添加流程图支持</title>
+    <url>/2019/03/02/flow-chart-support/</url>
+    <content><![CDATA[<ul>
+<li><p>写博客有时候需要使用流程图来说明整个工程，或者整个项目的一个大致流程；</p>
+</li>
+<li><p>一些笔记软件中也已经相继支持流程图的解析，但是默认安装的Hexo是不支持流程图解析的；</p>
+</li>
+<li><p>所以需要将流程图支持的模块安装到Hexo中，才能解析Markdown中的流程图；</p>
+</li>
+<li><p>下面是Hexo安装流程图模块的教程，主要包括：</p>
+<ul>
+<li>模块选择</li>
+<li>模块安装和设置</li>
+<li>流程图绘制例子</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="模块选择"><a href="#模块选择" class="headerlink" title="模块选择"></a>模块选择</h2><p>目前的流程图模块主流的有3个，包括：</p>
+<ul>
+<li><p>mermaid模块<br><img src="https://github.com/leaguecn/leenotes/raw/master/img2/mermaid.png"></p>
+</li>
+<li><p>flowchart模块<br><img src="https://camo.githubusercontent.com/51780424a31f92eb5f0008b84be7c15d3dd29cc5/68747470733a2f2f63646e2e7261776769742e636f6d2f6275626b6f6f2f6865786f2d66696c7465722d666c6f7763686172742f6d61737465722f736e617073686f742e737667"></p>
+</li>
+<li><p>sequence模块<br><img src="https://github.com/leaguecn/leenotes/raw/master/img2/sequence.png"></p>
+</li>
+</ul>
+<p>mermaid支持流程、时序、甘地图，写法简便，最受欢迎，是流程图中的最大玩家。其他的两个是小众，但相当淡雅的玩家，不追求颜色多样，只是简单的纯黑色样式。<br>个人还是首推mermaid的，多样化，选择更多；如果你是一位算法爱好者，理论研究人员，不追求流程图的颜色、搭配，喜欢黑白样式的流程图，那可以选择后两者。</p>
+<p>所以，以下的教程将以mermaid安装进行介绍，其他的两种模块可以参考官方教程进行安装：</p>
+<ul>
+<li>flowchart官方：<a href="https://github.com/bubkoo/hexo-filter-flowchart">https://github.com/bubkoo/hexo-filter-flowchart</a></li>
+<li>sequence官方：<a href="https://github.com/bubkoo/hexo-filter-sequence">https://github.com/bubkoo/hexo-filter-sequence</a></li>
+</ul>
+<h2 id="模块安装"><a href="#模块安装" class="headerlink" title="模块安装"></a>模块安装</h2><ul>
+<li><p>安装模块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#npm安装</span><br><span class="line">npm install hexo-filter-mermaid-diagrams</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>配置文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#编辑hexo的配置文件，_config.yml，追加以下内容</span><br><span class="line"># mermaid chart</span><br><span class="line">mermaid: ## mermaid url https:&#x2F;&#x2F;github.com&#x2F;knsv&#x2F;mermaid</span><br><span class="line">  enable: true  # default true</span><br><span class="line">  version: &quot;7.1.2&quot; # default v7.1.2</span><br><span class="line">  options:  # find more api options from https:&#x2F;&#x2F;github.com&#x2F;knsv&#x2F;mermaid&#x2F;blob&#x2F;master&#x2F;src&#x2F;mermaidAPI.js</span><br><span class="line">  #startOnload: true  &#x2F;&#x2F; default true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">#编辑NexT主题的脚注文件，即.&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;footer.swig，追加以下内容</span><br><span class="line">&#123;% if (theme.mermaid.enable)  %&#125;</span><br><span class="line">  &lt;script src&#x3D;&#39;https:&#x2F;&#x2F;unpkg.com&#x2F;mermaid@&lt;%&#x3D; theme.mermaid.version %&gt;&#x2F;dist&#x2F;mermaid.min.js&#39;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    if (window.mermaid) &#123;</span><br><span class="line">      mermaid.initialize(&#123;theme: &#39;forest&#39;&#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">      </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="一个栗子"><a href="#一个栗子" class="headerlink" title="一个栗子"></a>一个栗子</h2><p>利用mermaid绘制流程图、时序图以及甘地图。</p>
+</li>
+<li><p>流程图</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD#方向：TD上到下，LR左到右，RL右道左</span><br><span class="line">A[模块A] --&gt;|A1| B(模块B)</span><br><span class="line">B --&gt; C&#123;判断条件C&#125;</span><br><span class="line">C --&gt;|条件C1| D[模块D]</span><br><span class="line">C --&gt;|条件C2| E[模块E]</span><br><span class="line">C --&gt;|条件C3| F[模块F]</span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A[模块A] --&gt;|A1| B(模块B)</span><br><span class="line">B --&gt; C&#123;判断条件C&#125;</span><br><span class="line">C --&gt;|条件C1| D[模块D]</span><br><span class="line">C --&gt;|条件C2| E[模块E]</span><br><span class="line">C --&gt;|条件C3| F[模块F]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>时序图<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">A-&gt;&gt;B: 是否已收到消息？</span><br><span class="line">B--&gt;&gt;A: 已收到消息</span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">A-&gt;&gt;B: 是否已收到消息？</span><br><span class="line">B--&gt;&gt;A: 已收到消息</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>甘特图<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 甘特图</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 项目A</span><br><span class="line">任务1      :a1, 2018-06-06, 30d</span><br><span class="line">任务2      :after a1  , 20d</span><br><span class="line">section 项目B</span><br><span class="line">任务3      :2018-06-12  , 12d</span><br><span class="line">任务4      : 24d</span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">title 甘特图</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">section 项目A</span><br><span class="line">任务1      :a1, 2018-06-06, 30d</span><br><span class="line">任务2      :after a1  , 20d</span><br><span class="line">section 项目B</span><br><span class="line">任务3      :2018-06-12  , 12d</span><br><span class="line">任务4      : 24d</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html">https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html</a><br><a href="https://tyloafer.github.io/2018/04/21/hexo-mermaid/">https://tyloafer.github.io/2018/04/21/hexo-mermaid/</a><br><a href="https://github.com/knsv/mermaid">https://github.com/knsv/mermaid</a><br><a href="https://github.com/bubkoo/hexo-filter-flowchart">https://github.com/bubkoo/hexo-filter-flowchart</a><br><a href="https://github.com/bubkoo/hexo-filter-sequence">https://github.com/bubkoo/hexo-filter-sequence</a></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>flowchart</tag>
+        <tag>流程图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github搭建博客</title>
+    <url>/2019/03/01/how-to-build-your-blog-on-github/</url>
+    <content><![CDATA[<p>这是一个比较完整的Github Page的博客搭建教程，涵盖以下几点：</p>
+<ul>
+<li>Hexo框架安装</li>
+<li>Next主题的安装和个性化</li>
+<li>Hexo支持多设备方案</li>
+</ul>
+<span id="more"></span>
+
+
+<p>前几天终于搭建好了自己的博客站点，中间折腾了很多地方，权当学习，整理一下搭建过程的资料，写一个搭建的教程。</p>
+<p>教程可能不同于网上单一的搭建教程，在网上搜集到的搭建教程要么是比较老的教程（=_=，弄得我走了很多弯路！），要么是一些比较零散的教程，或缺少一些部分。总而言之，缺少一种较为完整的搭建教程，从入手搭建到博客在不同设备之间正常迁移，并正常配置是教程的所有。本教程分为：     </p>
+<ul>
+<li>1）新建Github仓库    </li>
+<li>2）Hexo博客框架安装    </li>
+<li>3）安装NexT等个性化主题    </li>
+<li>4）添加NexT主题插件    </li>
+<li>5）多设备支持方案   </li>
+<li>6）其他   </li>
+</ul>
+<hr>
+<h2 id="新建Github仓库"><a href="#新建Github仓库" class="headerlink" title="新建Github仓库"></a>新建Github仓库</h2><p>请确认在该步骤前已经注册了一个<a href="https://github.com/">Github</a>账号。</p>
+<ul>
+<li><p>进入*<a href="https://github.com/%7Busername%7D/*%E9%A1%B5%E9%9D%A2%EF%BC%8C%E7%A1%AE%E4%BF%9D%E5%B7%B2%E7%BB%8F%E7%99%BB%E9%99%86%E8%B4%A6%E5%8F%B7%EF%BC%9B">https://github.com/{username}/*页面，确保已经登陆账号；</a></p>
+</li>
+<li><p>点击右上角的+，会跳转到<a href="https://github.com/new">新建界面</a>，然后必须以*{username}.github.io*名称新建一个人仓库，其他设置如下图所示：<br><img src="https://github.com/leaguecn/leenotes/raw/master/img/github-build-blog-create-repo.png"></p>
+</li>
+<li><p>拷贝新建仓库的git地址，如：<em><a href="https://github.com/%7Busername%7D/%7Busername%7D.github.io.git">https://github.com/{username}/{username}.github.io.git</a></em>到文本备存。</p>
+</li>
+</ul>
+<h2 id="Hexo博客框架安装"><a href="#Hexo博客框架安装" class="headerlink" title="Hexo博客框架安装"></a>Hexo博客框架安装</h2><ul>
+<li><p>依赖环境：Node.js+npm</p>
+</li>
+<li><p>依赖环境安装教程</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#安装Node.js</span><br><span class="line">wget -qO- https:&#x2F;&#x2F;raw.github.com&#x2F;creationix&#x2F;nvm&#x2F;v0.33.11&#x2F;install.sh | sh</span><br><span class="line">#使用命令行vim ~&#x2F;.profile添加环境变量 &amp; source ~&#x2F;.profile使得nvm生效</span><br><span class="line">#然后利用nvm安装特定版本的node.js</span><br><span class="line">nvm install 8.0.0</span><br><span class="line">#安装npm</span><br><span class="line">apt-get install npm</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>安装hexo框架</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#请确保已经正常安装Node.js+npm，然后使用命令行安装</span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
+<li><p>初始化Hexo项目和安装项目模块 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#hexo初始化</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">#安装项目模块</span><br><span class="line">cd &lt;folder&gt; &amp;&amp; npm install</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>项目文件分析</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml#网站配置文件</span><br><span class="line">├── package.json#项目的应用信息</span><br><span class="line">├── scaffolds#模版文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</span><br><span class="line">├── source#资源文件夹，新建博客的存储文件夹</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes#主题文件夹，可以在文件夹下安装不同的主题，并修改相关主题风格</span><br><span class="line"></span><br><span class="line"># 可以根据需要和要求对上述文件进行修改。</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ul>
+<li><p>生成静态网页<em>hexo g/genarate</em>需要一秒左右的时间对整个项目工程进行编译，从而生成静态的网页。</p>
+</li>
+<li><p>调试网页<em>hexo server</em>然后在浏览器中访问<em><a href="http://localhost:40000/">http://localhost:40000</a></em>，将会看到类似如下的页面：<br><img src="https://github.com/leaguecn/leenotes/raw/master/img/hexo-server.png">     </p>
+</li>
+</ul>
+<p><strong>如果没有看到，那就是环境出了问题，根据不同的问题自行debug。</strong></p>
+<ul>
+<li><p>发布到Github仓库<br>如果调试没有出现问题，那就可以发布到Github上的仓库，通过<em>https://{username}.github.io</em>访问验证配置是否正常，看到的界面应和调试所看到的界面一致。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#首先安装hexo配置到git上的插件</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">#之后修改_config.yml中的deploy字段属性</span><br><span class="line">deploy:</span><br><span class="line">     type: git</span><br><span class="line">     repo: https:&#x2F;&#x2F;github.com&#x2F;&#123;username&#125;&#x2F;&#123;username&#125;.github.io.git</span><br><span class="line">     branch: master</span><br><span class="line"></span><br><span class="line">#配置到Github</span><br><span class="line">hexo d&#x2F;deploy</span><br></pre></td></tr></table></figure></li>
+<li><p>写博客</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#新建博客postname</span><br><span class="line">hexo new postname</span><br><span class="line"></span><br><span class="line">#编辑博客</span><br><span class="line">vim source&#x2F;_posts&#x2F;postname.md</span><br><span class="line"></span><br><span class="line">#生成静态网页并配置到仓库</span><br><span class="line"></span><br><span class="line">hexo clean &amp;&amp; hexo g&#x2F;generate &amp;&amp; hexo d&#x2F;deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>Hexo常用命令</p>
+<ul>
+<li>hexo init <folder> #新建hexo项目工程</li>
+<li>hexo new postname #新建博客</li>
+<li>hexo generate/g #生成静态网页</li>
+<li>hexo deploy/d #配置静态网页到指定的仓库</li>
+<li>hexo server #建立本地服务</li>
+<li>hexo help #显示hexo帮助</li>
+</ul>
+</li>
+</ul>
+<h2 id="安装NexT等个性化主题"><a href="#安装NexT等个性化主题" class="headerlink" title="安装NexT等个性化主题"></a>安装NexT等个性化主题</h2><p>其实就是将主题文件夹next拷贝到上述项目的主题文件夹theme中。<a href="https://theme-next.org/">HexT主题</a>风格简洁、优雅，目前已经更新到6.0.6版本（2019-02）。</p>
+<ul>
+<li><p>进入上述Hexo新建项目文件夹并下载主题文件到主题theme文件夹下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li><p>修改配置文件的主题属性</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#打开_config.yml配置文件，查找theme字段，注释掉原有属性，修改为next</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></li>
+<li><p>应用新的主题配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#参照上一节，生成静态网页然后配置到仓库</span><br><span class="line">hexo clean &amp;&amp; hexo g&#x2F;generate &amp;&amp; hexo d&#x2F;deploy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>效果如下：<br><img src="https://github.com/leaguecn/leenotes/raw/master/img/hexo-server.png"></p>
+<h2 id="添加NexT主题插件"><a href="#添加NexT主题插件" class="headerlink" title="添加NexT主题插件"></a>添加NexT主题插件</h2><ul>
+<li><p>修改主题风格</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#修改next文件夹下的_config.yml文件中的scheme字段属性</span><br><span class="line">-----</span><br><span class="line"># Schemes</span><br><span class="line">scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br></pre></td></tr></table></figure></li>
+<li><p>设定菜单</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#修改next文件夹下的_config.yml文件中的menu字段属性</span><br><span class="line">-----</span><br><span class="line">menu:</span><br><span class="line">  home: &#x2F; #主界面</span><br><span class="line">  categories: &#x2F;categories #分类</span><br><span class="line">  about: &#x2F;about #关于</span><br><span class="line">  archives: &#x2F;archives #存档</span><br><span class="line">  tags: &#x2F;tags #标签</span><br><span class="line">  #commonweal: &#x2F;404.html</span><br><span class="line"></span><br><span class="line">#同时修改主目录下的_config.yml文件的language字段属性为zh-CN.yml</span><br><span class="line">-----</span><br><span class="line">language: zh-CN</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>修改布局</p>
+<ul>
+<li>sidebar</li>
+<li>avatar</li>
+<li>favoi.ico</li>
+<li>社交账号</li>
+</ul>
+</li>
+</ul>
+<p><em>待更新</em></p>
+<ul>
+<li>增删部件<ul>
+<li>增加flagcount</li>
+<li>增加文字统计</li>
+<li>增加本站搜索</li>
+<li>删除底部logo</li>
+</ul>
+</li>
+</ul>
+<p><em>待更新</em></p>
+<ul>
+<li><p>添加页面     </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#添加标签页面</span><br><span class="line">hexo new page tags</span><br><span class="line">#编辑source&#x2F;tags&#x2F;index.md</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2019-02-21 19:10:05</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">#添加分类页面</span><br><span class="line">hexo new page categories</span><br><span class="line">#编辑source&#x2F;categories&#x2F;index.md</span><br><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2019-02-21 19:11:13</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">#添加关于页面</span><br><span class="line">hexo new page about</span><br><span class="line">#source&#x2F;about&#x2F;index.md</span><br><span class="line">---</span><br><span class="line">title: about</span><br><span class="line">date: 2019-02-21 19:13:13</span><br><span class="line">---</span><br><span class="line">##关于我</span><br><span class="line"></span><br><span class="line">一只学习中的小菜鸟，欢迎留言讨论。</span><br><span class="line"></span><br><span class="line">From Xuzhou</span><br><span class="line"></span><br><span class="line">QQ：10001</span><br><span class="line">Email: 10001@qq.com</span><br></pre></td></tr></table></figure></li>
+<li><p>编辑博客的标签和分类   </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: Github搭建个人博客</span><br><span class="line">date: 2019-02-27</span><br><span class="line">tags: </span><br><span class="line">  - npm</span><br><span class="line">  - hexo</span><br><span class="line">  - github</span><br><span class="line">  - 博客</span><br><span class="line">categories: 教程</span><br></pre></td></tr></table></figure></li>
+<li><p>使更改生效/发布更改配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g&#x2F;generate &amp;&amp; hexo d&#x2F;deploy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="多设备支持方案"><a href="#多设备支持方案" class="headerlink" title="多设备支持方案"></a>多设备支持方案</h2><p>网络上的方案较为混乱，模糊不清。看了几个较为清晰的博客后大致理解了方案的原理。<br>多设备支持是为了方便在多种设备中更新博客，方案的思路如下图所示：</p>
+<ul>
+<li>新建分支对hexo的工程文件进行备份在原来的部署仓库中新建另一分支<em>backup/hexo</em>等分支，将分支设为默认分支</li>
+</ul>
+<ul>
+<li>克隆静态网页文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#在原部署设备上clone部署仓库的默认分支backup&#x2F;hexo</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;&#123;username&#125;&#x2F;&#123;username&#125;.github.io.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>合并部署文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#将原部署文件全部拷贝到&#123;username&#125;.github.io文件夹中</span><br><span class="line">cp hexoprjs &#123;username&#125;.github.io&#x2F;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>推送所有的部署文件</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#移除theme文件夹下的.git文件夹</span><br><span class="line">rm -rf &#123;username&#125;.github.io&#x2F;theme&#x2F;.git</span><br><span class="line"></span><br><span class="line">#git命令行推送部署文件到backup&#x2F;hexo分支</span><br><span class="line">git add . &amp;&amp; git commit -m &#39;- update&#39; &amp;&amp; git push</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>其他设备同步</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#直接拷贝部署仓库的默认分支backup&#x2F;hexo</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;&#123;username&#125;&#x2F;&#123;username&#125;.github.io.git</span><br><span class="line"></span><br><span class="line">#安装npm插件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">#新建博客</span><br><span class="line">hexo new postname</span><br><span class="line"></span><br><span class="line">#发布博客</span><br><span class="line">hexo clean &amp;&amp; hexo g&#x2F;generate &amp;&amp; hexo d&#x2F;deploy</span><br><span class="line"></span><br><span class="line">#同步配置文件到部署仓库</span><br><span class="line">git add . &amp;&amp; git commit -m &#39;- update&#39; &amp;&amp; git push</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>总体思路是：拷贝默认分支中的hexo部署文件，安装npm插件，新建博客，每次发布博客后最好随手同步配置文件到分支<em>backup/hexo</em>。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>可能在其他设备上clone仓库中的backup/hexo分支后，<em>npm install</em>会出现问题，这时需要根据不同的bug去网上找解决方法来debug了。</li>
+<li>在其他设备上使用hexo deploy进行部署网页时，可能会遇到github page build不能运行的错误，同时会收到官方发来的Alert邮件，这时也是需要仁者见仁智者见智了。</li>
+<li>关于博客公式和流程图的支持，需要另外安装插件，对公式和流程图block进行render,这里简单给出教程：<ul>
+<li>公式支持mathjax,需要卸载<em>hexo-renderer-marked</em>安装<em>hexo-renderer-kramed</em>,然后在NexT主题配置文件激活以及在文章开头激活<em>mathjax: true</em>，具体参考<a href="https://www.lefer.cn/posts/64106/">博客1</a>&amp;<a href="https://blog.csdn.net/wgshun616/article/details/81019687">博客2</a>。</li>
+<li>流程图支持，需要下列模块之一安装:<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo-filter-mermaid-diagrams</span><br><span class="line">hexo-filter-flowchart</span><br><span class="line">hexo-filter-sequence </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<p><strong>参考</strong></p>
+<ul>
+<li>1 <a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></li>
+<li>2 <a href="https://theme-next.org/">https://theme-next.org/</a></li>
+<li>3 <a href="http://www.cnblogs.com/syd192/p/6074323.html">http://www.cnblogs.com/syd192/p/6074323.html</a></li>
+<li>4 <a href="https://www.lefer.cn/posts/64106/">https://www.lefer.cn/posts/64106/</a></li>
+<li>5 <a href="https://blog.csdn.net/wgshun616/article/details/81019687">https://blog.csdn.net/wgshun616/article/details/81019687</a></li>
+<li>6 <a href="https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html">https://www.liuyude.com/How_to_make_your_HEXO_blog_support_handwriting_flowchart.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+        <tag>教程</tag>
+        <tag>Hexo</tag>
+        <tag>搭建博客</tag>
+        <tag>NexT</tag>
+        <tag>多设备</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为Hexo添加数学公式支持|math-equation-support</title>
+    <url>/2019/02/22/math-equation/</url>
+    <content><![CDATA[<ul>
+<li><p>Hexo默认支持数学公式渲染，但默认不开启；</p>
+</li>
+<li><p>但是在配置文件________config.yml下开启后，发现公式block还是没有被render；</p>
+</li>
+<li><p>解决办法是卸载原来的渲染模块，安装kramed渲染模块，之后进行配置。</p>
+</li>
+<li><p>下面是安装该模块的教程以及一些MD的数学公式例子，可以根据渲染效果选择其中一种写法。|There are three kinds of math equation styles in markdown file in generally. But all these styles are suitable for markdown? Or which one is better? Here are the samples.</p>
+</li>
+</ul>
+<span id="more"></span>
+<h2 id="数学公式支持模块安装-Installation-note-of-the-Hexo-renderer-kramed"><a href="#数学公式支持模块安装-Installation-note-of-the-Hexo-renderer-kramed" class="headerlink" title="数学公式支持模块安装|Installation note of the Hexo-renderer-kramed"></a>数学公式支持模块安装|Installation note of the Hexo-renderer-kramed</h2><ul>
+<li><p>卸载默认的渲染模块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br></pre></td></tr></table></figure></li>
+<li><p>安装kramed模块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure></li>
+<li><p>修改inline.js文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#文件位于./node_modules/kramed/lib/rules/inline.js</span><br><span class="line">#更改escape的正则表达式</span><br><span class="line">// escape: /^\\([\\`*{}\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">   escape: /^\\([`*\[\]()#$+\-.!_&gt;])/],</span><br><span class="line"></span><br><span class="line">#同时更改em的正则表达式</span><br><span class="line">// em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">   em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>在NexT主题下的配置文件____config.yml，开启mathjax渲染</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#Math Equations Render Support</span><br><span class="line">math:</span><br><span class="line">  enable: true</span><br><span class="line">  # Default(true) will load mathjax/katex script on demand</span><br><span class="line">  # That is it only render those page who has 'mathjax: true' in Front Matter.</span><br><span class="line">  # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.</span><br><span class="line">  per_page: true</span><br><span class="line"></span><br><span class="line">  engine: mathjax</span><br><span class="line">  #engine: katex</span><br></pre></td></tr></table></figure></li>
+<li><p>在博客的顶部声明中添加mathjax渲染声明</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: ***教程</span><br><span class="line">date: 2019-03-02 12:01:30</span><br><span class="line">tags: </span><br><span class="line">    - 教程</span><br><span class="line">    - ***</span><br><span class="line">mathjax: true</span><br><span class="line">--</span><br></pre></td></tr></table></figure></li>
+<li><p>调试公式渲染效果</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo server</span><br><span class="line">#然后在http://localhost:4000中查看效果，如果没有出错、异常，就可以配置到博客仓库中</span><br><span class="line">hexo d</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="三种常见的数学公式写法-3-kinds-of-Math-Equation-style-in-MD-file"><a href="#三种常见的数学公式写法-3-kinds-of-Math-Equation-style-in-MD-file" class="headerlink" title="三种常见的数学公式写法|3 kinds of Math Equation style in MD file"></a>三种常见的数学公式写法|3 kinds of Math Equation style in MD file</h2><ul>
+<li>图片形式|Picture style equation    </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![](https://latex.codecogs.com/svg.latex?\Large&amp;space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})&lt;/div&gt;</span><br><span class="line">![](http://latex.codecogs.com/gif.latex?h%28x%29%3D%5Ctheta_0%20x%20&amp;plus;%20%5Ctheta_1%20x)&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://latex.codecogs.com/svg.latex?%5CLarge&space;x=%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D"><br><img src="http://latex.codecogs.com/gif.latex?h(x)=%5Ctheta_0%20x%20&plus;%20%5Ctheta_1%20x"></p>
+<hr>
+<ul>
+<li>MD支持的形式|MD support style equation   </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">\begin{equation}</span><br><span class="line">x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}   </span><br><span class="line">\end{equation}    </span><br><span class="line">\begin{equation}</span><br><span class="line">h(x)=\theta_0 x + \theta_1 x</span><br><span class="line">\end{equation}</span><br></pre></td></tr></table></figure>
+
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -1.575ex" xmlns="http://www.w3.org/2000/svg" width="20.69ex" height="5.291ex" role="img" focusable="false" viewBox="0 -1642.5 9145 2338.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(849.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(1905.6, 0)"><g data-mml-node="mrow" transform="translate(220, 676)"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(778, 0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(1429.2, 0)"><path data-c="B1" d="M56 320T56 333T70 353H369V502Q369 651 371 655Q376 666 388 666Q402 666 405 654T409 596V500V353H707Q722 345 722 333Q722 320 707 313H409V40H707Q722 32 722 20T707 0H70Q56 7 56 20T70 40H369V313H70Q56 320 56 333Z"></path></g><g data-mml-node="msqrt" transform="translate(2429.4, 0)"><g transform="translate(853, 0)"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mn" transform="translate(429, 289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(1054.8, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(2055, 0)"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g><g data-mml-node="mi" transform="translate(2555, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(3084, 0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g></g><g data-mml-node="mo" transform="translate(0, 106.5)"><path data-c="221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path></g><rect width="3517" height="60" x="853" y="846.5"></rect></g></g><g data-mml-node="mrow" transform="translate(3105.2, -686)"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(500, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g><rect width="6999.4" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></p>
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="16.677ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 7371.1 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="210E" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"></path></g><g data-mml-node="mo" transform="translate(576, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(965, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(1537, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2203.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3259.6, 0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(469, -150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g><g data-mml-node="mi" transform="translate(4132.1, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(4926.3, 0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msub" transform="translate(5926.6, 0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(469, -150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="mi" transform="translate(6799.1, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container></p>
+<hr>
+<ul>
+<li>MathJax的形式|MathJax style equation    </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</span><br><span class="line">$$    </span><br><span class="line">$$</span><br><span class="line">h(x)=\theta_0 x + \theta_1 x</span><br><span class="line">$$  </span><br></pre></td></tr></table></figure>
+
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -1.575ex" xmlns="http://www.w3.org/2000/svg" width="20.69ex" height="5.291ex" role="img" focusable="false" viewBox="0 -1642.5 9145 2338.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(849.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(1905.6, 0)"><g data-mml-node="mrow" transform="translate(220, 676)"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(778, 0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(1429.2, 0)"><path data-c="B1" d="M56 320T56 333T70 353H369V502Q369 651 371 655Q376 666 388 666Q402 666 405 654T409 596V500V353H707Q722 345 722 333Q722 320 707 313H409V40H707Q722 32 722 20T707 0H70Q56 7 56 20T70 40H369V313H70Q56 320 56 333Z"></path></g><g data-mml-node="msqrt" transform="translate(2429.4, 0)"><g transform="translate(853, 0)"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mn" transform="translate(429, 289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="mo" transform="translate(1054.8, 0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mn" transform="translate(2055, 0)"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g><g data-mml-node="mi" transform="translate(2555, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(3084, 0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g></g><g data-mml-node="mo" transform="translate(0, 106.5)"><path data-c="221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path></g><rect width="3517" height="60" x="853" y="846.5"></rect></g></g><g data-mml-node="mrow" transform="translate(3105.2, -686)"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g><g data-mml-node="mi" transform="translate(500, 0)"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g><rect width="6999.4" height="60" x="120" y="220"></rect></g></g></g></svg></mjx-container></p>
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="16.677ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 7371.1 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="210E" d="M137 683Q138 683 209 688T282 694Q294 694 294 685Q294 674 258 534Q220 386 220 383Q220 381 227 388Q288 442 357 442Q411 442 444 415T478 336Q478 285 440 178T402 50Q403 36 407 31T422 26Q450 26 474 56T513 138Q516 149 519 151T535 153Q555 153 555 145Q555 144 551 130Q535 71 500 33Q466 -10 419 -10H414Q367 -10 346 17T325 74Q325 90 361 192T398 345Q398 404 354 404H349Q266 404 205 306L198 293L164 158Q132 28 127 16Q114 -11 83 -11Q69 -11 59 -2T48 16Q48 30 121 320L195 616Q195 629 188 632T149 637H128Q122 643 122 645T124 664Q129 683 137 683Z"></path></g><g data-mml-node="mo" transform="translate(576, 0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(965, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(1537, 0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2203.8, 0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="msub" transform="translate(3259.6, 0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(469, -150) scale(0.707)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g><g data-mml-node="mi" transform="translate(4132.1, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(4926.3, 0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="msub" transform="translate(5926.6, 0)"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g><g data-mml-node="mn" transform="translate(469, -150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="mi" transform="translate(6799.1, 0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container></p>
+<hr>
+<ul>
+<li>效果预览|Here is shot of normal display in html thread.<br><img src="https://github.com/leaguecn/leenotes/raw/master/img/md-equation.png"></li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog">https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog</a>    </li>
+<li><a href="https://www.zhihu.com/question/26887527">https://www.zhihu.com/question/26887527</a>    </li>
+<li><a href="https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview">https://stackoverflow.com/questions/27972177/how-to-enable-mathjax-rendering-in-sublime-text-markdown-preview</a></li>
+<li><a href="http://latex.codecogs.com/eqneditor/editor.php">http://latex.codecogs.com/eqneditor/editor.php</a></li>
+<li><a href="https://blog.csdn.net/Quest_sec/article/details/78068960">https://blog.csdn.net/Quest_sec/article/details/78068960</a></li>
+<li><a href="https://www.lefer.cn/posts/64106/">https://www.lefer.cn/posts/64106/</a></li>
+<li><a href="https://blog.csdn.net/wgshun616/article/details/81019687">https://blog.csdn.net/wgshun616/article/details/81019687</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tutorial</category>
+      </categories>
+      <tags>
+        <tag>Tutorial</tag>
+        <tag>教程</tag>
+        <tag>Hexo</tag>
+        <tag>Math</tag>
+        <tag>Equation</tag>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算视觉SLAM工程师技能要求</title>
+    <url>/2019/02/28/slam-engineer-skills-demand/</url>
+    <content><![CDATA[<ul>
+<li>计算机视觉SLAM可以说是现在和以后较长一段时间里都比较火的研究方向，总结一下工程师的技能要求。分为下面几方面内容：<ul>
+<li>基础知识学习要求</li>
+<li>进步历程篇</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><p>看了较多的这类招聘，基本要求包括：</p>
+<ul>
+<li>精通C/C++语言</li>
+<li>熟练使用OpenCV、g2o、BA开源库</li>
+<li>掌握SLAM、SFM等算法原理</li>
+<li>具有较强的学习能力和实践能力，可以阅读计算机视觉顶级期刊论文并进行相关算法的移植</li>
+</ul>
+</li>
+<li><p>要求更高一点的是：</p>
+<ul>
+<li>发表过CVPR/ECCV/ICCV等顶会的论文</li>
+<li>熟悉高性能加速工具GPGPU、CUDA</li>
+</ul>
+</li>
+<li><p>结合招聘的要求和相关博客内容以及自己的经验（菜逼的我，还是有点经验的;)），整理一些这方面的内容，希望对网友有所帮助。</p>
+</li>
+</ul>
+<h2 id="学习要求"><a href="#学习要求" class="headerlink" title="学习要求"></a>学习要求</h2><h3 id="技能："><a href="#技能：" class="headerlink" title="技能："></a>技能：</h3><ul>
+<li><p>【熟练使用C和C++】</p>
+<ul>
+<li>《21天学通C++》</li>
+<li>《Effective C++》</li>
+</ul>
+</li>
+<li><p>【熟悉常用的opencv，等库】</p>
+<ul>
+<li>《opencv 3入门》</li>
+<li>《学习 opencv》</li>
+</ul>
+</li>
+<li><p>【熟悉linux下编程】</p>
+<ul>
+<li>熟悉cmake编程</li>
+<li>熟悉Kdevelop 以及调试</li>
+<li>熟练使用VIM编辑器</li>
+<li>熟练markdown文档编写</li>
+</ul>
+</li>
+<li><p>【QT下的编程】</p>
+<ul>
+<li>熟悉QT软件以及基本的语法功能</li>
+</ul>
+</li>
+<li><p>【熟悉常见的slam框架】</p>
+<ul>
+<li>跟着高翔的14讲走就行</li>
+</ul>
+</li>
+<li><p>【机器学习数学知识】</p>
+<ul>
+<li>高数，矩阵分析，概率论</li>
+</ul>
+</li>
+<li><p>【基本的数据结构与算法】</p>
+<ul>
+<li>《数据结构，邓俊辉》</li>
+<li>《算法竞赛入门》睡觉</li>
+</ul>
+</li>
+<li><p>【熟悉模式识别，多视图几何，计算机视觉等理论知识】</p>
+<ul>
+<li>《计算机视觉》</li>
+<li>《多视图几何》某几章</li>
+<li>《模式识别》</li>
+</ul>
+</li>
+</ul>
+<h3 id="项目经历："><a href="#项目经历：" class="headerlink" title="项目经历："></a>项目经历：</h3><ul>
+<li>【C++ demo】雷霆战机C++与QT实现</li>
+<li>【opencv demo】</li>
+<li>【slam easy demo】</li>
+</ul>
+<hr>
+<h2 id="进步历程"><a href="#进步历程" class="headerlink" title="进步历程"></a>进步历程</h2><h3 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h3><ul>
+<li>《21天学通 C++ 》</li>
+<li>《数据结构（C++ 语言版）》</li>
+<li>《Effective C++ 》</li>
+<li>《算法竞赛入门》</li>
+<li>高数/矩阵分析/概率论 课程</li>
+<li>《线性估计》</li>
+<li>《An Invitation to 3-D Vision》</li>
+</ul>
+<h3 id="技能篇"><a href="#技能篇" class="headerlink" title="技能篇"></a>技能篇</h3><ul>
+<li>《视觉slam十四讲》</li>
+<li>《OpenCV3 入门》</li>
+<li>《学习 opencv》</li>
+<li>专业知识背景<ul>
+<li>《计算机视觉》</li>
+<li>《多视图几何》某几章</li>
+<li>《模式识别》</li>
+<li>《概率机器人学》</li>
+<li>《Computer Vision Algorithms and Applications》</li>
+<li>《Computer vision A modern approach 2nd》</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://blog.csdn.net/fanjiule/article/details/80851233">https://blog.csdn.net/fanjiule/article/details/80851233</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/22266788">https://zhuanlan.zhihu.com/p/22266788</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>总结</category>
+      </categories>
+      <tags>
+        <tag>计算机视觉</tag>
+        <tag>SLAM</tag>
+        <tag>工程师</tag>
+        <tag>技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>web端地图坐标拾取工具</title>
+    <url>/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Web端地图遍地开花，一些坐标拾取工具质量参差不齐，为了提高地理学科研人员的寻找坐标数据的效率，本文对当前的主流Web端地图：谷歌、高德、Bing地图的API进行了研究，通过建立定制化在线地图，仅调用其检索工具、地理坐标、高程函数，对地图的坐标数据进行提取，并以简介的界面呈现，从而实现了精简的坐标拾取小工具。</p>
+<p><strong>关键词：谷歌地图、高德地图、BingMap、Web端、地理坐标、高程、拾取</strong></p>
+<span id="more"></span>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>地图坐标是地理学工作研究重要的数据之一，近年来虽然出现了很多的地图开发商及软件，但他们大部分是商业应用型，兼顾了主流的消费需求，但限于个国家之间的政策，并没有很好地给出地图数据获取的方式，仅提供了一下接口，保留其科研性质。一些网络上的坐标拾取工具也由这些接口应用而生，但质量上良莠不齐，较好的会趋向收费，这不仅浪费了地理学科研人员寻找可靠数据的时间，而且增加了其成本，由此需要一个能够批量导出坐标拾取点数据的专业地图网站。</p>
+<h2 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h2><p>网上的坐标拾取工具较多，但商业化严重，这里列举一些坐标拾取工具并简单介绍。</p>
+<ul>
+<li><a href="http://www.gpsov.com/cn/main.php">奥维地图</a>是一个商业化的软件，采用谷歌和百度两种主流地图作为底图，在服务器端自架构了谷歌地图的自动提示检索模块，可以在GFW情况下提示检索关键词；给一些事业单位提供坐标服务，包含坐标的批量查询、导入、导出，GNSS定位存储。</li>
+<li><a href="http://www.gpsspg.com/maps.htm">GPSspg</a>也是一个商业化软件，提供有偿数据服务，地图的地图杂糅了当前的谷歌、百度、腾讯、高德、图吧等主流地图，且提供IP、基站、身份证、手机号码等查询。</li>
+<li><a href="http://haiba.qhdi.com/">去何地</a>则是一个旅游者发烧友自建一个网站，以谷歌地图为地图，提供坐标查询。</li>
+</ul>
+<h2 id="开发原理"><a href="#开发原理" class="headerlink" title="开发原理"></a>开发原理</h2><p>JavaScript/JS+CSS+HTML<br>这里就不过多讲述了，毕竟这只是本人的业余爱好项目。<br>概括一下是：HTML是整个网页的基础框架，其中有W3C的标准，主要包含：head、body两大部分，近些年来也开始支持HTML5了；CSS是整个HTML网页版面的布局样式文件，确定某一id、class元素的属性，布局在左上、右上、居中还是左下、右下、居中，更加深究一点就是是不是有阴影、圆角、SVG图等等；JS则是动态脚本，通过结合官方API,可以在线调用在官方服务器上的JS函数库，实现各种操作，当然请求这些函数库往往需要开发Key，这需要申请一个并激活。</p>
+<h2 id="Web端地图生成"><a href="#Web端地图生成" class="headerlink" title="Web端地图生成"></a>Web端地图生成</h2><p>这里也不太过多讲述，下面给出一个流程图更加言简意赅。<br>流程大致如下：</p>
+<ul>
+<li>1）官网上申请地图开发密钥；</li>
+<li>2）浏览官网给出的样例Demo；</li>
+<li>3）熟悉参考手册的JS函数及回调结果数据结构；</li>
+<li>4）制定开发地图的页面布局及模块功能；</li>
+<li>5）在样例里找定制的模块功能代码、或者查找相关的博客借用其相关模块；</li>
+<li>6）编写地图Alpha版本并调试；</li>
+<li>7）调试通过后进行网页部署并测试；</li>
+<li>8）测试通过后正式发布Beta版本；</li>
+<li>9）后期升级、维护。</li>
+</ul>
+<p>本实验调用了Google/高德/Bing等地图的API，提供坐标的拾取，检索，页面相对简洁，没有一点商业化的意图，仅提供给地理学科研人员，可以拾取经纬度、高程（仅Google）。</p>
+<h2 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h2><p>Web端发布在三个平台，包括：github/gitee/coding.net。</p>
+<ul>
+<li>github是国外最有名的代码托管平台；</li>
+<li>gitee/coding.net则是国内模仿github的代码托管平台。<br>因为国外受限于GWF网络，所以选择了两个国内的备用。<br>在网页版和移动端均测试了其页面布局、操作响应等方面，均达到了可以发布的标准（我也不清楚啥标准）。<br>截图：</li>
+</ul>
+<p>Google Map 截图<br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw186h3459653_1527908688_401.png"></p>
+<p><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908701_650.png"></p>
+<p>Gaode Map 截图<br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_307.png"><br><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908699_569.png"></p>
+<p>Bing Map 截图</p>
+<p><img src="http://muchongimg.xmcimg.com/oss2/img/2018/0602/bw188h3459653_1527908700_793.png"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>网页部署在github等代码托管平台的静态网页中，无需管理费等地图维护费用，相比于其他的坐标拾取网站，本实验不单节约了运营成本，简化了数据获取的流程，将有利于各地理学科研工作人员的数据获取。同时本实验将三个地图分开部署，会在一定程度上对数据的比较产生不便利。本实验中对数据现在仅能提高人工打点方式获取，工作量依然很大，后期可能会进行自动化的完善。坐标拾取也将会朝着自动化获取方向发展，只要用户输入几个关键词，工具批量下载其坐标数据。</p>
+<p>更新后的大地图地址为（地图加载的框架文件较多，需要较长时间，请耐心等待）：</p>
+<p><a href="http://leaguecn.coding.me/maxmap/">http://leaguecn.coding.me/maxmap/</a></p>
+<p>2018-09-29,提供另外一个地图，基于AcrGIS JS API/HERE tile/GoogleMap tile</p>
+<p><a href="http://leaguecn.coding.me/GeoMap/">http://leaguecn.coding.me/GeoMap/</a></p>
+<p><strong>欢迎批评指正，如有bug或者不满意，请邮件与我联系。</strong></p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>找地图 </p>
+<ul>
+<li><a href="https://leaguecn.github.io/resume/">https://leaguecn.github.io/resume/</a></li>
+</ul>
+<p>直连</p>
+<ul>
+<li>Google: <a href="http://leaguecn.gitee.io/map/">http://leaguecn.gitee.io/map/</a></li>
+<li>Bing: <a href="https://leaguecn.github.io/bingmap/">https://leaguecn.github.io/bingmap/</a></li>
+<li>高德：<a href="http://leaguecn.coding.me/amaplite/">http://leaguecn.coding.me/amaplite/</a></li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="http://muchong.com/t-12381369-1">http://muchong.com/t-12381369-1</a></li>
+<li><a href="http://lbsyun.baidu.com/index.php?title=jspopular">http://lbsyun.baidu.com/index.php?title=jspopular</a></li>
+<li><a href="https://lbs.amap.com/api/javascript-api/summary">https://lbs.amap.com/api/javascript-api/summary</a></li>
+<li><a href="https://www.bing.com/api/maps/mapcontrol/isdk/">https://www.bing.com/api/maps/mapcontrol/isdk/</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/tutorial">https://developers.google.com/maps/documentation/javascript/tutorial</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>地图</category>
+      </categories>
+      <tags>
+        <tag>地图</tag>
+        <tag>Map</tag>
+        <tag>坐标拾取</tag>
+        <tag>Coordination picking</tag>
+        <tag>工具</tag>
+        <tag>tool</tag>
+      </tags>
+  </entry>
+</search>
