@@ -2,7 +2,8 @@
 
 This repo is backup of my blogger sources and hexo settings.
 
-> [leaguecn.github.io](leaguecn.github.io)
+> [leaguecn.github.io](https://leaguecn.github.io)
+
 *2019-04*
 
 ## Update Log
