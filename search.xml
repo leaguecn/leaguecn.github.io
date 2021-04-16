@@ -778,6 +778,519 @@
       </tags>
   </entry>
   <entry>
+    <title>VIM笔记</title>
+    <url>/2021/04/17/vim-note/</url>
+    <content><![CDATA[<p>VIM编辑器是基于命令行的编辑器，是传奇编辑器VI的增强版本，如果你深入地了解过linux系统，那么想必一定认识这个名气不小的软件,相比其他的软件，VIM的闻名，主要是得益于它强大的插件，同时是命令行时代著称的软件，软件简洁，如果熟练使用，几乎可以把鼠标丢掉。<br><a href="https://github.com/spf13/spf13-vim">spf13</a>是比较出名的一个vim插件集成项目，集成了VIM的大部分插件，可以说是一把利器。</p>
+<span id="more"></span>
+<h2 id="SPF13的安装教程"><a href="#SPF13的安装教程" class="headerlink" title="SPF13的安装教程"></a>SPF13的安装教程</h2><p>Requires Git 1.7+ and Vim 7.3+</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</span><br></pre></td></tr></table></figure>
+<p>If you have a bash-compatible shell you can run the script directly:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sh &lt;(curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L)</span><br></pre></td></tr></table></figure>
+<p>如果因为gfw原因使用以上方法依然无法安装，可以尝试：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;spf13&#x2F;spf13-vim&#x2F;3.0&#x2F;bootstrap.sh</span><br><span class="line">sh bootstrap.sh</span><br></pre></td></tr></table></figure>
+
+<h2 id="VIM快捷键教程"><a href="#VIM快捷键教程" class="headerlink" title="VIM快捷键教程"></a>VIM快捷键教程</h2><p>Vim 编辑器是一个基于命令行的工具，是传奇编辑器 vi 的增强版。尽管图形界面的富文本编辑有很多，但是熟悉 Vim 对于每一位 Linux 的使用者都能有所帮助——无论你是经验丰富的系统管理员，还是刚上手树莓派的新手用户。<br>这个轻量级的编辑器是个非常强大的工具。在有经验的使用者手中，它能完成不可思议的任务。除了常规的文本编辑功能以外，它还支持一些进阶特性。例如，基于正则表达式的搜索和替换、编码转换，以及语法高亮、代码折叠等的编程特性。<br>使用 Vim 时有一个非常重要的一点需要注意，那就是按键的功能取决于编辑器当前的“模式”。例如，在“普通模式”输入字母<code>j</code>时，光标会向下移动一行。而当你在“插入模式”下输入字符，则只是正常的文字录入。<br>下面就是速查表，以便于你充分利用 Vim。</p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Esc</code></td>
+<td>从当前模式转换到“普通模式”。所有的键对应到命令。</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>“插入模式”用于插入文字。回归按键的本职工作。</td>
+</tr>
+<tr>
+<td><code>:</code></td>
+<td>“命令行模式” Vim 希望你输入类似于保存该文档命令的地方。</td>
+</tr>
+</tbody></table>
+<h3 id="方向键"><a href="#方向键" class="headerlink" title="方向键"></a>方向键</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>h</code></td>
+<td>光标向左移动一个字符</td>
+</tr>
+<tr>
+<td><code>j</code> 或 <code>Ctrl + J</code></td>
+<td>光标向下移动一行</td>
+</tr>
+<tr>
+<td><code>k</code> 或 <code>Ctrl + P</code></td>
+<td>光标向上移动一行</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>光标向右移动一个字符</td>
+</tr>
+<tr>
+<td><code>0</code></td>
+<td>（数字 0）移动光标至本行开头</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>移动光标至本行末尾</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>移动光标至本行第一个非空字符处</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>向前移动一个词 （上一个字母和数字组成的词之后）</td>
+</tr>
+<tr>
+<td><code>W</code></td>
+<td>向前移动一个词 （以空格分隔的词）</td>
+</tr>
+<tr>
+<td><code>5w</code></td>
+<td>向前移动五个词</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td>向后移动一个词 （下一个字母和数字组成的词之前）</td>
+</tr>
+<tr>
+<td><code>B</code></td>
+<td>向后移动一个词 （以空格分隔的词）</td>
+</tr>
+<tr>
+<td><code>5b</code></td>
+<td>向后移动五个词</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td>移动至文件末尾</td>
+</tr>
+<tr>
+<td><code>gg</code></td>
+<td>移动至文件开头</td>
+</tr>
+</tbody></table>
+<h3 id="浏览文档"><a href="#浏览文档" class="headerlink" title="浏览文档"></a>浏览文档</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>(</code></td>
+<td>跳转到上一句</td>
+</tr>
+<tr>
+<td><code>)</code></td>
+<td>跳转到下一句</td>
+</tr>
+<tr>
+<td><code>&#123;</code></td>
+<td>跳转到上一段</td>
+</tr>
+<tr>
+<td><code>&#125;</code></td>
+<td>跳转到下一段</td>
+</tr>
+<tr>
+<td><code>[[</code></td>
+<td>跳转到上一部分</td>
+</tr>
+<tr>
+<td><code>]]</code></td>
+<td>跳转到下一部分</td>
+</tr>
+<tr>
+<td><code>[]</code></td>
+<td>跳转到上一部分的末尾</td>
+</tr>
+<tr>
+<td><code>][</code></td>
+<td>跳转到上一部分的开头</td>
+</tr>
+</tbody></table>
+<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>a</code></td>
+<td>在光标后插入文本</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>在行末插入文本</td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>在光标前插入文本</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>（小写字母 o）在光标下方新开一行</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>（大写字母 O）在光标上方新开一行</td>
+</tr>
+</tbody></table>
+<h3 id="特殊插入"><a href="#特殊插入" class="headerlink" title="特殊插入"></a>特殊插入</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>:r [filename]</code></td>
+<td>在光标下方插入文件 [filename] 的内容</td>
+</tr>
+<tr>
+<td><code>:r ![command]</code></td>
+<td>执行命令 [command] ，并将输出插入至光标下方</td>
+</tr>
+</tbody></table>
+<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>x</code></td>
+<td>删除光标处字符</td>
+</tr>
+<tr>
+<td><code>dw</code></td>
+<td>删除一个词</td>
+</tr>
+<tr>
+<td><code>d0</code></td>
+<td>删至行首</td>
+</tr>
+<tr>
+<td><code>d$</code></td>
+<td>删至行末</td>
+</tr>
+<tr>
+<td><code>d)</code></td>
+<td>删至句末</td>
+</tr>
+<tr>
+<td><code>dgg</code></td>
+<td>删至文件开头</td>
+</tr>
+<tr>
+<td><code>dG</code></td>
+<td>删至文件末尾</td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td>删除该行</td>
+</tr>
+<tr>
+<td><code>3dd</code></td>
+<td>删除三行</td>
+</tr>
+</tbody></table>
+<h3 id="简单替换文本"><a href="#简单替换文本" class="headerlink" title="简单替换文本"></a>简单替换文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>r&#123;text&#125;</code></td>
+<td>将光标处的字符替换成 {text}</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>进入覆写模式，输入的字符将替换原有的字符</td>
+</tr>
+</tbody></table>
+<h3 id="复制-粘贴文本"><a href="#复制-粘贴文本" class="headerlink" title="复制/粘贴文本"></a>复制/粘贴文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>yy</code></td>
+<td>复制当前行至存储缓冲区</td>
+</tr>
+<tr>
+<td><code>[&quot;x]yy</code></td>
+<td>复制当前行至寄存器 x</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>在当前行之后粘贴存储缓冲区中的内容</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>在当前行之前粘贴存储缓冲区中的内容</td>
+</tr>
+<tr>
+<td><code>[&quot;x]p</code></td>
+<td>在当前行之后粘贴寄存器 x 中的内容</td>
+</tr>
+<tr>
+<td><code>[&quot;x]P</code></td>
+<td>在当前行之前粘贴寄存器 x 中的内容</td>
+</tr>
+</tbody></table>
+<h3 id="撤销-重做操作"><a href="#撤销-重做操作" class="headerlink" title="撤销/重做操作"></a>撤销/重做操作</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>u</code></td>
+<td>撤销最后的操作</td>
+</tr>
+<tr>
+<td><code>Ctrl+r</code></td>
+<td>重做最后撤销的操作</td>
+</tr>
+</tbody></table>
+<h3 id="搜索和替换"><a href="#搜索和替换" class="headerlink" title="搜索和替换"></a>搜索和替换</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/search_text</code></td>
+<td>检索文档，在文档后面的部分搜索 search_text</td>
+</tr>
+<tr>
+<td><code>?search_text</code></td>
+<td>检索文档，在文档前面的部分搜索 search_text</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>移动到后一个检索结果</td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td>移动到前一个检索结果</td>
+</tr>
+<tr>
+<td><code>:%s/original/replacement</code></td>
+<td>检索第一个 “original” 字符串并将其替换成 “replacement”</td>
+</tr>
+<tr>
+<td><code>:%s/original/replacement/g</code></td>
+<td>检索并将所有的 “original” 替换为 “replacement”</td>
+</tr>
+<tr>
+<td><code>:%s/original/replacement/gc</code></td>
+<td>检索出所有的 “original” 字符串，但在替换成 “replacement” 前，先询问是否替换</td>
+</tr>
+</tbody></table>
+<h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>m &#123;a-zA-Z&#125;</code></td>
+<td>在当前光标位置设置书签，书签名可用一个大小写字母（{a-zA-Z}）</td>
+</tr>
+<tr>
+<td><code>:marks</code></td>
+<td>列出所有书签</td>
+</tr>
+<tr>
+<td><code>&#123;a-zA-Z&#125;</code></td>
+<td>跳转到书签 {a-zA-Z}</td>
+</tr>
+</tbody></table>
+<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>v</code></td>
+<td>进入逐字可视模式</td>
+</tr>
+<tr>
+<td><code>V</code></td>
+<td>进入逐行可视模式</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>退出可视模式</td>
+</tr>
+</tbody></table>
+<h3 id="改动选中文本"><a href="#改动选中文本" class="headerlink" title="改动选中文本"></a>改动选中文本</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>~</code></td>
+<td>切换大小写</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>删除一个词</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>变更</td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td>复制</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>右移</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>左移</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>通过外部命令进行过滤</td>
+</tr>
+</tbody></table>
+<h3 id="保存并退出"><a href="#保存并退出" class="headerlink" title="保存并退出"></a>保存并退出</h3><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>:q</code></td>
+<td>退出 Vim，如果文件已被修改，将退出失败</td>
+</tr>
+<tr>
+<td><code>:w</code></td>
+<td>保存文件</td>
+</tr>
+<tr>
+<td><code>:w new_name</code></td>
+<td>用 new_name 作为文件名保存文件</td>
+</tr>
+<tr>
+<td><code>:wq</code></td>
+<td>保存文件并退出 Vim</td>
+</tr>
+<tr>
+<td><code>:q!</code></td>
+<td>退出 Vim，不保存文件改动</td>
+</tr>
+<tr>
+<td><code>ZZ</code></td>
+<td>退出 Vim，如果文件被改动过，保存改动内容</td>
+</tr>
+<tr>
+<td><code>ZQ</code></td>
+<td>与 :q! 相同，退出 Vim，不保存文件改动</td>
+</tr>
+</tbody></table>
+<h3 id="下载-Vim-快捷键速查表"><a href="#下载-Vim-快捷键速查表" class="headerlink" title="下载 Vim 快捷键速查表"></a>下载 Vim 快捷键速查表</h3><p>仅仅是这样是否还不足以满足你？别担心，我们已经为你整理好了一份下载版的速查表，以备不时之需。</p>
+<p><a href="http://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts-cheatsheet/">点此下载（英文）</a></p>
+<p>-----------------------------------------------------</p>
+<p>Vim 编辑器提供了很多的特性，要想全部掌握它们很困难。然而，花费更多的时间在命令行编辑器上总是有帮助的。毫无疑问，和 Vim 用户们进行交流能够让你更快地学习新颖有创造性的东西。</p>
+<p><strong>注：</strong> 本文中用到的例子，使用的 Vim 版本是 7.4.52 。</p>
+<hr>
+<h2 id="VIM常用场景教程"><a href="#VIM常用场景教程" class="headerlink" title="VIM常用场景教程"></a>VIM常用场景教程</h2><h3 id="1、-同时编辑多个文件"><a href="#1、-同时编辑多个文件" class="headerlink" title="1、 同时编辑多个文件"></a>1、 同时编辑多个文件</h3><p>如果你是一名软件开发者或者把 Vim 作为主要的编辑器，那么可能很多时候你需要同时编辑多个文件。“紧跟（following）”是在同时编辑多个文件时可用的实用技巧。</p>
+<p>不需要在多个 shell 界面中打开多个文件，你可以通过把多个文件的文件名作为 Vim 命令的参数从而在一个 shell 界面中打开多个文件。比如：</p>
+<p>vim 文件1 文件2 文件3</p>
+<p>第一个文件（例子中的文件1）将成为当前文件并被读入缓冲区。</p>
+<p>在编辑器中，使用 <code>:next</code> 或 <code>:n</code> 命令来移动到下一个文件，使用 <code>:prev</code> 或 <code>:N</code> 命令返回上一个文件。如果想直接切换到第一个文件或最后一个文件，使用 <code>:bf</code> 和 <code>:bl</code> 命令。特别地，如果想打开另外的文件并编辑，使用 <code>:e</code> 命令并把文件名作为参数（如果该文件不在当前目录中则需要完整路径做为参数）。</p>
+<p>任何时候如果需要列出当前打开的所有文件，使用 <code>:ls</code> 命令。看下面展示的屏幕截图。</p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/141942p7hm7eeieh1j7p1l.png"></p>
+<p>注意 ”%a” 表示文件在当前活动窗口，而 “#” 表示上一个活动窗口的文件。</p>
+<h3 id="2、-通过自动补全节约时间"><a href="#2、-通过自动补全节约时间" class="headerlink" title="2、 通过自动补全节约时间"></a>2、 通过自动补全节约时间</h3><p>想节约时间并提高效率吗？使用缩写吧。使用它们能够快速写出文件中多次出现、复杂冗长的词。在 Vim 中缩写命令写就是 <code>ab</code> 。</p>
+<p>比如，当你运行下面的命令以后：</p>
+<p>:ab asap as soon as possible</p>
+<p>文件中出现的每一个 <code>asap</code> 都会被自动替换为 <code>as soon as possible</code> ，就像你自己输入的一样。</p>
+<p>类似地，你可以使用缩写来更正常见的输入错误。比如，下面的命令</p>
+<p>:ab recieve receive</p>
+<p>将会自动更正拼写错误，就像你自己输入的一样。如果在一次特殊情况下你想阻止缩写展开或更正发生，那么你只需要在输入一个单词的最后一个字母以后按 <code>Ctrl + V</code> ，然后按空格键。</p>
+<p>如果你想把刚才使用的缩写保存下来，从而当你下次使用 Vim 编辑器的时候可以再次使用，那么只需将完整的 <code>ab</code> 命令(没有起始的冒号)添加到　<code>/etc/vim/vimrc</code> 文件中。如果想删除某个缩写，你可以使用 <code>una</code> 命令。比如： <code>una asap</code> 。</p>
+<h3 id="3、-切分窗口便于复制-粘贴"><a href="#3、-切分窗口便于复制-粘贴" class="headerlink" title="3、 切分窗口便于复制/粘贴"></a>3、 切分窗口便于复制/粘贴</h3><p>有时，你需要从一个文件将一段代码或文本的一部分复制到另一个。当使用 GUI（图形界面）编辑器的时候，这很容易实现，但是当使用一个命令行编辑器的时候，这就变得比较困难并且很费时间。幸运的是， Vim 提供了一种高效、节约时间的方式来完成这件事。</p>
+<p>打开两个文件中的一个然后切分 Vim 窗口来打开另一个文件。可以通过使用 <code>split</code> 命令并以文件名作为参数来完成这件事。比如：</p>
+<p>:split test.c</p>
+<p>上面的命令将分离窗口并打开文件 “test.c”</p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142000pal6qgf6b5gfffz9.png"></p>
+<p>注意到 <code>split</code> 命令水平分离 Vim 窗口。如果你想垂直分离窗口，那么你可以使用 <code>vsplit</code> 命令。当同时打开了两个文件并从一个文件中复制好内容以后，按 <code>Ctrl + W</code> 切换到另一个文件，然后粘贴。</p>
+<h3 id="4、-保存一个没有权限的已编辑文件"><a href="#4、-保存一个没有权限的已编辑文件" class="headerlink" title="4、 保存一个没有权限的已编辑文件"></a>4、 保存一个没有权限的已编辑文件</h3><p>有时候当你对一个文件做了大量更改以后才会意识到你对该文件仅有 <code>只读</code> 权限。</p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142018ytpotpoxntini2oo.png"></p>
+<p>虽然把文件关闭，获取权限以后再重新打开是一种解决方法。但是如果你已经做了大量更改，这样做会很浪费时间，因为在这个过程中所有的更改都会丢失。 Vim 提供了一种方式来处理这种情况：你可以在编辑器中在保存文件前更改文件权限。命令是：</p>
+<p>:w !sudo tee %</p>
+<p>这个命令将会向你询问密码，就像在命令行中使用 <code>sudo</code> 一样，然后就能保存更改。</p>
+<p><strong>一个相关的技巧</strong>：在 Vim 中编辑一个文件的时候，如果想快速进入命令行提示符，可以在编辑器中运行 <code>:sh</code> 命令，从而你将进入一个交互的 shell 中。完成以后，运行 <code>exit</code> 命令可以快速回到 Vim 模式中。</p>
+<h3 id="5、-在复制-粘贴过程中保持缩进"><a href="#5、-在复制-粘贴过程中保持缩进" class="headerlink" title="5、 在复制/粘贴过程中保持缩进"></a>5、 在复制/粘贴过程中保持缩进</h3><p>大多数有经验的程序员在 Vim 上工作时都会启用自动缩进。虽然这是一个节约时间的做法，但是在粘贴一段已经缩进了的代码的时候会产生新的问题。比如，下图是我把一段已缩进代码粘贴到一个在自动缩进的 Vim 编辑器中打开的文件中时遇到的问题：</p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142034q67v77brs7d7ts7s.png"></p>
+<p>这个问题的解决方法是 <code>pastetoggle</code> 选项。在 <code>/etc/vim/vimrc</code> 文件中加入下面这行内容：</p>
+<p>set pastetoggle=</p>
+<p>然后当你在 <code>插入</code> 模式中准备粘贴代码前先按 <code>F2</code> 键，就不会再出现上图中的问题，这样会保留原始的缩进。注意，你可以用其他的任何键来代替 <code>F2</code>，如果它已经映射到了别的功能上。</p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>更进一步的提高你的 Vim 编辑器技巧的唯一方法是，在你日复一日的工作中使用命令行编辑器。留意那些耗时多的操作，然后尝试去寻找是否有编辑器命令可以很快地完成这个操作。</p>
+<p>via: <a href="https://www.maketecheasier.com/vim-tips-tricks-for-experienced-users/">https://www.maketecheasier.com/vim-tips-tricks-for-experienced-users/</a></p>
+<p>作者：<a href="https://www.maketecheasier.com/author/himanshu/">Himanshu Arora</a> 译者：<a href="https://github.com/ucasFL">ucasFL</a> 校对：<a href="https://github.com/wxy">wxy</a></p>
+<p>本文由 <a href="https://github.com/LCTT/TranslateProject">LCTT</a> 原创编译，<a href="https://linux.cn/article-8148-1.html">Linux中国</a> 荣誉推出</p>
+<p>----------------------------------------------------</p>
+<blockquote>
+<p>作者：卢钧轶(cenalulu)<br>来自：<a href="http://cenalulu.github.io/linux/all-vim-cheatsheat/">http://cenalulu.github.io/linux/all-vim-cheatsheat/</a></p>
+</blockquote>
+<hr>
+<h2 id="经典版-图文教程"><a href="#经典版-图文教程" class="headerlink" title="经典版(图文教程)"></a>经典版(图文教程)</h2><p>下面这个键位图应该是大家最常看见的经典版了。</p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/classic1.gif"><img alt="classic" class="alignnone size-full wp-image-14328 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/classic1.gif" width="1024" height="724"></a></p>
+<h3 id="对应的简体中文版"><a href="#对应的简体中文版" class="headerlink" title="对应的简体中文版"></a>对应的简体中文版</h3><p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch1.gif"><img alt="vi-vim-cheat-sheet-sch" class="alignnone size-full wp-image-14329 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch1.gif" width="1024" height="724"></a></p>
+<h3 id="其实经典版是一系列的入门教程键位图的组合结果，下面是不同编辑模式下的键位图。"><a href="#其实经典版是一系列的入门教程键位图的组合结果，下面是不同编辑模式下的键位图。" class="headerlink" title="其实经典版是一系列的入门教程键位图的组合结果，下面是不同编辑模式下的键位图。"></a>其实经典版是一系列的入门教程键位图的组合结果，下面是不同编辑模式下的键位图。</h3><p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-1.gif"><img alt="vi-vim-tutorial-1" class="alignnone size-full wp-image-14330 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-1.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-2.gif"><img alt="vi-vim-tutorial-2" class="alignnone size-full wp-image-14331 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-2.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-3.gif"><img alt="vi-vim-tutorial-3" class="alignnone size-full wp-image-14332 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-3.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-4.gif"><img alt="vi-vim-tutorial-4" class="alignnone size-full wp-image-14333 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-4.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-5.gif"><img alt="vi-vim-tutorial-5" class="alignnone size-full wp-image-14334 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-5.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-6.gif"><img alt="vi-vim-tutorial-6" class="alignnone size-full wp-image-14335 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-6.gif" width="1024" height="724"></a></p>
+<p><a href="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-7.gif"><img alt="vi-vim-tutorial-7" class="alignnone size-full wp-image-14336 jop-noMdConv" src="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-7.gif" width="1024" height="724"></a></p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.runoob.com/w3cnote/all-vim-cheatsheat.html">https://www.runoob.com/w3cnote/all-vim-cheatsheat.html</a></p>
+<p><a href="https://linux.cn/article-8144-1.html">https://linux.cn/article-8144-1.html</a></p>
+<p><a href="https://linux.cn/article-8148-1.html">https://linux.cn/article-8148-1.html</a></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+        <category>摘录</category>
+      </categories>
+      <tags>
+        <tag>VIM</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>web端地图坐标拾取工具</title>
     <url>/2019/05/17/web%E7%AB%AF%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E6%8B%BE%E5%8F%96%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Web端地图遍地开花，一些坐标拾取工具质量参差不齐，为了提高地理学科研人员的寻找坐标数据的效率，本文对当前的主流Web端地图：谷歌、高德、Bing地图的API进行了研究，通过建立定制化在线地图，仅调用其检索工具、地理坐标、高程函数，对地图的坐标数据进行提取，并以简介的界面呈现，从而实现了精简的坐标拾取小工具。</p>
