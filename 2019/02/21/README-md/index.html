@@ -28,7 +28,7 @@
 <meta property="og:description" content="这是本站的第一篇博客，即博客开贴公告！">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2019-02-21T04:42:05.000Z">
-<meta property="article:modified_time" content="2021-04-14T01:43:12.279Z">
+<meta property="article:modified_time" content="2021-04-14T01:43:12.000Z">
 <meta property="article:author" content="PatrickLee">
 <meta property="article:tag" content="Post">
 <meta property="article:tag" content="Article">
@@ -257,7 +257,6 @@
 <li>这是本站的第一篇博客，即博客开贴公告！</li>
 </ul>
 <span id="more"></span>
-
 <h2 id="About-介绍"><a href="#About-介绍" class="headerlink" title="About|介绍"></a>About|介绍</h2><p><strong>Welcome to this website, thanks for your visit!|欢迎光顾本站，非常感谢您的来访！</strong><br>This is leaguecn’s blog website. </p>
 <h2 id="Build-information-建站信息"><a href="#Build-information-建站信息" class="headerlink" title="Build information|建站信息"></a>Build information|建站信息</h2><ul>
 <li>Built via Hexo+Nodejs+github page view(repository username.github.io).    </li>
@@ -449,7 +448,7 @@
 <div class="copyright">
   
   &copy; 2019 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="user"></i>
   </span>
@@ -527,7 +526,22 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
+
+  
 
   
 

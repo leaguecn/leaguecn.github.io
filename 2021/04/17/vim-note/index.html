@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-6.gif">
 <meta property="og:image" content="https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-tutorial-7.gif">
 <meta property="article:published_time" content="2021-04-16T18:36:03.000Z">
-<meta property="article:modified_time" content="2021-04-16T11:36:39.150Z">
+<meta property="article:modified_time" content="2021-04-16T11:36:39.000Z">
 <meta property="article:author" content="PatrickLee">
 <meta property="article:tag" content="VIM">
 <meta property="article:tag" content="笔记">
@@ -275,22 +275,18 @@
       
         <p>VIM编辑器是基于命令行的编辑器，是传奇编辑器VI的增强版本，如果你深入地了解过linux系统，那么想必一定认识这个名气不小的软件,相比其他的软件，VIM的闻名，主要是得益于它强大的插件，同时是命令行时代著称的软件，软件简洁，如果熟练使用，几乎可以把鼠标丢掉。<br><a target="_blank" rel="noopener" href="https://github.com/spf13/spf13-vim">spf13</a>是比较出名的一个vim插件集成项目，集成了VIM的大部分插件，可以说是一把利器。</p>
 <span id="more"></span>
-<h2 id="SPF13的安装教程"><a href="#SPF13的安装教程" class="headerlink" title="SPF13的安装教程"></a>SPF13的安装教程</h2><p>Requires Git 1.7+ and Vim 7.3+</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</span><br></pre></td></tr></table></figure>
-<p>If you have a bash-compatible shell you can run the script directly:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh &lt;(curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L)</span><br></pre></td></tr></table></figure>
-<p>如果因为gfw原因使用以上方法依然无法安装，可以尝试：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;spf13&#x2F;spf13-vim&#x2F;3.0&#x2F;bootstrap.sh</span><br><span class="line">sh bootstrap.sh</span><br></pre></td></tr></table></figure>
-
+<h2 id="SPF13的安装教程"><a href="#SPF13的安装教程" class="headerlink" title="SPF13的安装教程"></a>SPF13的安装教程</h2><p>Requires Git 1.7+ and Vim 7.3+<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</span><br></pre></td></tr></table></figure><br>If you have a bash-compatible shell you can run the script directly:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh &lt;(curl https:&#x2F;&#x2F;j.mp&#x2F;spf13-vim3 -L)</span><br></pre></td></tr></table></figure><br>如果因为gfw原因使用以上方法依然无法安装，可以尝试：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;spf13&#x2F;spf13-vim&#x2F;3.0&#x2F;bootstrap.sh</span><br><span class="line">sh bootstrap.sh</span><br></pre></td></tr></table></figure></p>
 <h2 id="VIM快捷键教程"><a href="#VIM快捷键教程" class="headerlink" title="VIM快捷键教程"></a>VIM快捷键教程</h2><p>Vim 编辑器是一个基于命令行的工具，是传奇编辑器 vi 的增强版。尽管图形界面的富文本编辑有很多，但是熟悉 Vim 对于每一位 Linux 的使用者都能有所帮助——无论你是经验丰富的系统管理员，还是刚上手树莓派的新手用户。<br>这个轻量级的编辑器是个非常强大的工具。在有经验的使用者手中，它能完成不可思议的任务。除了常规的文本编辑功能以外，它还支持一些进阶特性。例如，基于正则表达式的搜索和替换、编码转换，以及语法高亮、代码折叠等的编程特性。<br>使用 Vim 时有一个非常重要的一点需要注意，那就是按键的功能取决于编辑器当前的“模式”。例如，在“普通模式”输入字母<code>j</code>时，光标会向下移动一行。而当你在“插入模式”下输入字符，则只是正常的文字录入。<br>下面就是速查表，以便于你充分利用 Vim。</p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><table>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>Esc</code></td>
 <td>从当前模式转换到“普通模式”。所有的键对应到命令。</td>
 </tr>
@@ -302,15 +298,19 @@
 <td><code>:</code></td>
 <td>“命令行模式” Vim 希望你输入类似于保存该文档命令的地方。</td>
 </tr>
-</tbody></table>
-<h3 id="方向键"><a href="#方向键" class="headerlink" title="方向键"></a>方向键</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="方向键"><a href="#方向键" class="headerlink" title="方向键"></a>方向键</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>h</code></td>
 <td>光标向左移动一个字符</td>
 </tr>
@@ -370,15 +370,19 @@
 <td><code>gg</code></td>
 <td>移动至文件开头</td>
 </tr>
-</tbody></table>
-<h3 id="浏览文档"><a href="#浏览文档" class="headerlink" title="浏览文档"></a>浏览文档</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="浏览文档"><a href="#浏览文档" class="headerlink" title="浏览文档"></a>浏览文档</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>(</code></td>
 <td>跳转到上一句</td>
 </tr>
@@ -410,15 +414,19 @@
 <td><code>][</code></td>
 <td>跳转到上一部分的开头</td>
 </tr>
-</tbody></table>
-<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="插入文本"><a href="#插入文本" class="headerlink" title="插入文本"></a>插入文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>a</code></td>
 <td>在光标后插入文本</td>
 </tr>
@@ -438,15 +446,19 @@
 <td><code>O</code></td>
 <td>（大写字母 O）在光标上方新开一行</td>
 </tr>
-</tbody></table>
-<h3 id="特殊插入"><a href="#特殊插入" class="headerlink" title="特殊插入"></a>特殊插入</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="特殊插入"><a href="#特殊插入" class="headerlink" title="特殊插入"></a>特殊插入</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>:r [filename]</code></td>
 <td>在光标下方插入文件 [filename] 的内容</td>
 </tr>
@@ -454,15 +466,19 @@
 <td><code>:r ![command]</code></td>
 <td>执行命令 [command] ，并将输出插入至光标下方</td>
 </tr>
-</tbody></table>
-<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>x</code></td>
 <td>删除光标处字符</td>
 </tr>
@@ -498,15 +514,19 @@
 <td><code>3dd</code></td>
 <td>删除三行</td>
 </tr>
-</tbody></table>
-<h3 id="简单替换文本"><a href="#简单替换文本" class="headerlink" title="简单替换文本"></a>简单替换文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="简单替换文本"><a href="#简单替换文本" class="headerlink" title="简单替换文本"></a>简单替换文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>r&#123;text&#125;</code></td>
 <td>将光标处的字符替换成 {text}</td>
 </tr>
@@ -514,15 +534,19 @@
 <td><code>R</code></td>
 <td>进入覆写模式，输入的字符将替换原有的字符</td>
 </tr>
-</tbody></table>
-<h3 id="复制-粘贴文本"><a href="#复制-粘贴文本" class="headerlink" title="复制/粘贴文本"></a>复制/粘贴文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="复制-粘贴文本"><a href="#复制-粘贴文本" class="headerlink" title="复制/粘贴文本"></a>复制/粘贴文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>yy</code></td>
 <td>复制当前行至存储缓冲区</td>
 </tr>
@@ -546,15 +570,19 @@
 <td><code>[&quot;x]P</code></td>
 <td>在当前行之前粘贴寄存器 x 中的内容</td>
 </tr>
-</tbody></table>
-<h3 id="撤销-重做操作"><a href="#撤销-重做操作" class="headerlink" title="撤销/重做操作"></a>撤销/重做操作</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="撤销-重做操作"><a href="#撤销-重做操作" class="headerlink" title="撤销/重做操作"></a>撤销/重做操作</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>u</code></td>
 <td>撤销最后的操作</td>
 </tr>
@@ -562,15 +590,19 @@
 <td><code>Ctrl+r</code></td>
 <td>重做最后撤销的操作</td>
 </tr>
-</tbody></table>
-<h3 id="搜索和替换"><a href="#搜索和替换" class="headerlink" title="搜索和替换"></a>搜索和替换</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="搜索和替换"><a href="#搜索和替换" class="headerlink" title="搜索和替换"></a>搜索和替换</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>/search_text</code></td>
 <td>检索文档，在文档后面的部分搜索 search_text</td>
 </tr>
@@ -598,15 +630,19 @@
 <td><code>:%s/original/replacement/gc</code></td>
 <td>检索出所有的 “original” 字符串，但在替换成 “replacement” 前，先询问是否替换</td>
 </tr>
-</tbody></table>
-<h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>m &#123;a-zA-Z&#125;</code></td>
 <td>在当前光标位置设置书签，书签名可用一个大小写字母（{a-zA-Z}）</td>
 </tr>
@@ -618,15 +654,19 @@
 <td><code>&#123;a-zA-Z&#125;</code></td>
 <td>跳转到书签 {a-zA-Z}</td>
 </tr>
-</tbody></table>
-<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="选择文本"><a href="#选择文本" class="headerlink" title="选择文本"></a>选择文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>v</code></td>
 <td>进入逐字可视模式</td>
 </tr>
@@ -638,15 +678,19 @@
 <td><code>Esc</code></td>
 <td>退出可视模式</td>
 </tr>
-</tbody></table>
-<h3 id="改动选中文本"><a href="#改动选中文本" class="headerlink" title="改动选中文本"></a>改动选中文本</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="改动选中文本"><a href="#改动选中文本" class="headerlink" title="改动选中文本"></a>改动选中文本</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>~</code></td>
 <td>切换大小写</td>
 </tr>
@@ -674,15 +718,19 @@
 <td><code>!</code></td>
 <td>通过外部命令进行过滤</td>
 </tr>
-</tbody></table>
-<h3 id="保存并退出"><a href="#保存并退出" class="headerlink" title="保存并退出"></a>保存并退出</h3><table>
+</tbody>
+</table>
+</div>
+<h3 id="保存并退出"><a href="#保存并退出" class="headerlink" title="保存并退出"></a>保存并退出</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>快捷键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>:q</code></td>
 <td>退出 Vim，如果文件已被修改，将退出失败</td>
 </tr>
@@ -710,7 +758,9 @@
 <td><code>ZQ</code></td>
 <td>与 :q! 相同，退出 Vim，不保存文件改动</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="下载-Vim-快捷键速查表"><a href="#下载-Vim-快捷键速查表" class="headerlink" title="下载 Vim 快捷键速查表"></a>下载 Vim 快捷键速查表</h3><p>仅仅是这样是否还不足以满足你？别担心，我们已经为你整理好了一份下载版的速查表，以备不时之需。</p>
 <p><a target="_blank" rel="noopener" href="http://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts-cheatsheet/">点此下载（英文）</a></p>
 <p>-----------------------------------------------------</p>
@@ -723,7 +773,7 @@
 <p>第一个文件（例子中的文件1）将成为当前文件并被读入缓冲区。</p>
 <p>在编辑器中，使用 <code>:next</code> 或 <code>:n</code> 命令来移动到下一个文件，使用 <code>:prev</code> 或 <code>:N</code> 命令返回上一个文件。如果想直接切换到第一个文件或最后一个文件，使用 <code>:bf</code> 和 <code>:bl</code> 命令。特别地，如果想打开另外的文件并编辑，使用 <code>:e</code> 命令并把文件名作为参数（如果该文件不在当前目录中则需要完整路径做为参数）。</p>
 <p>任何时候如果需要列出当前打开的所有文件，使用 <code>:ls</code> 命令。看下面展示的屏幕截图。</p>
-<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/141942p7hm7eeieh1j7p1l.png"></p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/141942p7hm7eeieh1j7p1l.png" alt=""></p>
 <p>注意 ”%a” 表示文件在当前活动窗口，而 “#” 表示上一个活动窗口的文件。</p>
 <h3 id="2、-通过自动补全节约时间"><a href="#2、-通过自动补全节约时间" class="headerlink" title="2、 通过自动补全节约时间"></a>2、 通过自动补全节约时间</h3><p>想节约时间并提高效率吗？使用缩写吧。使用它们能够快速写出文件中多次出现、复杂冗长的词。在 Vim 中缩写命令写就是 <code>ab</code> 。</p>
 <p>比如，当你运行下面的命令以后：</p>
@@ -737,16 +787,16 @@
 <p>打开两个文件中的一个然后切分 Vim 窗口来打开另一个文件。可以通过使用 <code>split</code> 命令并以文件名作为参数来完成这件事。比如：</p>
 <p>:split test.c</p>
 <p>上面的命令将分离窗口并打开文件 “test.c”</p>
-<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142000pal6qgf6b5gfffz9.png"></p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142000pal6qgf6b5gfffz9.png" alt=""></p>
 <p>注意到 <code>split</code> 命令水平分离 Vim 窗口。如果你想垂直分离窗口，那么你可以使用 <code>vsplit</code> 命令。当同时打开了两个文件并从一个文件中复制好内容以后，按 <code>Ctrl + W</code> 切换到另一个文件，然后粘贴。</p>
 <h3 id="4、-保存一个没有权限的已编辑文件"><a href="#4、-保存一个没有权限的已编辑文件" class="headerlink" title="4、 保存一个没有权限的已编辑文件"></a>4、 保存一个没有权限的已编辑文件</h3><p>有时候当你对一个文件做了大量更改以后才会意识到你对该文件仅有 <code>只读</code> 权限。</p>
-<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142018ytpotpoxntini2oo.png"></p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142018ytpotpoxntini2oo.png" alt=""></p>
 <p>虽然把文件关闭，获取权限以后再重新打开是一种解决方法。但是如果你已经做了大量更改，这样做会很浪费时间，因为在这个过程中所有的更改都会丢失。 Vim 提供了一种方式来处理这种情况：你可以在编辑器中在保存文件前更改文件权限。命令是：</p>
 <p>:w !sudo tee %</p>
 <p>这个命令将会向你询问密码，就像在命令行中使用 <code>sudo</code> 一样，然后就能保存更改。</p>
 <p><strong>一个相关的技巧</strong>：在 Vim 中编辑一个文件的时候，如果想快速进入命令行提示符，可以在编辑器中运行 <code>:sh</code> 命令，从而你将进入一个交互的 shell 中。完成以后，运行 <code>exit</code> 命令可以快速回到 Vim 模式中。</p>
 <h3 id="5、-在复制-粘贴过程中保持缩进"><a href="#5、-在复制-粘贴过程中保持缩进" class="headerlink" title="5、 在复制/粘贴过程中保持缩进"></a>5、 在复制/粘贴过程中保持缩进</h3><p>大多数有经验的程序员在 Vim 上工作时都会启用自动缩进。虽然这是一个节约时间的做法，但是在粘贴一段已经缩进了的代码的时候会产生新的问题。比如，下图是我把一段已缩进代码粘贴到一个在自动缩进的 Vim 编辑器中打开的文件中时遇到的问题：</p>
-<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142034q67v77brs7d7ts7s.png"></p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/201701/26/142034q67v77brs7d7ts7s.png" alt=""></p>
 <p>这个问题的解决方法是 <code>pastetoggle</code> 选项。在 <code>/etc/vim/vimrc</code> 文件中加入下面这行内容：</p>
 <p>set pastetoggle=</p>
 <p>然后当你在 <code>插入</code> 模式中准备粘贴代码前先按 <code>F2</code> 键，就不会再出现上图中的问题，这样会保留原始的缩进。注意，你可以用其他的任何键来代替 <code>F2</code>，如果它已经映射到了别的功能上。</p>
@@ -943,7 +993,7 @@
 <div class="copyright">
   
   &copy; 2019 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="user"></i>
   </span>
@@ -1021,7 +1071,22 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
+
+  
 
   
 
