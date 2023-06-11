@@ -35,225 +35,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Android awesome apps|安卓优秀应用集</title>
-    <url>/2019/02/22/android-awesome-apps/</url>
-    <content><![CDATA[<ul>
-<li>There are many apps in android play store. But there are a few applications to be awesome.</li>
-<li>I summary list of apps what I had used, which have good performent. I hope them will help you in some way.</li>
-<li>I also split these apps into three catergories: Daily driving, Assistance &amp; System enhence. Just enjoy it.</li>
-</ul>
-<span id="more"></span>
-<h2 id="Android-awesome-apps-remark"><a href="#Android-awesome-apps-remark" class="headerlink" title="Android awesome apps remark"></a>Android awesome apps remark</h2><p><strong>Daily driving</strong>    </p>
-<h3 id="Video-player"><a href="#Video-player" class="headerlink" title="Video player"></a>Video player</h3><ul>
-<li>MX Player</li>
-<li>VLC</li>
-<li>PotPlayer</li>
-</ul>
-<h3 id="Online-music"><a href="#Online-music" class="headerlink" title="Online music"></a>Online music</h3><ul>
-<li>NetEase Music</li>
-<li>QQ Music</li>
-</ul>
-<h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><ul>
-<li>Chrome(variant: kiwibrowser for snapdrogen chips)</li>
-<li>Via(simple &amp; pure)</li>
-</ul>
-<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><ul>
-<li>GoogleMap</li>
-<li>Amap(in China)</li>
-</ul>
-<h3 id="3rd-Camera"><a href="#3rd-Camera" class="headerlink" title="3rd Camera"></a>3rd Camera</h3><ul>
-<li>Google Camera(nice functions &amp; powerful night sight)</li>
-<li>OpenCamera(pure but rich function on manual control for camera)</li>
-</ul>
-<h3 id="Social-app"><a href="#Social-app" class="headerlink" title="Social app"></a>Social app</h3><ul>
-<li>Twitter</li>
-<li>Facebook</li>
-<li>Telegram</li>
-<li>Weibo</li>
-<li>QQ</li>
-<li>Wechat</li>
-</ul>
-<hr>
-<p><strong>Assistance</strong></p>
-<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><ul>
-<li>Mdict+mdx file</li>
-<li>GoldenDict</li>
-<li>kiwix+zim file</li>
-</ul>
-<h3 id="Books-reader"><a href="#Books-reader" class="headerlink" title="Books reader"></a>Books reader</h3><ul>
-<li>Moon+ Reader</li>
-<li>Librera</li>
-</ul>
-<h3 id="PDF-reader"><a href="#PDF-reader" class="headerlink" title="PDF reader"></a>PDF reader</h3><ul>
-<li>Foxit PDF</li>
-</ul>
-<h3 id="Mobile-office"><a href="#Mobile-office" class="headerlink" title="Mobile office"></a>Mobile office</h3><ul>
-<li>WPS office</li>
-<li>OfficeSuite</li>
-<li>Polaris office(&lt;5.2)</li>
-</ul>
-<h3 id="Text-editor"><a href="#Text-editor" class="headerlink" title="Text editor"></a>Text editor</h3><ul>
-<li>QuickEdit</li>
-<li>Jota+</li>
-</ul>
-<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><ul>
-<li>Evernote</li>
-<li>Notes</li>
-</ul>
-<h3 id="Markdown-editor"><a href="#Markdown-editor" class="headerlink" title="Markdown editor"></a>Markdown editor</h3><ul>
-<li>MarkdownX</li>
-</ul>
-<h3 id="Picture-recognition"><a href="#Picture-recognition" class="headerlink" title="Picture recognition"></a>Picture recognition</h3><ul>
-<li>Quick PDF Scanner</li>
-</ul>
-<h3 id="Photo-editor"><a href="#Photo-editor" class="headerlink" title="Photo editor"></a>Photo editor</h3><ul>
-<li>PicsArt</li>
-<li>Snapseed</li>
-</ul>
-<hr>
-<p><strong>System enhence</strong></p>
-<h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><ul>
-<li>Wuma VPN</li>
-</ul>
-<h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><ul>
-<li>JuiceSSH</li>
-</ul>
-<h3 id="3rd-file-explorer"><a href="#3rd-file-explorer" class="headerlink" title="3rd file explorer"></a>3rd file explorer</h3><ul>
-<li>Root Explorer</li>
-<li>X-plore</li>
-</ul>
-<h3 id="Data-backup"><a href="#Data-backup" class="headerlink" title="Data backup"></a>Data backup</h3><ul>
-<li>Titanium Backup</li>
-</ul>
-<h3 id="Downloader"><a href="#Downloader" class="headerlink" title="Downloader"></a>Downloader</h3><ul>
-<li>IDM+</li>
-<li>ADM</li>
-</ul>
-<h3 id="Hack-app"><a href="#Hack-app" class="headerlink" title="Hack app"></a>Hack app</h3><ul>
-<li><a href="https://www.luckypatchers.com/download/">Lucky Patcher</a><br><img src="https://www.luckypatchers.com/wp-content/uploads/2016/03/Lucky-patcher-logo.webp" alt="Lucky-Patcher-icon"></li>
-</ul>
-<h3 id="Root-manager"><a href="#Root-manager" class="headerlink" title="Root manager"></a>Root manager</h3><ul>
-<li><a href="http://supersu.com/">SuperSU</a><br><img src="http://supersu.com/img/phone.gif" alt="SuperSU-snapshot"></li>
-<li><a href="https://magiskroot.net/install-download-magisk-manager-latest/">Magisk</a><br><img src="https://magiskroot.net/wp-content/uploads/2017/07/magisk-manager-1024x576.webp" alt="Magisk-manager"></li>
-</ul>
-<h3 id="System-cleaner"><a href="#System-cleaner" class="headerlink" title="System cleaner"></a>System cleaner</h3><ul>
-<li>SD Maid</li>
-</ul>
-<p><em>by ligure on 2019-02-20</em></p>
-<hr>
-<h2 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h2><h3 id="Deploy-linux"><a href="#Deploy-linux" class="headerlink" title="Deploy linux"></a>Deploy linux</h3><p>Yep, I mean that you can deploy linux on android phone.</p>
-<p><em>Tools</em></p>
-<ul>
-<li><a href="https://github.com/meefik/linuxdeploy/releases/download/2.2.1/linuxdeploy-2.2.1-243.apk">linuxdeploy.apk</a></li>
-<li><a href="https://github.com/meefik/linuxdeploy/wiki/Installing-Kali-Linux-Guide">tutorial en</a></li>
-<li>tutorial zh<ul>
-<li><a href="https://www.htcp.net/4431.html">教程1</a></li>
-<li><a href="https://mlapp.cn/134.html">教程2</a></li>
-<li><a href="https://my.oschina.net/zss1993/blog/1790223">教程3</a></li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Android</tag>
-        <tag>APP</tag>
-        <tag>Summary</tag>
-        <tag>安卓</tag>
-        <tag>应用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OpenCV2开发笔记</title>
-    <url>/2019/02/27/OpenCV2/</url>
-    <content><![CDATA[<p>这是一篇OpenCV2的开发笔记，根据自己学习OpenCV开源库笔记整理，包含以下几方面内容：</p>
-<ul>
-<li>OpenCV2的环境配置</li>
-<li>简单图像处理</li>
-<li>相机标定</li>
-<li>三维重建</li>
-<li>机器学习</li>
-<li>目标检测</li>
-</ul>
-<span id="more"></span>
-<h2 id="OpenCV简介"><a href="#OpenCV简介" class="headerlink" title="OpenCV简介"></a>OpenCV简介</h2><p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p>
-<h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><hr>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://opencv.org/about.html">https://opencv.org/about.html</a></li>
-<li><a href="https://baike.baidu.com/item/opencv/10320623">https://baike.baidu.com/item/opencv/10320623</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Note</category>
-      </categories>
-      <tags>
-        <tag>opencv</tag>
-        <tag>Tutorial</tag>
-        <tag>计算机视觉</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>招聘笔试编程题笔记</title>
-    <url>/2019/05/17/company-recuit-testing-notes/</url>
-    <content><![CDATA[<ul>
-<li><p>首先声明一下，本人很懒，然后博客搭建了之后，就较少更新博客了，原因有几个；</p>
-<ul>
-<li>原因1：临近毕业了，论文|工作各种忙，所以很少时间整理知识点；</li>
-<li>原因2：一直没有idea，要写什么博客，是技术编程，还是鸡汤美文，还没想好；</li>
-<li>原因3：比较懒，对我就是那种死肥宅的一类人物，博客更新看心情吧；</li>
-<li>原因4：其实写一些意义不大的吐槽的，或结构不完整的博客，本人觉得还不如不写。<span id="more"></span>
-</li>
-</ul>
-</li>
-<li><p>之前在应聘各种单位|公司，虽然不是什么CS科班出身，但是难免会遇上一些装X的公司想试试你的编程能力<br>从此他们开始走向一条不归路。然后想把这些暂存在脑海里的编程题记录下来，归档或给后来者提供一些参考<br>毕竟现在，乐意在网上分享知识经验的人还是少数的，而能分享一些有意义的知识更是寥寥无几。</p>
-</li>
-<li><p>以上是起因，下文进入正题。</p>
-</li>
-</ul>
-<p><em>特别声明：限于本人知识水平有限，本文可能存在一些不足，还请谅解!</em></p>
-<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="公司1"><a href="#公司1" class="headerlink" title="公司1"></a>公司1</h3><ul>
-<li>判断平面点在指定的直线的左边还是右边</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定点A(xa, ya)和点B(xb, yb)，A、B两点确定了一条直线；</span><br><span class="line">然后，假定需要判定的点C坐标为(xc, yc)，如何判定C点相对于AB直线位置；</span><br><span class="line">请编程实现判定点C相对于直线AB的位置，左边返回true，右边返回false。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">利用向量叉乘的正负判定其位于直线左边还是右边。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>C++ 编程实现</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// judge a point in which side of one line consisted with tow line in plane</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019.03.19</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">getJudgement</span><span class="params">(<span class="keyword">double</span> point[], <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>])</span></span>&#123;</span><br><span class="line">    <span class="comment">//reconstruct vertors like a, b</span></span><br><span class="line">    <span class="comment">// then use cross product method to judge</span></span><br><span class="line">    <span class="comment">// if result is positive, point in left, otherwise negetive, point in right</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft=<span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">double</span> a[<span class="number">2</span>], b[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">2</span>; i++)</span><br><span class="line">        a[i] = line[<span class="number">1</span>][i]-line[<span class="number">0</span>][i], b[i]=point[i]-line[<span class="number">0</span>][i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">double</span> res = a[<span class="number">0</span>] * b[<span class="number">1</span>] - a[<span class="number">1</span>] * b[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span>(res &gt; <span class="number">0</span>) isLeft = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> isLeft;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">double</span> point[<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">srand</span>(<span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">time</span>(<span class="number">0</span>)));<span class="comment">//seed from time</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">2</span>; j++)line[i][j] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">        point[i] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// judge point position in which side of line</span></span><br><span class="line">    <span class="comment">// if in left side, return true</span></span><br><span class="line">    <span class="comment">// in right side, return false</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft = <span class="built_in">getJudgement</span>(point, line);</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- point(&quot;</span> &lt;&lt; point[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; point[<span class="number">1</span>]&lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(isLeft) cout &lt;&lt; <span class="string">&quot;-&gt; in left side of line: &quot;</span>;</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;-&gt; right side of line: &quot;</span>;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)&lt;-&gt;&quot;</span></span><br><span class="line">         &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ul>
-<li>测试结果</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">$ g++ lrj.cpp -o pp</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 1</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-6.2113, 8.92874)</span><br><span class="line">-&gt; in left side of line: (0.0824081,9.7702)&lt;-&gt;(-5.83127,9.57272)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 2</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(8.20822, 8.60886)</span><br><span class="line">-&gt; right side of line: (4.5333,-5.9355)&lt;-&gt;(-8.27962,-2.37346)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 3</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-1.58741, 0.621722)</span><br><span class="line">-&gt; right side of line: (0.306838,-4.67183)&lt;-&gt;(-6.34671,0.975676)</span><br></pre></td></tr></table></figure>
-<hr>
-<ul>
-<li>求向量元素前n个之和值为最大、最小时的位置。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定一组向量V(1, -9, 30, 3, -20, 9, ..., 88)；</span><br><span class="line">前n个元素之和为：1+(-9)+30&#x3D;22，但22不一定是最大或最小；</span><br><span class="line">请编程实现找出前n个元素最大和最小值的位置。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">遍历将向量的前n个元素之和依次计算，然后找出最大、最小值，最后根据index给出位置即可。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>C++编程实现</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// sum test</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019-03-18</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">minv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mn = v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (v[i]&lt;mn) mn = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mn;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mx= v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(v[i]&gt;mx) mx = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mx;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span></span>&#123;</span><br><span class="line">    <span class="comment">// tips of using.</span></span><br><span class="line">    <span class="keyword">if</span>(argc &lt; <span class="number">2</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;- Usage: &quot;</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; Num&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// get the num para.</span></span><br><span class="line">    <span class="keyword">int</span> num = <span class="built_in">atoi</span>(argv[<span class="number">1</span>]);</span><br><span class="line">    <span class="comment">// initial array: V.</span></span><br><span class="line">    <span class="keyword">int</span> V[num];</span><br><span class="line">    <span class="comment">// seed random number via unix time var.</span></span><br><span class="line">    <span class="built_in">srand</span>((<span class="keyword">int</span>)<span class="built_in">time</span>(<span class="number">0</span>));</span><br><span class="line">    <span class="comment">// generate the array via random function.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) V[i] = <span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">random</span>(<span class="number">-50</span>, <span class="number">50</span>));</span><br><span class="line">    <span class="comment">// then display them.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- Original array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; V[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// get sum of first N int var in V.</span></span><br><span class="line">    <span class="keyword">int</span> S[num];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">0</span>) S[i]=V[i];</span><br><span class="line">        <span class="keyword">else</span> S[i]=S[i<span class="number">-1</span>]+V[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// see the array of sum.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Sum array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; S[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// pick out the min &amp; max value of sum array.</span></span><br><span class="line">    <span class="keyword">int</span> mins = <span class="built_in">minv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> maxs = <span class="built_in">maxv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> mins_idx, maxs_idx;</span><br><span class="line">    <span class="comment">// fetch min &amp; max index via their value.</span></span><br><span class="line">    <span class="comment">// perhaps, there are more than one of them.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==mins) mins_idx = i;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==maxs) maxs_idx = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// show the final answer.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; min sum value is: &quot;</span> &lt;&lt; mins</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; mins_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; max sum value is: &quot;</span> &lt;&lt; maxs</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; maxs_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>测试结果</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 编译</span><br><span class="line">$g++ test.cpp -o test</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;1</span><br><span class="line">$.&#x2F;test 10</span><br><span class="line">- Original array:</span><br><span class="line">20 -11 47 -36 24 45 6 46 -44 -5</span><br><span class="line">Sum array:</span><br><span class="line">20 9 56 20 44 89 95 141 97 92</span><br><span class="line">-&gt; min sum value is: 9, in position: 2</span><br><span class="line">-&gt; max sum value is: 141, in position: 8</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;2</span><br><span class="line">$ .&#x2F;test 15</span><br><span class="line">- Original array:</span><br><span class="line">25 -15 6 -16 -6 -31 -29 -21 24 -9 28 14 -3 -46 35</span><br><span class="line">Sum array:</span><br><span class="line">25 10 16 0 -6 -37 -66 -87 -63 -72 -44 -30 -33 -79 -44</span><br><span class="line">-&gt; min sum value is: -87, in position: 8</span><br><span class="line">-&gt; max sum value is: 25, in position: 1</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;3</span><br><span class="line">$ .&#x2F;test 20</span><br><span class="line">- Original array:</span><br><span class="line">13 -6 -27 -12 48 -45 -35 28 -3 26 49 20 29 17 -32 -31 36 28 1 31</span><br><span class="line">Sum array:</span><br><span class="line">13 7 -20 -32 16 -29 -64 -36 -39 -13 36 56 85 102 70 39 75 103 104 135</span><br><span class="line">-&gt; min sum value is: -64, in position: 7</span><br><span class="line">-&gt; max sum value is: 135, in position: 20</span><br></pre></td></tr></table></figure>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A">https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A</a></li>
-<li><a href="http://www.cnblogs.com/carekee/articles/2299546.html">http://www.cnblogs.com/carekee/articles/2299546.html</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作</tag>
-        <tag>招聘</tag>
-        <tag>编程笔记</tag>
-        <tag>work</tag>
-        <tag>recruit</tag>
-        <tag>coding note</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Visual Studio Code在win7下安装笔记&lt;!--VS-Code-Installation--&gt;</title>
     <url>/2019/05/19/VS-Code-Installation/</url>
     <content><![CDATA[<h2 id="前言-Preword"><a href="#前言-Preword" class="headerlink" title="前言|Preword"></a>前言|Preword</h2><p>VS Code 全称Visual Studio Code是微软推出了一款跨平台的开放源码的代码编辑器。<br>没错，TA就是一款编辑器，不是所谓的编译器，请不要被Code误解，理解为Build Program。VS Code强大之处，除了开源，还加入了Git版本控制（还不清楚是啥功能，估计是Git同步）、代码补全（just like intellisense functions）、代码片段、代码重构等功能，深受欢迎。由于VS Code资源占用少，就连台湾 Emacs 布道师试用了VS Code以后，决定不推Emacs了。但是，VS Code的安装和配置是件令人头疼的事情。这几天利用空余时间安装了VS Code及C++的插件并把编译C++项目的配置文件走了一遍，终于可以编译C++源代码，故写下这篇安装笔记，以便后来者参考和自己学习的记录。</p>
@@ -325,6 +106,36 @@
         <tag>编辑器</tag>
         <tag>Editor</tag>
         <tag>微软</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenCV2开发笔记</title>
+    <url>/2019/02/27/OpenCV2/</url>
+    <content><![CDATA[<p>这是一篇OpenCV2的开发笔记，根据自己学习OpenCV开源库笔记整理，包含以下几方面内容：</p>
+<ul>
+<li>OpenCV2的环境配置</li>
+<li>简单图像处理</li>
+<li>相机标定</li>
+<li>三维重建</li>
+<li>机器学习</li>
+<li>目标检测</li>
+</ul>
+<span id="more"></span>
+<h2 id="OpenCV简介"><a href="#OpenCV简介" class="headerlink" title="OpenCV简介"></a>OpenCV简介</h2><p>OpenCV是计算视觉开源库，由C和C++语言编写，跨多个平台，包括windos、linux、Mac oS、Android等平台。包含图像处理和计算视觉中的大部分函数，可以用于进行图像分类、目标识别、相机标定、立体视觉、机器学习中，提供500多个易于上手的函数。由Intel公司员工Gary Bradski(got from text book:learning OpenCV3)发起的该项目，专注于高性能计算和实时应用，得到了Google和Intel公司的支持，并被IBM、Microsoft、Intel、SONY、Siemens和Google公司采用，同时应用于Stanford、MIT、CMU、Cambridge和INRIA等研究中心。该项目在全世界范围内被广泛应用，拥有将近5w个会员，在中国、日本、俄罗斯、欧洲诸国中广受欢迎。</p>
+<h2 id="OpenCV安装与配置"><a href="#OpenCV安装与配置" class="headerlink" title="OpenCV安装与配置"></a>OpenCV安装与配置</h2><h2 id="入门知识"><a href="#入门知识" class="headerlink" title="入门知识"></a>入门知识</h2><h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><h2 id="相机标定"><a href="#相机标定" class="headerlink" title="相机标定"></a>相机标定</h2><h2 id="三维重建"><a href="#三维重建" class="headerlink" title="三维重建"></a>三维重建</h2><h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><h2 id="目标检测"><a href="#目标检测" class="headerlink" title="目标检测"></a>目标检测</h2><hr>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://opencv.org/about.html">https://opencv.org/about.html</a></li>
+<li><a href="https://baike.baidu.com/item/opencv/10320623">https://baike.baidu.com/item/opencv/10320623</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>opencv</tag>
+        <tag>Tutorial</tag>
+        <tag>计算机视觉</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -714,6 +525,134 @@ h(x)=\theta_0 x + \theta_1 x</script><hr>
         <tag>Math</tag>
         <tag>Equation</tag>
         <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android awesome apps|安卓优秀应用集</title>
+    <url>/2019/02/22/android-awesome-apps/</url>
+    <content><![CDATA[<ul>
+<li>There are many apps in android play store. But there are a few applications to be awesome.</li>
+<li>I summary list of apps what I had used, which have good performent. I hope them will help you in some way.</li>
+<li>I also split these apps into three catergories: Daily driving, Assistance &amp; System enhence. Just enjoy it.</li>
+</ul>
+<span id="more"></span>
+<h2 id="Android-awesome-apps-remark"><a href="#Android-awesome-apps-remark" class="headerlink" title="Android awesome apps remark"></a>Android awesome apps remark</h2><p><strong>Daily driving</strong>    </p>
+<h3 id="Video-player"><a href="#Video-player" class="headerlink" title="Video player"></a>Video player</h3><ul>
+<li>MX Player</li>
+<li>VLC</li>
+<li>PotPlayer</li>
+</ul>
+<h3 id="Online-music"><a href="#Online-music" class="headerlink" title="Online music"></a>Online music</h3><ul>
+<li>NetEase Music</li>
+<li>QQ Music</li>
+</ul>
+<h3 id="Browser"><a href="#Browser" class="headerlink" title="Browser"></a>Browser</h3><ul>
+<li>Chrome(variant: kiwibrowser for snapdrogen chips)</li>
+<li>Via(simple &amp; pure)</li>
+</ul>
+<h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><ul>
+<li>GoogleMap</li>
+<li>Amap(in China)</li>
+</ul>
+<h3 id="3rd-Camera"><a href="#3rd-Camera" class="headerlink" title="3rd Camera"></a>3rd Camera</h3><ul>
+<li>Google Camera(nice functions &amp; powerful night sight)</li>
+<li>OpenCamera(pure but rich function on manual control for camera)</li>
+</ul>
+<h3 id="Social-app"><a href="#Social-app" class="headerlink" title="Social app"></a>Social app</h3><ul>
+<li>Twitter</li>
+<li>Facebook</li>
+<li>Telegram</li>
+<li>Weibo</li>
+<li>QQ</li>
+<li>Wechat</li>
+</ul>
+<hr>
+<p><strong>Assistance</strong></p>
+<h3 id="Dictionary"><a href="#Dictionary" class="headerlink" title="Dictionary"></a>Dictionary</h3><ul>
+<li>Mdict+mdx file</li>
+<li>GoldenDict</li>
+<li>kiwix+zim file</li>
+</ul>
+<h3 id="Books-reader"><a href="#Books-reader" class="headerlink" title="Books reader"></a>Books reader</h3><ul>
+<li>Moon+ Reader</li>
+<li>Librera</li>
+</ul>
+<h3 id="PDF-reader"><a href="#PDF-reader" class="headerlink" title="PDF reader"></a>PDF reader</h3><ul>
+<li>Foxit PDF</li>
+</ul>
+<h3 id="Mobile-office"><a href="#Mobile-office" class="headerlink" title="Mobile office"></a>Mobile office</h3><ul>
+<li>WPS office</li>
+<li>OfficeSuite</li>
+<li>Polaris office(&lt;5.2)</li>
+</ul>
+<h3 id="Text-editor"><a href="#Text-editor" class="headerlink" title="Text editor"></a>Text editor</h3><ul>
+<li>QuickEdit</li>
+<li>Jota+</li>
+</ul>
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><ul>
+<li>Evernote</li>
+<li>Notes</li>
+</ul>
+<h3 id="Markdown-editor"><a href="#Markdown-editor" class="headerlink" title="Markdown editor"></a>Markdown editor</h3><ul>
+<li>MarkdownX</li>
+</ul>
+<h3 id="Picture-recognition"><a href="#Picture-recognition" class="headerlink" title="Picture recognition"></a>Picture recognition</h3><ul>
+<li>Quick PDF Scanner</li>
+</ul>
+<h3 id="Photo-editor"><a href="#Photo-editor" class="headerlink" title="Photo editor"></a>Photo editor</h3><ul>
+<li>PicsArt</li>
+<li>Snapseed</li>
+</ul>
+<hr>
+<p><strong>System enhence</strong></p>
+<h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><ul>
+<li>Wuma VPN</li>
+</ul>
+<h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><ul>
+<li>JuiceSSH</li>
+</ul>
+<h3 id="3rd-file-explorer"><a href="#3rd-file-explorer" class="headerlink" title="3rd file explorer"></a>3rd file explorer</h3><ul>
+<li>Root Explorer</li>
+<li>X-plore</li>
+</ul>
+<h3 id="Data-backup"><a href="#Data-backup" class="headerlink" title="Data backup"></a>Data backup</h3><ul>
+<li>Titanium Backup</li>
+</ul>
+<h3 id="Downloader"><a href="#Downloader" class="headerlink" title="Downloader"></a>Downloader</h3><ul>
+<li>IDM+</li>
+<li>ADM</li>
+</ul>
+<h3 id="Hack-app"><a href="#Hack-app" class="headerlink" title="Hack app"></a>Hack app</h3><ul>
+<li><a href="https://www.luckypatchers.com/download/">Lucky Patcher</a><br><img src="https://www.luckypatchers.com/wp-content/uploads/2016/03/Lucky-patcher-logo.webp" alt="Lucky-Patcher-icon"></li>
+</ul>
+<h3 id="Root-manager"><a href="#Root-manager" class="headerlink" title="Root manager"></a>Root manager</h3><ul>
+<li><a href="http://supersu.com/">SuperSU</a><br><img src="http://supersu.com/img/phone.gif" alt="SuperSU-snapshot"></li>
+<li><a href="https://magiskroot.net/install-download-magisk-manager-latest/">Magisk</a><br><img src="https://magiskroot.net/wp-content/uploads/2017/07/magisk-manager-1024x576.webp" alt="Magisk-manager"></li>
+</ul>
+<h3 id="System-cleaner"><a href="#System-cleaner" class="headerlink" title="System cleaner"></a>System cleaner</h3><ul>
+<li>SD Maid</li>
+</ul>
+<p><em>by ligure on 2019-02-20</em></p>
+<hr>
+<h2 id="One-More-Thing"><a href="#One-More-Thing" class="headerlink" title="One More Thing"></a>One More Thing</h2><h3 id="Deploy-linux"><a href="#Deploy-linux" class="headerlink" title="Deploy linux"></a>Deploy linux</h3><p>Yep, I mean that you can deploy linux on android phone.</p>
+<p><em>Tools</em></p>
+<ul>
+<li><a href="https://github.com/meefik/linuxdeploy/releases/download/2.2.1/linuxdeploy-2.2.1-243.apk">linuxdeploy.apk</a></li>
+<li><a href="https://github.com/meefik/linuxdeploy/wiki/Installing-Kali-Linux-Guide">tutorial en</a></li>
+<li>tutorial zh<ul>
+<li><a href="https://www.htcp.net/4431.html">教程1</a></li>
+<li><a href="https://mlapp.cn/134.html">教程2</a></li>
+<li><a href="https://my.oschina.net/zss1993/blog/1790223">教程3</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Android</tag>
+        <tag>APP</tag>
+        <tag>Summary</tag>
+        <tag>安卓</tag>
+        <tag>应用</tag>
       </tags>
   </entry>
   <entry>
@@ -1475,6 +1414,67 @@ h(x)=\theta_0 x + \theta_1 x</script><hr>
         <tag>SLAM</tag>
         <tag>工程师</tag>
         <tag>技能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>招聘笔试编程题笔记</title>
+    <url>/2019/05/17/company-recuit-testing-notes/</url>
+    <content><![CDATA[<ul>
+<li><p>首先声明一下，本人很懒，然后博客搭建了之后，就较少更新博客了，原因有几个；</p>
+<ul>
+<li>原因1：临近毕业了，论文|工作各种忙，所以很少时间整理知识点；</li>
+<li>原因2：一直没有idea，要写什么博客，是技术编程，还是鸡汤美文，还没想好；</li>
+<li>原因3：比较懒，对我就是那种死肥宅的一类人物，博客更新看心情吧；</li>
+<li>原因4：其实写一些意义不大的吐槽的，或结构不完整的博客，本人觉得还不如不写。<span id="more"></span>
+</li>
+</ul>
+</li>
+<li><p>之前在应聘各种单位|公司，虽然不是什么CS科班出身，但是难免会遇上一些装X的公司想试试你的编程能力<br>从此他们开始走向一条不归路。然后想把这些暂存在脑海里的编程题记录下来，归档或给后来者提供一些参考<br>毕竟现在，乐意在网上分享知识经验的人还是少数的，而能分享一些有意义的知识更是寥寥无几。</p>
+</li>
+<li><p>以上是起因，下文进入正题。</p>
+</li>
+</ul>
+<p><em>特别声明：限于本人知识水平有限，本文可能存在一些不足，还请谅解!</em></p>
+<h2 id="编程题"><a href="#编程题" class="headerlink" title="编程题"></a>编程题</h2><h3 id="公司1"><a href="#公司1" class="headerlink" title="公司1"></a>公司1</h3><ul>
+<li>判断平面点在指定的直线的左边还是右边</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定点A(xa, ya)和点B(xb, yb)，A、B两点确定了一条直线；</span><br><span class="line">然后，假定需要判定的点C坐标为(xc, yc)，如何判定C点相对于AB直线位置；</span><br><span class="line">请编程实现判定点C相对于直线AB的位置，左边返回true，右边返回false。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">利用向量叉乘的正负判定其位于直线左边还是右边。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>C++ 编程实现</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// judge a point in which side of one line consisted with tow line in plane</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019.03.19</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">getJudgement</span><span class="params">(<span class="keyword">double</span> point[], <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>])</span></span>&#123;</span><br><span class="line">    <span class="comment">//reconstruct vertors like a, b</span></span><br><span class="line">    <span class="comment">// then use cross product method to judge</span></span><br><span class="line">    <span class="comment">// if result is positive, point in left, otherwise negetive, point in right</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft=<span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">double</span> a[<span class="number">2</span>], b[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">2</span>; i++)</span><br><span class="line">        a[i] = line[<span class="number">1</span>][i]-line[<span class="number">0</span>][i], b[i]=point[i]-line[<span class="number">0</span>][i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">double</span> res = a[<span class="number">0</span>] * b[<span class="number">1</span>] - a[<span class="number">1</span>] * b[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span>(res &gt; <span class="number">0</span>) isLeft = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> isLeft;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> line[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">double</span> point[<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">srand</span>(<span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">time</span>(<span class="number">0</span>)));<span class="comment">//seed from time</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">2</span>; j++)line[i][j] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">        point[i] = <span class="built_in">random</span>(<span class="number">-10</span>, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// judge point position in which side of line</span></span><br><span class="line">    <span class="comment">// if in left side, return true</span></span><br><span class="line">    <span class="comment">// in right side, return false</span></span><br><span class="line">    <span class="keyword">bool</span> isLeft = <span class="built_in">getJudgement</span>(point, line);</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- point(&quot;</span> &lt;&lt; point[<span class="number">0</span>] &lt;&lt; <span class="string">&quot;, &quot;</span> &lt;&lt; point[<span class="number">1</span>]&lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span>(isLeft) cout &lt;&lt; <span class="string">&quot;-&gt; in left side of line: &quot;</span>;</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;-&gt; right side of line: &quot;</span>;</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">0</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)&lt;-&gt;&quot;</span></span><br><span class="line">         &lt;&lt; <span class="string">&quot;(&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">0</span>] &lt;&lt; <span class="string">&quot;,&quot;</span> &lt;&lt; line[<span class="number">1</span>][<span class="number">1</span>] &lt;&lt; <span class="string">&quot;)\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>测试结果</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;编译</span><br><span class="line">$ g++ lrj.cpp -o pp</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 1</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-6.2113, 8.92874)</span><br><span class="line">-&gt; in left side of line: (0.0824081,9.7702)&lt;-&gt;(-5.83127,9.57272)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 2</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(8.20822, 8.60886)</span><br><span class="line">-&gt; right side of line: (4.5333,-5.9355)&lt;-&gt;(-8.27962,-2.37346)</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;Test 3</span><br><span class="line">$ .&#x2F;pp</span><br><span class="line">- point(-1.58741, 0.621722)</span><br><span class="line">-&gt; right side of line: (0.306838,-4.67183)&lt;-&gt;(-6.34671,0.975676)</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>求向量元素前n个之和值为最大、最小时的位置。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">题目重述：</span><br><span class="line">给定一组向量V(1, -9, 30, 3, -20, 9, ..., 88)；</span><br><span class="line">前n个元素之和为：1+(-9)+30&#x3D;22，但22不一定是最大或最小；</span><br><span class="line">请编程实现找出前n个元素最大和最小值的位置。</span><br><span class="line"></span><br><span class="line">解题思路：</span><br><span class="line">遍历将向量的前n个元素之和依次计算，然后找出最大、最小值，最后根据index给出位置即可。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>C++编程实现</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// sum test</span></span><br><span class="line"><span class="comment">// @author ligurecn</span></span><br><span class="line"><span class="comment">// xuzhou, 2019-03-18</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">random</span><span class="params">(<span class="keyword">double</span> start, <span class="keyword">double</span> end)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> start+(end-start)*<span class="built_in">rand</span>()/(RAND_MAX + <span class="number">1.0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">minv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mn = v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span> (v[i]&lt;mn) mn = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mn;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxv</span><span class="params">(<span class="keyword">int</span> v[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mx= v[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(v[i]&gt;mx) mx = v[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mx;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span>** argv)</span></span>&#123;</span><br><span class="line">    <span class="comment">// tips of using.</span></span><br><span class="line">    <span class="keyword">if</span>(argc &lt; <span class="number">2</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;- Usage: &quot;</span> &lt;&lt; argv[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; Num&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// get the num para.</span></span><br><span class="line">    <span class="keyword">int</span> num = <span class="built_in">atoi</span>(argv[<span class="number">1</span>]);</span><br><span class="line">    <span class="comment">// initial array: V.</span></span><br><span class="line">    <span class="keyword">int</span> V[num];</span><br><span class="line">    <span class="comment">// seed random number via unix time var.</span></span><br><span class="line">    <span class="built_in">srand</span>((<span class="keyword">int</span>)<span class="built_in">time</span>(<span class="number">0</span>));</span><br><span class="line">    <span class="comment">// generate the array via random function.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) V[i] = <span class="built_in"><span class="keyword">int</span></span>(<span class="built_in">random</span>(<span class="number">-50</span>, <span class="number">50</span>));</span><br><span class="line">    <span class="comment">// then display them.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;- Original array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; V[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// get sum of first N int var in V.</span></span><br><span class="line">    <span class="keyword">int</span> S[num];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">0</span>) S[i]=V[i];</span><br><span class="line">        <span class="keyword">else</span> S[i]=S[i<span class="number">-1</span>]+V[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// see the array of sum.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Sum array:\n&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++) cout &lt;&lt; S[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// pick out the min &amp; max value of sum array.</span></span><br><span class="line">    <span class="keyword">int</span> mins = <span class="built_in">minv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> maxs = <span class="built_in">maxv</span>(S, num);</span><br><span class="line">    <span class="keyword">int</span> mins_idx, maxs_idx;</span><br><span class="line">    <span class="comment">// fetch min &amp; max index via their value.</span></span><br><span class="line">    <span class="comment">// perhaps, there are more than one of them.</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt; num; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==mins) mins_idx = i;</span><br><span class="line">        <span class="keyword">if</span>(S[i]==maxs) maxs_idx = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// show the final answer.</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; min sum value is: &quot;</span> &lt;&lt; mins</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; mins_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;-&gt; max sum value is: &quot;</span> &lt;&lt; maxs</span><br><span class="line">        &lt;&lt; <span class="string">&quot;, in position: &quot;</span> &lt;&lt; maxs_idx+<span class="number">1</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>测试结果</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 编译</span><br><span class="line">$g++ test.cpp -o test</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;1</span><br><span class="line">$.&#x2F;test 10</span><br><span class="line">- Original array:</span><br><span class="line">20 -11 47 -36 24 45 6 46 -44 -5</span><br><span class="line">Sum array:</span><br><span class="line">20 9 56 20 44 89 95 141 97 92</span><br><span class="line">-&gt; min sum value is: 9, in position: 2</span><br><span class="line">-&gt; max sum value is: 141, in position: 8</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;2</span><br><span class="line">$ .&#x2F;test 15</span><br><span class="line">- Original array:</span><br><span class="line">25 -15 6 -16 -6 -31 -29 -21 24 -9 28 14 -3 -46 35</span><br><span class="line">Sum array:</span><br><span class="line">25 10 16 0 -6 -37 -66 -87 -63 -72 -44 -30 -33 -79 -44</span><br><span class="line">-&gt; min sum value is: -87, in position: 8</span><br><span class="line">-&gt; max sum value is: 25, in position: 1</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;&#x2F;3</span><br><span class="line">$ .&#x2F;test 20</span><br><span class="line">- Original array:</span><br><span class="line">13 -6 -27 -12 48 -45 -35 28 -3 26 49 20 29 17 -32 -31 36 28 1 31</span><br><span class="line">Sum array:</span><br><span class="line">13 7 -20 -32 16 -29 -64 -36 -39 -13 36 56 85 102 70 39 75 103 104 135</span><br><span class="line">-&gt; min sum value is: -64, in position: 7</span><br><span class="line">-&gt; max sum value is: 135, in position: 20</span><br></pre></td></tr></table></figure>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A">https://dev.gameres.com/Program/Abstract/Geometry.htm#%E5%88%A4%E6%96%AD%E7%82%B9%E6%98%AF%E5%90%A6%E5%9C%A8%E7%BA%BF%E6%AE%B5%E4%B8%8A</a></li>
+<li><a href="http://www.cnblogs.com/carekee/articles/2299546.html">http://www.cnblogs.com/carekee/articles/2299546.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+        <tag>招聘</tag>
+        <tag>编程笔记</tag>
+        <tag>work</tag>
+        <tag>recruit</tag>
+        <tag>coding note</tag>
       </tags>
   </entry>
 </search>
